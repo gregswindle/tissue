@@ -30,7 +30,7 @@
   },
   "contributors": [],
   "dependencies": {
-    "@octokit/rest": "15.1.9",
+    "@octokit/rest": "15.2.1",
     "bunyan": "1.8.12",
     "chalk": "2.3.2",
     "dotenv": "5.0.1",
