@@ -1,5 +1,7 @@
 # github-resource-converter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/github-resource-converter.svg)](https://greenkeeper.io/)
+
 > Convert GitHub resources (Issues) into CSV, etc.
 
 [![NPM version][npm-image]][npm-url]
