@@ -8,13 +8,18 @@ os:
   - linux
   - osx
 
+notifications:
+  webhooks: https://app.fossa.io/hooks/travisci
+
 before_script:
   - npm prune
 
 script:
   - npm test
 
-after_script: 'cat ./docs/reports/coverage/lcov.info | coveralls'
+after_script:
+  - 'cat ./docs/reports/coverage/lcov.info | coveralls'
+  - 'cat ./docs/reports/coverage/lcov.info | codacy-coverage'
 
 deploy:
   provider: script

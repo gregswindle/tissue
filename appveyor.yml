@@ -33,6 +33,5 @@ clone_depth: 1
 test_script:
   - node --version
   - npm --version
-  # - C:\projects\github-resource-converter\node_modules\.bin\jest --config=C:\projects\github-resource-converter\jest.config.json
   - cd C:\projects\github-resource-converter\
   - npm test

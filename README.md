@@ -1,16 +1,20 @@
-# github-resource-converter
+# `github-resource-converter`
 
-> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-opened.svg"> Convert GitHub resources (Issues) into CSV, etc.
+> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-opened.svg"> Convert GitHub Issues and Pull Requests to JSON and CSV from a Terminal or within your Node.js app.
 
+[![The MIT License][license-image]][license-url]
+[![FOSSA Status][fossa-image]][fossa-url]
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![NPMS score][npms-image]][npms-url]<br>
+[![NSP Status][nsp-image]][nsp-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
+[![Development Dependency Status][daviddm-dev-image]][daviddm-dev-url]<br>
+[![MacOS and Ubuntu build statuses][travis-image]][travis-url]
+[![Windows build status][appveyor-image]][appveyor-url]
 [![Coverage percentage][coveralls-image]][coveralls-url]
-[![Codacy](https://img.shields.io/codacy/id.svg?style=flat-square)]()
-[![David](https://img.shields.io/david/dev/user/repository.svg?style=flat-square)](https://david-dm.org/user/repository?type=dev)
-[![Libscore](https://img.shields.io/libscore/s/project.svg?style=flat-square)]()
-[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![AppVeyor](https://img.shields.io/appveyor/ci/user/repository.svg?style=flat-square)]()
+[![Codacy][codacy-image]][codacy-url]
+
+## Table of contents
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
 
@@ -24,6 +28,7 @@
   * [Optional command-line flags](#optional-command-line-flags)
   * [Errors](#errors)
   * [Info](#info)
+* [Contributing](#contributing)
 * [License](#license)
   <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
@@ -31,11 +36,11 @@
 
 ### Prerequisites
 
-1.  `github-resource-converter` requires [Node.js](https://nodejs.org/), and `npm`, which installs with Node.js.
+1.  `github-resource-converter` requires [Node.js ![External link][icon-octicon-link-external]](https://nodejs.org/), and `npm`, which installs with Node.js.
 
-1.  To avoid rate-limiting, you should [create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token:
+1.  To avoid rate-limiting, you should [create a personal access token ![External link][icon-octicon-link-external]](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token:
 
-* **MacOS and Unix:**
+* **MacOS and Unix**
 
   ```bash
   $ mkdir -p /usr/local/etc/github-resource-center/envvars/
@@ -44,7 +49,7 @@
      /usr/local/etc/github-resource-center/envvars/.env
   ```
 
-* **Windows:**
+* **Windows**
 
   ```shell
   > md -p C:\usr\local\etc\github-resource-center\envvars\
@@ -77,20 +82,20 @@ Open a terminal and run:
 ```bash
 $ github-resource-converter \
   --owner gregswindle \
-  --repo eslint-plugin-crc \
-  --dest './docs/gregswindle-eslint-plugin-crc-issues.csv'
+  --repo github-resource-converter \
+  --dest './docs/gregswindle-github-resource-converter-issues.csv'
 
 # Or use the grc alias:
-$ grc --owner gregswindle --repo eslint-plugin-crc --dest './docs/gregswindle-eslint-plugin-crc-issues.csv'
+$ grc --owner gregswindle --repo github-resource-converter --dest './docs/gregswindle-github-resource-converter-issues.csv'
 ```
 
 ### Required command-line flags
 
 <dl>
   <dt><code>--owner</code></dt>
-  <dd>The GitHub account name or organization name.</dd>
+  <dd><p>The GitHub account name or organization name.</p></dd>
   <dt><code>--repo</code></dt>
-  <dd>The name of the GitHub (or GitHub Enterprise) repository.</dd>
+  <dd><p>The name of the GitHub (or GitHub Enterprise) repository.</p></dd>
 </dl>
 
 ---
@@ -109,8 +114,8 @@ The minium amount of CLI flags for _all_ issues at
 `https://github.com/gregswindle/github-resource-converter.git` would therefore be:
 
 ```bash
-# Invoke https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues
-$ grc --owner gregswindle --repo eslint-plugin-crc
+# Invoke https://api.github.com/repos/gregswindle/github-resource-converter/issues
+$ grc --owner gregswindle --repo github-resource-converter
 ```
 
 ---
@@ -120,7 +125,7 @@ $ grc --owner gregswindle --repo eslint-plugin-crc
 Export all issues from a private, on-premise GitHub Enterprise repoository to CSV:
 
 ```bash
-# Invoke https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues
+# Invoke https://api.github.com/repos/gregswindle/github-resource-converter/issues
 $ grc --host api.ecorp.com \
   --owner evilcorp \
   --path-prefix 'api/v3'
@@ -133,8 +138,8 @@ $ grc --host api.ecorp.com \
 
 <dl>
   <dt><code>--dest</code></dt>
-  <dd>The destination path and file name of the CSV.
-    <br><br>Default value: <code>./issues.csv</code>.
+  <dd><p>The destination path and file name of the CSV.</p>
+    <p>Default value: <code>./issues.csv</code>.</p>
   </dd>
   <dt><code>--host</code></dt>
   <dd>The name of the GitHub (or GitHub Enterprise) repository.
@@ -168,7 +173,7 @@ $ grc --owner repo --repo foobar
       "documentation_url": "https://developer.github.com/v3"
     },
     "name": "HttpError",
-    "stack": "HttpError: {\"message\":\"Not Found\",\"documentation_url\":\"https://developer.github.com/v3\"}\n    at response.text.then.message (/Users/swindle/Projects/github/gregswindle/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+    "stack": "HttpError: {\"message\":\"Not Found\",\"documentation_url\":\"https://developer.github.com/v3\"}\n    at response.text.then.message (/path/to/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
     "code": 404
   },
   "msg": {
@@ -216,7 +221,7 @@ Convert GitHub resources (Issues) into CSV, etc.
     $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'
     // => Exported CSV to /path/to/reports/issues/2018-05-10.csv.
 
-    $ grc --owner repo --repo foobar
+    $ grc --owner error --repo example
       [github-resource-converter] 2018-03-12T07:36:31.681Z ERROR HttpError: {
       'name': 'github-resource-converter',
       'hostname': 'localhost',
@@ -229,7 +234,7 @@ Convert GitHub resources (Issues) into CSV, etc.
         },
         'name': 'HttpError',
         'stack': 'HttpError: {"message":"Not Found","documentation_url":"https://developer.github.com/v3"}
-      at response.text.then.message (/Users/swindle/Projects/github/gregswindle/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)
+      at response.text.then.message (/path/to/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)
       at <anonymous>
       at process._tickCallback (internal/process/next_tick.js:188:7)',
         'code': 404
@@ -250,18 +255,91 @@ $ github-resource-converter --version
 # => 1.0.0-alpha
 ```
 
+## Contributing
+
+[![PRs Welcome][makeapullrequest-image] ![External link][icon-octicon-link-external]][makeapullrequest-url] We welcome contributions with GitHub **issues** and **pull requests**.
+
+---
+
+[![Request a feature][issues-new-feat-image]][issues-new-feat-url]
+[![Report a defect][issues-new-defect-image]][issues-new-defect-url]
+
+[![Read the CONTRIBUTING guidelines][contributing-image]][contributing-url]
+
+---
+
+Contributions in the form of GitHub pull requests are welcome. Before embarking on a significant change, please adhere to the following guidelines:
+
+1.  **[Create an issue][issues-url]**&mdash;e.g., a [defect ("bug") report][issues-new-defect-url] or a [feature request][issues-new-feat-url]&mdash;to propose changes.
+
+    _Exceptions:_
+
+    > If you're working on documentation and fixing something simple like a typo or an easy bug, go ahead and make a pull request.
+
+1.  **[Follow the CONTRIBUTING guidelines][contributing-url].**
+
+    _Why:_
+
+    > Standards and guidelines make communication easier. If you're willing and able to program&mdash;or want to learn how&mdash; following the guidelines will increase the likelihood of adding your changes to the software product.
+
+1.  **[Read the Code of Conduct][code-of-conduct-url].**
+
+    _Why:_
+
+    > It's more fun when everybody's friendly and respectful.
+
+1.  **[Make a pull request][pr-url]** when you're ready for other to review your changes (or you get stuck somewhere).
+
+    _PR novices:_
+
+    > **🙋 Never created a pull request?** No problem. [🆓 Take this free online training ![External link][icon-octicon-link-external]][makeapullrequest-url]. (It even covers most of the conventions in the [CONTRIBUTING guidelines][contributing-url]!)
+
 ## License
 
-MIT © [Greg Swindle](https://github.com/gregswindle)
+[MIT](./LICENSE) © [Greg Swindle](https://github.com/gregswindle).
 
-[npm-image]: https://badge.fury.io/js/github-resource-converter.svg
-[npm-url]: https://npmjs.org/package/github-resource-converter
-[travis-image]: https://travis-ci.org/gregswindle/github-resource-converter.svg?branch=master
-[travis-url]: https://travis-ci.org/gregswindle/github-resource-converter
-[daviddm-image]: https://david-dm.org/gregswindle/github-resource-converter.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/gregswindle/github-resource-converter
-[coveralls-image]: https://coveralls.io/repos/gregswindle/github-resource-converter/badge.svg
+Read the [NOTICE ![External link][icon-octicon-link-external]](https://app.fossa.io/reports/07123904-7d26-40a6-b6af-c74e82a53789) for all third-party software that `github-resource-converter` uses.
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter?ref=badge_large)
+
+<!-- ⛔️ CI Services ⛔️  -->
+
+[appveyor-image]: https://img.shields.io/appveyor/ci/gregswindle/github-resource-converter.svg?style=flat-square&logo=appveyor&label=Windows%20build
+[appveyor-url]: https://ci.appveyor.com/project/gregswindle/github-resource-converter
+[codacy-image]: https://img.shields.io/codacy/grade/b3ac6aaaa3cf41d0897959c1e5d732a3.svg?style=flat-square
+[codacy-url]: https://www.codacy.com/app/greg_7/github-resource-converter?utm_source=github.com&utm_medium=referral&utm_content=gregswindle/github-resource-converter&utm_campaign=Badge_Grade
+[coveralls-image]: https://coveralls.io/repos/gregswindle/github-resource-converter/badge.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/gregswindle/github-resource-converter
+[daviddm-dev-image]: https://david-dm.org/gregswindle/github-resource-converter/dev-status.svg?theme=shields.io&style=flat-square
+[daviddm-dev-url]: https://david-dm.org/gregswindle/github-resource-converter?type=dev
+[daviddm-image]: https://david-dm.org/gregswindle/github-resource-converter.svg?theme=shields.io&style=flat-square
+[daviddm-url]: https://david-dm.org/gregswindle/github-resource-converter
+[fossa-image]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter.svg?type=shield&style=flat-square
+[fossa-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter?ref=badge_shield
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: http://opensource.org/licenses/MIT
+[npm-image]: https://badge.fury.io/js/github-resource-converter.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/github-resource-converter
+[npms-image]: https://badges.npms.io/github-resource-converter.svg?style=flat-square
+[npms-url]: https://npms.io/search?q=github-resource-converter
+[nsp-image]: https://nodesecurity.io/orgs/gregswindle/projects/b0a38d7a-29c1-4607-a724-e283b44f1618/badge
+[nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/b0a38d7a-29c1-4607-a724-e283b44f1618
+[travis-image]: https://img.shields.io/travis/gregswindle/github-resource-converter.svg?branch=master&style=flat-square&label=MacOS%20%26%20Ubuntu%20builds&logo=travis
+[travis-url]: https://travis-ci.org/gregswindle/github-resource-converter
+
+<!-- ⛔️ Contributing ⛔️  -->
+
+[code-of-conduct-url]: https://github.com/gregswindle/github-resource-converter/blob/master/.github/CODE_OF_CONDUCT.md
+[contributing-image]: https://img.shields.io/badge/read---CONTRIBUTING%20Guidelines---yellow.svg?style=for-the-badge&label=read+the
+[contributing-url]: https://github.com/gregswindle/github-resource-converter/blob/master/.github/CONTRIBUTING.md
+[issues-new-defect-image]: https://img.shields.io/badge/report---defect---lightgrey.svg?style=for-the-badge&label=report+a
+[issues-new-defect-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=fix%28affected-scope%29%3A+50-character-defect-summary&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Defect&template=defect-report.md
+[issues-new-feat-image]: https://img.shields.io/badge/request---feature---blue.svg?style=for-the-badge&label=request+a
+[issues-new-feat-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=feat%28affected-scope%29%3A+50-character-change-proposal-summary&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Feature&template=feature-request.md
+[issues-url]: https://github.com/gregswindle/github-resource-converter/issues
+[makeapullrequest-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[makeapullrequest-url]: http://makeapullrequest.com
+[pr-url]: https://github.com/gregswindle/github-resource-converter/pulls
 
 <!-- ⛔️ Octicon img references ⛔️  -->
 
