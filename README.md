@@ -38,25 +38,25 @@
 
 1.  `github-resource-converter` requires [Node.js ![External link][icon-octicon-link-external]](https://nodejs.org/), and `npm`, which installs with Node.js.
 
-1.  To avoid rate-limiting, you should [create a personal access token ![External link][icon-octicon-link-external]](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token:
+1.  To avoid rate-limiting, you should [create a personal access token ![External link][icon-octicon-link-external]](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token.
 
-* **MacOS and Unix**
+    * **MacOS and Unix**
 
-  ```bash
-  $ mkdir -p /usr/local/etc/github-resource-center/envvars/
-  $ touch /usr/local/etc/github-resource-center/envvars/.env
-  $ echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" > \
-     /usr/local/etc/github-resource-center/envvars/.env
-  ```
+      ```bash
+      $ mkdir -p /usr/local/etc/github-resource-center/envvars/
+      $ touch /usr/local/etc/github-resource-center/envvars/.env
+      $ echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" > \
+        /usr/local/etc/github-resource-center/envvars/.env
+      ```
 
-* **Windows**
+    * **Windows**
 
-  ```shell
-  > md -p C:\usr\local\etc\github-resource-center\envvars\
-  > touch C:\usr\local\etc\github-resource-center\envvars\.env
-  > echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" >>
-     C:\usr\local\etc\github-resource-center\envvars\.env
-  ```
+      ```shell
+      > md -p C:\usr\local\etc\github-resource-center\envvars\
+      > touch C:\usr\local\etc\github-resource-center\envvars\.env
+      > echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" >>
+        C:\usr\local\etc\github-resource-center\envvars\.env
+      ```
 
 ### Installation
 

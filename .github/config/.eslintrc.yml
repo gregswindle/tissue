@@ -132,6 +132,7 @@ rules:
     capIsNew: false
   new-parens: error
   no-array-constructor: error
+  no-await-in-loop: error
   no-caller: error
   no-class-assign: error
   no-compare-neg-zero: error
@@ -225,6 +226,7 @@ rules:
   no-sync: off
   no-tabs: error
   no-template-curly-in-string: error
+  no-ternary: warn
   no-this-before-super: error
   no-throw-literal: error
   no-trailing-spaces: error
