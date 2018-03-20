@@ -155,260 +155,267 @@
 
   ---
 
-                                                                                                                                                                                                                                                            <details>
+                                                                                                                                                                                                                                                                          <details>
 
-                                                                                                                                                                                                                                                        <summary><img src="./docs/img/icons8/icon-help-48.png" alt="Help" align="middle" height="48" width="48"> Toggle view of the Label definitions table.</summary>
+                                                                                                                                                                                                                                                                      <summary><img src="./docs/img/icons8/icon-help-48.png" alt="Help" align="middle" height="48" width="48"> Toggle view of the Label definitions table.</summary>
 
-                                                                                                                                                                                                                                                      <table class="table table-striped table-bordered">
+                                                                                                                                                                                                                                                                    <table class="table table-striped table-bordered">
 
-                                                                                                                                                                                                                                                    <thead>
+                                                                                                                                                                                                                                                                  <thead>
 
-                                                                                                                                                                                                                                                  <tr>
+                                                                                                                                                                                                                                                                <tr>
 
-                                                                                                                                                                                                                                                <th>Label 🏷</th>
+                                                                                                                                                                                                                                                              <th>Label 🏷</th>
 
-                                                                                                                                                                                                                                              <th>Definition</th>
+                                                                                                                                                                                                                                                            <th>Definition</th>
 
-                                                                                                                                                                                                                                            </tr>
+                                                                                                                                                                                                                                                          </tr>
 
-                                                                                                                                                                                                                                          </thead>
+                                                                                                                                                                                                                                                        </thead>
 
-                                                                                                                                                                                                                                        <tbody>
+                                                                                                                                                                                                                                                      <tbody>
 
-                                                                                                                                                                                                                                      <tr>
+                                                                                                                                                                                                                                                    <tr>
 
-                                                                                                                                                                                                                                    <td><code>Type: Feature</code></td>
+                                                                                                                                                                                                                                                  <td><code>Type: Feature</code></td>
 
-                                                                                                                                                                                                                                  <td><dfn>A distinguished or expected characteristic of a product that either differentiates the product from competitors, or whose absence would be diminish the product’s value.</dfn><br><br><strong>Note</strong> that <code>Type: Feature</code> and <code>Type: Defect</code> are mutually exclusive: an Issue cannot be both a feature and a defect.</td>
+                                                                                                                                                                                                                                                <td><dfn>A distinguished or expected characteristic of a product that either differentiates the product from competitors, or whose absence would be diminish the product’s value.</dfn><br><br><strong>Note</strong> that <code>Type: Feature</code> and <code>Type: Defect</code> are mutually exclusive: an Issue cannot be both a feature and a defect.</td>
 
-                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                              </tr>
 
-                                                                                                                                                                                                                              <tr>
+                                                                                                                                                                                                                                            <tr>
 
-                                                                                                                                                                                                                            <td><code>Type: Defect</code></td>
+                                                                                                                                                                                                                                          <td><code>Type: Defect</code></td>
 
-                                                                                                                                                                                                                          <td><dfn>A flaw, fault, or abnormality that deviates from or prevents the product’s expected behavior.</dfn><br><br><strong>Note</strong> that <code>Type: Feature</code> and <code>Type: Defect</code> are mutually exclusive: an Issue cannot be both a feature and a defect.</td>
+                                                                                                                                                                                                                                        <td><dfn>A flaw, fault, or abnormality that deviates from or prevents the product’s expected behavior.</dfn><br><br><strong>Note</strong> that <code>Type: Feature</code> and <code>Type: Defect</code> are mutually exclusive: an Issue cannot be both a feature and a defect.</td>
 
-                                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                                                      </tr>
 
-                                                                                                                                                                                                                      <tr>
+                                                                                                                                                                                                                                    <tr>
 
-                                                                                                                                                                                                                    <td><code>CLA: Signed</code></td>
+                                                                                                                                                                                                                                  <td><code>CLA: Signed</code></td>
 
-                                                                                                                                                                                                                  <td><dfn>The person who submitted a product change has signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
+                                                                                                                                                                                                                                <td><dfn>The person who submitted a product change has signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
 
-                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                              </tr>
 
-                                                                                                                                                                                                              <tr>
+                                                                                                                                                                                                                            <tr>
 
-                                                                                                                                                                                                            <td><code>CLA: Unsigned</code></td>
+                                                                                                                                                                                                                          <td><code>CLA: Unsigned</code></td>
 
-                                                                                                                                                                                                          <td><dfn>The person who submitted a product change has **<em>not</em>**signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
+                                                                                                                                                                                                                        <td><dfn>The person who submitted a product change has **<em>not</em>**signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
 
-                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                                      </tr>
 
-                                                                                                                                                                                                      <tr>
+                                                                                                                                                                                                                    <tr>
 
-                                                                                                                                                                                                    <td><code>Priority: Critical</code></td>
+                                                                                                                                                                                                                  <td><code>Priority: Critical</code></td>
 
-                                                                                                                                                                                                  <td><code>Type: Feature</code>: <dfn>The proposed enhancement is essential to the success of your product.</dfn><br><br><code>Type: Defect</code>: <dfn>Your product no longer functions due to internal, <code>FATAL</code> errors, and must be addressed immediately in order to maintain consumer loyalty.</dfn></td>
+                                                                                                                                                                                                                <td><code>Type: Feature</code>: <dfn>The proposed enhancement is essential to the success of your product.</dfn><br><br><code>Type: Defect</code>: <dfn>Your product no longer functions due to internal, <code>FATAL</code> errors, and must be addressed immediately in order to maintain consumer loyalty.</dfn></td>
 
-                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                              </tr>
 
-                                                                                                                                                                                              <tr>
+                                                                                                                                                                                                            <tr>
 
-                                                                                                                                                                                            <td><code>Priority: High</code></td>
+                                                                                                                                                                                                          <td><code>Priority: High</code></td>
 
-                                                                                                                                                                                          <td><code>Type: Feature</code>: <dfn>The proposed enhancement is central to product’s value proposition, and should be implemented as soon as possible.</dfn><br><br><code>Type: Defect</code>: <dfn>The product functions overall, but with an issue that risks consumer abandonment.</dfn></td>
+                                                                                                                                                                                                        <td><code>Type: Feature</code>: <dfn>The proposed enhancement is central to product’s value proposition, and should be implemented as soon as possible.</dfn><br><br><code>Type: Defect</code>: <dfn>The product functions overall, but with an issue that risks consumer abandonment.</dfn></td>
 
-                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                      </tr>
 
-                                                                                                                                                                                      <tr>
+                                                                                                                                                                                                    <tr>
 
-                                                                                                                                                                                    <td><code>Priority: Medium</code></td>
+                                                                                                                                                                                                  <td><code>Priority: Medium</code></td>
 
-                                                                                                                                                                                  <td><code>Type: Feature</code> or <code>Type: Defect</code>:  <dfn>The proposed change should be implemented as long as no <code>Priority: Critical</code> or <code>Priority: High</code> issues exists.</dfn></td>
+                                                                                                                                                                                                <td><code>Type: Feature</code> or <code>Type: Defect</code>:  <dfn>The proposed change should be implemented as long as no <code>Priority: Critical</code> or <code>Priority: High</code> issues exists.</dfn></td>
 
-                                                                                                                                                                                </tr>
+                                                                                                                                                                                              </tr>
 
-                                                                                                                                                                              <tr>
+                                                                                                                                                                                            <tr>
 
-                                                                                                                                                                            <td><code>Priority: Low</code></td>
+                                                                                                                                                                                          <td><code>Priority: Low</code></td>
 
-                                                                                                                                                                          <td><code>Type: Feature</code>: <dfn>A proposal that minimally affects the product’s value.</dfn><br><br><code>Type: Defect</code>: <dfn>Represents “cosmetic” problems like misspelled words or misaligned text that do not affect branding and marketing strategy.</dfn></td>
+                                                                                                                                                                                        <td><code>Type: Feature</code>: <dfn>A proposal that minimally affects the product’s value.</dfn><br><br><code>Type: Defect</code>: <dfn>Represents “cosmetic” problems like misspelled words or misaligned text that do not affect branding and marketing strategy.</dfn></td>
 
-                                                                                                                                                                        </tr>
+                                                                                                                                                                                      </tr>
 
-                                                                                                                                                                      <tr>
+                                                                                                                                                                                    <tr>
 
-                                                                                                                                                                    <td><code>Status: Abandoned</code></td>
+                                                                                                                                                                                  <td><code>Status: Abandoned</code></td>
 
-                                                                                                                                                                  <td><code>Type: Feature</code> or <code>Type: Defect</code>: <dfn>The team and community have neglected, forgotten, discarded, or ignored resolving a Issue.</dfn></td>
+                                                                                                                                                                                <td><code>Type: Feature</code> or <code>Type: Defect</code>: <dfn>The team and community have neglected, forgotten, discarded, or ignored resolving a Issue.</dfn></td>
 
-                                                                                                                                                                </tr>
+                                                                                                                                                                              </tr>
 
-                                                                                                                                                              <tr>
+                                                                                                                                                                            <tr>
 
-                                                                                                                                                            <td><code>Status: Accepted</code></td>
+                                                                                                                                                                          <td><code>Status: Accepted</code></td>
 
-                                                                                                                                                          <td><code>Type: Feature</code> or <code>Type: Defect</code>: <dfn>The product owner or maintainers agreed to a product change proposal.</dfn></td>
+                                                                                                                                                                        <td><code>Type: Feature</code> or <code>Type: Defect</code>: <dfn>The product owner or maintainers agreed to a product change proposal.</dfn></td>
 
-                                                                                                                                                        </tr>
+                                                                                                                                                                      </tr>
 
-                                                                                                                                                      <tr>
+                                                                                                                                                                    <tr>
 
-                                                                                                                                                    <td><code>Status: Available</code></td>
+                                                                                                                                                                  <td><code>Status: Available</code></td>
 
-                                                                                                                                                  <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The change proposal is ready for team and community members to work on.</dfn></td>
+                                                                                                                                                                <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The change proposal is ready for team and community members to work on.</dfn></td>
 
-                                                                                                                                                </tr>
+                                                                                                                                                              </tr>
 
-                                                                                                                                              <tr>
+                                                                                                                                                            <tr>
 
-                                                                                                                                            <td><code>Status: Blocked</code></td>
+                                                                                                                                                          <td><code>Status: Blocked</code></td>
 
-                                                                                                                                          <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The proposed change cannot be addressed until another issue has been resolved.</dfn><br><br><strong>Note</strong> that the Issue blocking the proposed change SHOULD be referenced in the <code>Blocked</code> Issue’s description field.</td>
+                                                                                                                                                        <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The proposed change cannot be addressed until another issue has been resolved.</dfn><br><br><strong>Note</strong> that the Issue blocking the proposed change SHOULD be referenced in the <code>Blocked</code> Issue’s description field.</td>
 
-                                                                                                                                        </tr>
+                                                                                                                                                      </tr>
 
-                                                                                                                                      <tr>
+                                                                                                                                                    <tr>
 
-                                                                                                                                    <td><code>Status: Completed</code></td>
+                                                                                                                                                  <td><code>Status: Completed</code></td>
 
-                                                                                                                                  <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The issue has been resolved and all acceptance criteria validated.</dfn></td>
+                                                                                                                                                <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The issue has been resolved and all acceptance criteria validated.</dfn></td>
 
-                                                                                                                                </tr>
+                                                                                                                                              </tr>
 
-                                                                                                                              <tr>
+                                                                                                                                            <tr>
 
-                                                                                                                            <td><code>Status: In Progress</code></td>
+                                                                                                                                          <td><code>Status: In Progress</code></td>
 
-                                                                                                                          <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The team or community is actively working on the Issue’s resolution.</dfn></td>
+                                                                                                                                        <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The team or community is actively working on the Issue’s resolution.</dfn></td>
 
-                                                                                                                        </tr>
+                                                                                                                                      </tr>
 
-                                                                                                                      <tr>
+                                                                                                                                    <tr>
 
-                                                                                                                    <td><code>Status: On Hold</code></td>
+                                                                                                                                  <td><code>Status: On Hold</code></td>
 
-                                                                                                                  <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Product Owner has (temporarily) postponed Issue resolution.</dfn><br><br><strong>Note</strong> that the <em>reason</em> for postponement should be stated in the Issue’s description field.</td>
+                                                                                                                                <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Product Owner has (temporarily) postponed Issue resolution.</dfn><br><br><strong>Note</strong> that the <em>reason</em> for postponement should be stated in the Issue’s description field.</td>
 
-                                                                                                                </tr>
+                                                                                                                              </tr>
 
-                                                                                                              <tr>
+                                                                                                                            <tr>
 
-                                                                                                            <td><code>Status: Pending</code></td>
+                                                                                                                          <td><code>Status: Pending</code></td>
 
-                                                                                                          <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>product change or resolution is either awaiting the Product Owner’s decision.</dfn> Ideally, the Product Owner should declare why they’re undecided somewhere in the Issue thread.</td>
+                                                                                                                        <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>product change or resolution is either awaiting the Product Owner’s decision.</dfn> Ideally, the Product Owner should declare why they’re undecided somewhere in the Issue thread.</td>
 
-                                                                                                        </tr>
+                                                                                                                      </tr>
 
-                                                                                                      <tr>
+                                                                                                                    <tr>
 
-                                                                                                    <td><code>Status: Rejected</code></td>
+                                                                                                                  <td><code>Status: Rejected</code></td>
 
-                                                                                                  <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Product Owner has declined a change proposal.</dfn><br><br><strong>Note</strong> that the Product Owner should politely explain why they dismissed the change request.</td>
+                                                                                                                <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Product Owner has declined a change proposal.</dfn><br><br><strong>Note</strong> that the Product Owner should politely explain why they dismissed the change request.</td>
 
-                                                                                                </tr>
+                                                                                                              </tr>
 
-                                                                                              <tr>
+                                                                                                            <tr>
 
-                                                                                            <td><code>Status: Review Needed</code></td>
+                                                                                                          <td><code>Status: Review Needed</code></td>
 
-                                                                                          <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The person working on an Issue has requested help or discussion.</dfn> When applied to a Pull Request, <code>Status: Review Needed</code> <dfn>signifies that the PR is ready for evaluation (and potentially, approval).</dfn></td>
+                                                                                                        <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The person working on an Issue has requested help or discussion.</dfn> When applied to a Pull Request, <code>Status: Review Needed</code> <dfn>signifies that the PR is ready for evaluation (and potentially, approval).</dfn></td>
 
-                                                                                        </tr>
+                                                                                                      </tr>
 
-                                                                                      <tr>
+                                                                                                    <tr>
 
-                                                                                    <td><code>Status: Revision Needed</code></td>
+                                                                                                  <td><code>Status: Revision Needed</code></td>
 
-                                                                                  <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Issue is not ready for evaluation because of incomplete or insufficient information.</dfn></td>
+                                                                                                <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Issue is not ready for evaluation because of incomplete or insufficient information.</dfn></td>
 
-                                                                                </tr>
+                                                                                              </tr>
 
-                                                                              <tr>
+                                                                                            <tr>
 
-                                                                            <td><code>Type: Breaking Change</code></td>
+                                                                                          <td><code>Type: Breaking Change</code></td>
 
-                                                                          <td><dfn>The change introduces backward incompatibility with previous product versions.</dfn><br><br><strong><code>Type: Breaking Change</code> MUST be recorded with a</strong> <ol><br><li>Git commit message,<br><li>An increment (+1) in the product’s Semantic Version’s MAJOR version,<br><li><code>CHANGELOG</code> entry, and<br><li>Updated API documentation.</ol></td>
+                                                                                        <td><dfn>The change introduces backward incompatibility with previous product versions.</dfn><br><br><strong><code>Type: Breaking Change</code> MUST be recorded with a</strong> <ol><br><li>Git commit message,<br><li>An increment (+1) in the product’s Semantic Version’s MAJOR version,<br><li><code>CHANGELOG</code> entry, and<br><li>Updated API documentation.</ol></td>
 
-                                                                        </tr>
+                                                                                      </tr>
 
-                                                                      <tr>
+                                                                                    <tr>
 
-                                                                    <td><code>Type: Build</code></td>
+                                                                                  <td><code>Type: Build</code></td>
 
-                                                                  <td><dfn>Changes to the process that convert source code into a stand-alone form that can be run on a computer or to the form itself.</dfn></td>
+                                                                                <td><dfn>Changes to the process that convert source code into a stand-alone form that can be run on a computer or to the form itself.</dfn></td>
 
-                                                                </tr>
+                                                                              </tr>
 
-                                                              <tr>
+                                                                            <tr>
 
-                                                            <td><code>Type: Chore</code></td>
+                                                                          <td><code>Type: Chore</code></td>
 
-                                                          <td><dfn>Miscellaneous non-functional changes such as typographical fixes or source code repository initialization</dfn>, e.g., <code>chore(scm): scaffold product directory structure</code></td>
+                                                                        <td><dfn>Miscellaneous non-functional changes such as typographical fixes or source code repository initialization</dfn>, e.g., <code>chore(scm): scaffold product directory structure</code></td>
 
-                                                        </tr>
+                                                                      </tr>
 
-                                                      <tr>
+                                                                    <tr>
 
-                                                    <td><code>Type: CI</code></td>
+                                                                  <td><code>Type: CI</code></td>
 
-                                                  <td><dfn>Continuous Integration (CI) changes, i.e., automated build, test, an quality assurance tasks.</dfn></td>
+                                                                <td><dfn>Continuous Integration (CI) changes, i.e., automated build, test, an quality assurance tasks.</dfn></td>
 
-                                                </tr>
+                                                              </tr>
 
-                                              <tr>
+                                                            <tr>
 
-                                            <td><code>Type: Docs</code></td>
+                                                          <td><code>Type: Docs</code></td>
 
-                                          <td><dfn>The introduction of or revisions to natural language documents or source code comments.</dfn></td>
+                                                        <td><dfn>The introduction of or revisions to natural language documents or source code comments.</dfn></td>
 
-                                        </tr>
+                                                      </tr>
 
-                                      <tr>
+                                                    <tr>
 
-                                    <td><code>Type: Duplicate</code></td>
+                                                  <td><code>Type: Duplicate</code></td>
 
-                                  <td><dfn>An Issue that shares the same characteristics as a previously reported issue.</dfn> <br><br><strong>Note</strong> that  product maintainers should reference the original Issue and close the <code>Type: Duplicate</code> Issue.</td>
+                                                <td><dfn>An Issue that shares the same characteristics as a previously reported issue.</dfn> <br><br><strong>Note</strong> that  product maintainers should reference the original Issue and close the <code>Type: Duplicate</code> Issue.</td>
 
-                                </tr>
+                                              </tr>
 
-                              <tr>
+                                            <tr>
 
-                            <td><code>Type: Feedback</code></td>
+                                          <td><code>Type: Feedback</code></td>
 
-                          <td><dfn>A response to a <code>Type: Question</code> or voluntary information used as a basis for improvement.</td>
+                                        <td><dfn>A response to a <code>Type: Question</code> or voluntary information used as a basis for improvement.</td>
 
-                        </tr>
+                                      </tr>
 
-                      <tr>
+                                    <tr>
 
-                    <td><code>Type: Fix</code></td>
+                                  <td><code>Type: Fix</code></td>
 
-                  <td><dfn>A change intended to repair a <code>Type: Defect</code> Issue.</td>
+                                <td><dfn>A change intended to repair a <code>Type: Defect</code> Issue.</td>
 
-                </tr>
+                              </tr>
 
-              <tr>
+                            <tr>
 
-            <td><code>Type: Performance</code></td>
+                          <td><code>Type: Performance</code></td>
 
-          <td><dfn>A change intended to reduce product latency.</td>
+                        <td><dfn>A change intended to reduce product latency.</td>
 
-        </tr>
+                      </tr>
 
-      <tr>
+                    <tr>
 
-    <td><code>Type: Question</code></td>
-  <td><dfn>A request for information.</td>
-  </tr>
-  <tr>
-  <td><code>Type: Refactor</code></td>
-  <td><dfn>Source code design improvements that do not affect product behavior.</td>
-  </tr>
-  <tr>
+                  <td><code>Type: Question</code></td>
+
+                <td><dfn>A request for information.</td>
+
+              </tr>
+
+            <tr>
+
+          <td><code>Type: Refactor</code></td>
+
+        <td><dfn>Source code design improvements that do not affect product behavior.</td>
+
+      </tr>
+
+    <tr>
   <td><code>Type: Revert</code></td>
   <td><dfn>Changes that return the product’s source code to previous Git commit hash.</td>
   </tr>
