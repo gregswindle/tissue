@@ -99,14 +99,7 @@
         "statements": 100
       }
     },
-    "projects": [
-      {
-        "displayName": "unit-tests",
-        "runner": "jest-runner-eslint",
-        "testMatch": ["<rootDir>/**/__tests__/*.js"]
-      }
-    ],
-    "rootDir": "."
+    "testMatch": ["<rootDir>/__tests__/**/*.js"]
   },
   "jest-runner-eslint": {
     "cliOptions": {
@@ -169,7 +162,7 @@
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
     "security:nsp:scan": "nsp check",
-    "test": "jest --coverage",
+    "test": "jest",
     "test:config": "jest --showConfig",
     "test:watch": "jest ./lib/__tests__/*.test.js --watch",
     "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
