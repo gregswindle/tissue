@@ -100,7 +100,7 @@
     },
     "projects": ["<rootDir>"],
     "testEnvironment": "node",
-    "testMatch": ["<rootDir>/lib/__tests__/**"],
+    "testMatch": ["<rootDir>/lib/__tests__/*.test.js"],
     "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
   },
   "keywords": [
@@ -145,7 +145,7 @@
     "lint":
       "npm run lint:js && npm run lint:json && npm run lint:manifest && npm run lint:md",
     "lint:js":
-      "eslint --config '.github/config/.eslintrc.yml' --ignore-path .gitignore --ext .js . --fix",
+      "eslint --config .github/config/.eslintrc.yml --ignore-path .gitignore --ext .js . --fix",
     "lint:json":
       "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
     "lint:manifest": "fixpack",
