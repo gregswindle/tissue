@@ -1153,7 +1153,8 @@
  | [eslint-plugin-xss@0.1.9](https://github.com/Rantanen/eslint-plugin-xss#readme) | Validates XSS related issues of mixing HTML and non-HTML content in variables. | 0.1.9 | ISC | dev | 
  | [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack) | cli tool that cleans up package.json files. | 2.3.1 | MIT | dev | 
  | [husky@^0.14.3](https://github.com/typicode/husky) | Prevents bad commit or push (git hooks, pre-commit/precommit, pre-push/prepush, post-merge/postmerge and all that stuff...) | 0.14.3 | MIT | dev | 
- | [jest@^22.4.2](http://facebook.github.io/jest/) | Delightful JavaScript Testing. | 22.4.2 | MIT | dev | 
+ | [jest@22.4.2](http://facebook.github.io/jest/) | Delightful JavaScript Testing. | 22.4.2 | MIT | dev | 
+ | [jest-runner-eslint@0.4.0](https://github.com/jest-community/jest-runner-eslint) | An experimental ESLint runner for Jest | 0.4.0 | MIT | dev | 
  | [lec@^1.0.1](https://github.com/iShafayet/lec) | Command Line Wrapper for Line Ending Corrector (An utility that makes sure your files have consistent line endings) | 1.0.1 | MIT | dev | 
  | [lint-staged@7.0.0](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.0.0 | MIT | dev | 
  | [markdown-magic@0.1.21](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.21 | MIT | dev | 

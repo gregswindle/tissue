@@ -69,7 +69,8 @@
     "eslint-plugin-xss": "0.1.9",
     "fixpack": "2.3.1",
     "husky": "^0.14.3",
-    "jest": "^22.4.2",
+    "jest": "22.4.2",
+    "jest-runner-eslint": "0.4.0",
     "lec": "^1.0.1",
     "lint-staged": "7.0.0",
     "markdown-magic": "0.1.21",
@@ -89,7 +90,7 @@
   "jest": {
     "automock": false,
     "collectCoverage": true,
-    "coverageDirectory": "tmp/reports/coverage",
+    "coverageDirectory": "coverage",
     "coverageThreshold": {
       "global": {
         "branches": 100,
@@ -98,10 +99,20 @@
         "statements": 100
       }
     },
-    "rootDir": ".",
-    "testMatch": ["<rootDir>/__tests__/*.js"],
-    "testEnvironment": "node",
-    "testPathIgnorePatterns": ["./tmp/reports/coverage/*.js"]
+    "projects": [
+      {
+        "displayName": "unit-tests",
+        "runner": "jest-runner-eslint",
+        "testMatch": ["<rootDir>/**/__tests__/*.js"]
+      }
+    ],
+    "rootDir": "."
+  },
+  "jest-runner-eslint": {
+    "cliOptions": {
+      "config": ".github/config/jest-runner-eslint.config.json",
+      "fix": true
+    }
   },
   "keywords": [
     "QA",
@@ -150,8 +161,7 @@
       "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
     "lint:manifest": "fixpack",
     "lint:md": "prettier ./**/*.md -prose-wrap always --write",
-    "posttest:ci:coverage:codacy":
-      "cat ./tmp/reports/coverage/lcov.info | codacy-coverage",
+    "posttest:ci:coverage:codacy": "cat ./coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
     "prepublish": "lec lib/cli.js -c LF && nsp check",
@@ -159,7 +169,7 @@
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
     "security:nsp:scan": "nsp check",
-    "test": "jest --testPathPattern=/__tests__/",
+    "test": "jest --coverage",
     "test:config": "jest --showConfig",
     "test:watch": "jest ./lib/__tests__/*.test.js --watch",
     "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
