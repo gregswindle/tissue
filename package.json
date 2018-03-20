@@ -100,7 +100,7 @@
     },
     "projects": ["<rootDir>"],
     "testEnvironment": "node",
-    "testMatch": ["<rootDir>/lib/__tests__/**/*.(spec|test).js?(x)"],
+    "testMatch": ["<rootDir>/lib/__tests__/**"],
     "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
   },
   "keywords": [
