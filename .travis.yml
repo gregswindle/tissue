@@ -22,8 +22,8 @@ script:
   - echo $TRAVIS_BUILD_DIR
   - echo $(pwd)
   - npm run test:config
-  # - npm test
-  - $TRAVIS_BUILD_DIR/node_modules/.bin/jest $TRAVIS_BUILD_DIR/lib/__tests__/*.js
+  - npm test
+  # - $TRAVIS_BUILD_DIR/node_modules/.bin/jest $TRAVIS_BUILD_DIR/__tests__/*.js
 
 after_script:
   # - npm run posttest:ci:coverage:codacy
