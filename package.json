@@ -98,9 +98,7 @@
         "statements": 100
       }
     },
-    "projects": ["<rootDir>"],
     "testEnvironment": "node",
-    "testMatch": ["<rootDir>/lib/__tests__/*.test.js"],
     "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
   },
   "keywords": [
@@ -157,8 +155,8 @@
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
     "security:nsp:scan": "nsp check",
-    "test": "jest --forceExit",
-    "test:watch": "jest --watch",
-    "test:watch:all": "jest --watchAll"
+    "test": "jest lib/__tests__/*.test.js --forceExit",
+    "test:watch": "jest lib/__tests__/*.test.js --watch",
+    "test:watch:all": "jest lib/__tests__/*.test.js --watchAll"
   }
 }
