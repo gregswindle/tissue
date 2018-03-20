@@ -1,0 +1,1240 @@
+[
+  {
+    "url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/252",
+    "repository_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+    "labels_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/252/labels{/name}",
+    "comments_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/252/comments",
+    "events_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/252/events",
+    "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/252",
+    "id": 303602246,
+    "number": 252,
+    "title": "Update eslint-plugin-promise to the latest version",
+    "user": {
+      "login": "greenkeeper[bot]",
+      "id": 23040076,
+      "avatar_url": "https://avatars3.githubusercontent.com/in/505?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/greenkeeper%5Bbot%5D",
+      "html_url": "https://github.com/apps/greenkeeper",
+      "followers_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/followers",
+      "following_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/following{/other_user}",
+      "gists_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/subscriptions",
+      "organizations_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/greenkeeper%5Bbot%5D/repos",
+      "events_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/greenkeeper%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 614010420,
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/greenkeeper",
+        "name": "greenkeeper",
+        "color": "c2c2c2",
+        "default": false,
+        "description": null
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-03-08T19:29:59Z",
+    "updated_at": "2018-03-08T19:30:35Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "pull_request": {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/pulls/252",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/252",
+      "diff_url":
+        "https://github.com/gregswindle/eslint-plugin-crc/pull/252.diff",
+      "patch_url":
+        "https://github.com/gregswindle/eslint-plugin-crc/pull/252.patch"
+    },
+    "body":
+      "\nGreenkeeper’s [updated Terms of Service](https://mailchi.mp/ebfddc9880a9/were-updating-our-terms-of-service) will come into effect on April 6th, 2018.\n\n## Version **3.7.0** of [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise) was just published.\n\n<table>\n  <tr>\n    <th align=left>\n      Dependency\n    </td>\n    <td>\n      eslint-plugin-promise\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Current Version\n    </td>\n    <td>\n      3.6.0\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Type\n    </td>\n    <td>\n      devDependency\n    </td>\n  </tr>\n</table>\n\nThe version **3.7.0** is **not covered** by your **current version range**.\n\nIf you don’t accept this pull request, your project will work just like it did before. However, you might be missing out on a bunch of new features, fixes and/or performance improvements from the dependency update.\n\nIt might be worth looking into these changes and trying to get this project onto the latest version of eslint-plugin-promise.\n\nIf you have a solid test suite and good coverage, a passing build is a strong indicator that you can take advantage of these changes directly by merging the proposed change into your project. If the build fails or you don’t have such unconditional trust in your tests, this branch is a great starting point for you to work on the update.\n\n\n---\n\n\n\n\n<details>\n  <summary>FAQ and help</summary>\n\n  There is a collection of [frequently asked questions](https://greenkeeper.io/faq.html). If those don’t help, you can always [ask the humans behind Greenkeeper](https://github.com/greenkeeperio/greenkeeper/issues/new).\n</details>\n\n\n---\n\n\nYour [Greenkeeper](https://greenkeeper.io) bot :palm_tree:\n\n"
+  },
+  {
+    "url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/251",
+    "repository_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+    "labels_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/251/labels{/name}",
+    "comments_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/251/comments",
+    "events_url":
+      "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/251/events",
+    "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/251",
+    "id": 303406373,
+    "number": 251,
+    "title": "build: bump mocha from 5.0.0 to 5.0.4",
+    "user": {
+      "login": "dependabot[bot]",
+      "id": 27856297,
+      "avatar_url": "https://avatars3.githubusercontent.com/in/2141?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 740712067,
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/dependencies",
+        "name": "dependencies",
+        "color": "0025ff",
+        "default": false,
+        "description": null
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-03-08T09:12:03Z",
+    "updated_at": "2018-03-08T09:12:03Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "pull_request": {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/pulls/251",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/251",
+      "diff_url":
+        "https://github.com/gregswindle/eslint-plugin-crc/pull/251.diff",
+      "patch_url":
+        "https://github.com/gregswindle/eslint-plugin-crc/pull/251.patch"
+    },
+    "body":
+      "Bumps [mocha](https://github.com/mochajs/mocha) from 5.0.0 to 5.0.4.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v5.0.0...v5.0.4)\n\n[![Dependabot compatibility score](https://api.dependabot.com/badges/ci_status?dependency-name=mocha&package-manager=npm_and_yarn&previous-version=5.0.0&new-version=5.0.4)](https://dependabot.com/compatibility-score.html?dependency-name=mocha&package-manager=npm_and_yarn&previous-version=5.0.0&new-version=5.0.4)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting @dependabot rebase.\n\nIf you'd like to skip this version, you can just close this PR. If you have any feedback just mention @dependabot in the comments below."
+  },
+  {
+    "url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/4",
+    "id": 175686528,
+    "html_url":
+      "https://github.com/gregswindle/github-resource-converter/pull/4",
+    "diff_url":
+      "https://github.com/gregswindle/github-resource-converter/pull/4.diff",
+    "patch_url":
+      "https://github.com/gregswindle/github-resource-converter/pull/4.patch",
+    "issue_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/issues/4",
+    "number": 4,
+    "state": "open",
+    "locked": false,
+    "title": "test(cli): add tests and mocks",
+    "user": {
+      "login": "gregswindle",
+      "id": 2849690,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gregswindle",
+      "html_url": "https://github.com/gregswindle",
+      "followers_url": "https://api.github.com/users/gregswindle/followers",
+      "following_url":
+        "https://api.github.com/users/gregswindle/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/gregswindle/subscriptions",
+      "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+      "repos_url": "https://api.github.com/users/gregswindle/repos",
+      "events_url": "https://api.github.com/users/gregswindle/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/gregswindle/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "body":
+      "## Description of change\r\n\r\n1. Mock @octokit/rest.js and dotenv\r\n2. Refactor: rename github-resource-converter.js => base-resource-converter.js\r\n3. Reports: send code coverage to Codacy\r\n4. README.md: add contributing section\r\n5. Add tests for baseResourceConverter\r\n\r\n### Associated issue(s)\r\n\r\nCloses #1\r\n\r\n### Acceptance criteria/task completion\r\n\r\n* [ ] The acceptance criteria for all associated issues have been completed, tested, and validated.\r\n\r\n## PR check-list\r\n\r\n> **:white_check_mark: Please review and check the appropriate items.**\r\n\r\n#### 1. **Code standards compliance**\r\n\r\n[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)\r\n\r\n* [ ] `ESLint` passes.\r\n\r\n#### 2. **Code quality** [![Quality Gate][sonar-gate-img]][sonar-gate-url]\r\n\r\n* [ ] The quality gateways pass with an \"A\" grade.\r\n\r\n| Measure               | Scores                                                                                                                                                                                                                                                                                                                                                                                                   |\r\n| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\r\n| **`Complexity`**      | [![Complexity][sonar-complexity-img]][sonar-complexity-url]<br>[![Cognitive complexity][sonar-cognitive-img]][sonar-cognitive-url]<br>[![Complexity per Class][sonar-complexity-class-img]][sonar-complexity-class-img]<br>[![Complexity per file][sonar-complexity-file-img]][sonar-complexity-file-img] <br>[![Complexity per Function][sonar-complexity-function-img]][sonar-complexity-function-url] |\r\n| **`Duplications`**    | [![Duplications][sonar-duplications-img]][sonar-duplications-url]                                                                                                                                                                                                                                                                                                                                        |\r\n| **`Issues`**          | [![Issues][sonar-issues-img]][sonar-issues-url]                                                                                                                                                                                                                                                                                                                                                          |\r\n| **`Maintainability`** | [![Code smells][sonar-code-smells-img]][sonar-code-smells-url]<br>[![Maintainability][sonar-maintainability-img]][sonar-maintainability-url]<br>[![Technical debt][sonar-tech-debt-img]][sonar-tech-debt-url]                                                                                                                                                                                            |\r\n| **`Reliability`**     | [![Reliability][sonar-reliability-img]][sonar-reliability-url]                                                                                                                                                                                                                                                                                                                                           |\r\n| **`Security`**        | [![Security][sonar-security-img]][sonar-security-url]                                                                                                                                                                                                                                                                                                                                                    |\r\n\r\n#### 3. **Test coverage** [![Coverage Status][sonar-coverage-img]][sonar-coverage-url]\r\n\r\n* [ ] The source code is 100% covered with passing specs.\r\n\r\n> ** These tasks are not required to open a PR, and may be addresses while the PR is open.**\r\n\r\n[coveralls-img]: https://coveralls.io/repos/github/commonality/architecture-decision-records/badge.svg\r\n[coveralls-url]: https://coveralls.io/github/commonality/architecture-decision-records\r\n[sonar-code-smells-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=code_smells\r\n[sonar-code-smells-url]: https://sonarcloud.io/component_measures/metric/code_smells/list?id=gregswindle-github-resource-converter&metric=code_smells\r\n[sonar-cognitive-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=cognitive_complexity\r\n[sonar-cognitive-url]: https://sonarcloud.io/component_measures/metric/cognitive_complexity/list?id=gregswindle-github-resource-converter&metric=cognitive_complexity\r\n[sonar-complexity-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=complexity\r\n[sonar-complexity-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=complexity\r\n[sonar-complexity-function-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=function_complexity\r\n[sonar-complexity-function-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=function_complexity\r\n[sonar-complexity-file-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=file_complexity\r\n[sonar-complexity-file-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=file_complexity\r\n[sonar-complexity-class-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=class_complexity\r\n[sonar-complexity-class-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=class_complexity\r\n[sonar-coverage-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=coverage\r\n[sonar-coverage-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=coverage\r\n[sonar-duplications-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=duplicated_line_density\r\n[sonar-duplications-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=duplicated_lines_density\r\n[sonar-gate-img]: http://sonarcloud.io/api/badges/gate?key=gregswindle-github-resource-converter\r\n[sonar-gate-url]: https://sonarcloud.io/dashboard?id=gregswindle-github-resource-converter\r\n[sonar-issues-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=blocker_violations\r\n[sonar-issues-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=violations\r\n[sonar-maintainability-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=new_maintainability_rating\r\n[sonar-maintainability-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=new_maintainability_rating\r\n[sonar-reliability-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=new_reliability_rating\r\n[sonar-reliability-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=new_reliability_rating\r\n[sonar-security-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=vulnerabilities\r\n[sonar-security-url]: https://sonarcloud.io/component_measures?id=gregswindle-github-resource-converter&metric=vulnerabilities\r\n[sonar-tech-debt-img]: https://sonarcloud.io/api/badges/measure?key=gregswindle-github-resource-converter&metric=sqale_debt_ratio\r\n[sonar-tech-debt-url]: https://sonarcloud.io/component_measures/metric/sqale_index/list?id=gregswindle-github-resource-converter&metric=sqale_debt_ratio\r\n",
+    "created_at": "2018-03-17T06:35:24Z",
+    "updated_at": "2018-03-17T06:35:49Z",
+    "closed_at": null,
+    "merged_at": null,
+    "merge_commit_sha": "662e974291b8ddd21792de7a8e26a69b7781e8fc",
+    "assignee": {
+      "login": "gregswindle",
+      "id": 2849690,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gregswindle",
+      "html_url": "https://github.com/gregswindle",
+      "followers_url": "https://api.github.com/users/gregswindle/followers",
+      "following_url":
+        "https://api.github.com/users/gregswindle/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/gregswindle/subscriptions",
+      "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+      "repos_url": "https://api.github.com/users/gregswindle/repos",
+      "events_url": "https://api.github.com/users/gregswindle/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/gregswindle/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "assignees": [
+      {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      }
+    ],
+    "requested_reviewers": [],
+    "requested_teams": [],
+    "labels": [
+      {
+        "id": 861084035,
+        "url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "default": true
+      }
+    ],
+    "milestone": {
+      "url":
+        "https://api.github.com/repos/gregswindle/github-resource-converter/milestones/1",
+      "html_url":
+        "https://github.com/gregswindle/github-resource-converter/milestone/1",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/github-resource-converter/milestones/1/labels",
+      "id": 3194777,
+      "number": 1,
+      "title": "Command-line interface (CLI)",
+      "description":
+        "Provide a command-line interface (CLI) that can generate CSVs for all issues in a GitHub (or GitHub Enterprise) repository.",
+      "creator": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "open_issues": 4,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2018-03-17T04:27:06Z",
+      "updated_at": "2018-03-17T06:35:50Z",
+      "due_on": "2018-03-17T07:00:00Z",
+      "closed_at": null
+    },
+    "commits_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/4/commits",
+    "review_comments_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/4/comments",
+    "review_comment_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/comments{/number}",
+    "comments_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/issues/4/comments",
+    "statuses_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/statuses/2d4aa4e0ff16b16cc97b42efd81be8e59b0cabd9",
+    "head": {
+      "label": "gregswindle:feat/GH-1-cli",
+      "ref": "feat/GH-1-cli",
+      "sha": "2d4aa4e0ff16b16cc97b42efd81be8e59b0cabd9",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "repo": {
+        "id": 124477396,
+        "name": "github-resource-converter",
+        "full_name": "gregswindle/github-resource-converter",
+        "owner": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "private": false,
+        "html_url": "https://github.com/gregswindle/github-resource-converter",
+        "description":
+          "Export GitHub Issues to CSV, JSON, and YAML: the connective tissue for data exchange",
+        "fork": false,
+        "url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter",
+        "forks_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/forks",
+        "keys_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/keys{/key_id}",
+        "collaborators_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/collaborators{/collaborator}",
+        "teams_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/teams",
+        "hooks_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/hooks",
+        "issue_events_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/events{/number}",
+        "events_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/events",
+        "assignees_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/assignees{/user}",
+        "branches_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/branches{/branch}",
+        "tags_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/tags",
+        "blobs_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/blobs{/sha}",
+        "git_tags_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/tags{/sha}",
+        "git_refs_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/refs{/sha}",
+        "trees_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/trees{/sha}",
+        "statuses_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/statuses/{sha}",
+        "languages_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/languages",
+        "stargazers_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/stargazers",
+        "contributors_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/contributors",
+        "subscribers_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/subscribers",
+        "subscription_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/subscription",
+        "commits_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/commits{/sha}",
+        "git_commits_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/commits{/sha}",
+        "comments_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/comments{/number}",
+        "issue_comment_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/comments{/number}",
+        "contents_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/contents/{+path}",
+        "compare_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/compare/{base}...{head}",
+        "merges_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/merges",
+        "archive_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/{archive_format}{/ref}",
+        "downloads_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/downloads",
+        "issues_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues{/number}",
+        "pulls_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls{/number}",
+        "milestones_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/milestones{/number}",
+        "notifications_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/notifications{?since,all,participating}",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/labels{/name}",
+        "releases_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/releases{/id}",
+        "deployments_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/deployments",
+        "created_at": "2018-03-09T02:39:55Z",
+        "updated_at": "2018-03-12T06:55:53Z",
+        "pushed_at": "2018-03-17T06:35:25Z",
+        "git_url": "git://github.com/gregswindle/github-resource-converter.git",
+        "ssh_url": "git@github.com:gregswindle/github-resource-converter.git",
+        "clone_url":
+          "https://github.com/gregswindle/github-resource-converter.git",
+        "svn_url": "https://github.com/gregswindle/github-resource-converter",
+        "homepage": null,
+        "size": 289,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": "JavaScript",
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": true,
+        "has_pages": false,
+        "forks_count": 1,
+        "mirror_url": null,
+        "archived": false,
+        "open_issues_count": 4,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit"
+        },
+        "forks": 1,
+        "open_issues": 4,
+        "watchers": 0,
+        "default_branch": "master"
+      }
+    },
+    "base": {
+      "label": "gregswindle:master",
+      "ref": "master",
+      "sha": "9f2834469f368f0d64a6e2a075c3de02d84048ff",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "repo": {
+        "id": 124477396,
+        "name": "github-resource-converter",
+        "full_name": "gregswindle/github-resource-converter",
+        "owner": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "private": false,
+        "html_url": "https://github.com/gregswindle/github-resource-converter",
+        "description":
+          "Export GitHub Issues to CSV, JSON, and YAML: the connective tissue for data exchange",
+        "fork": false,
+        "url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter",
+        "forks_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/forks",
+        "keys_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/keys{/key_id}",
+        "collaborators_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/collaborators{/collaborator}",
+        "teams_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/teams",
+        "hooks_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/hooks",
+        "issue_events_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/events{/number}",
+        "events_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/events",
+        "assignees_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/assignees{/user}",
+        "branches_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/branches{/branch}",
+        "tags_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/tags",
+        "blobs_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/blobs{/sha}",
+        "git_tags_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/tags{/sha}",
+        "git_refs_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/refs{/sha}",
+        "trees_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/trees{/sha}",
+        "statuses_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/statuses/{sha}",
+        "languages_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/languages",
+        "stargazers_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/stargazers",
+        "contributors_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/contributors",
+        "subscribers_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/subscribers",
+        "subscription_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/subscription",
+        "commits_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/commits{/sha}",
+        "git_commits_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/commits{/sha}",
+        "comments_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/comments{/number}",
+        "issue_comment_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/comments{/number}",
+        "contents_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/contents/{+path}",
+        "compare_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/compare/{base}...{head}",
+        "merges_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/merges",
+        "archive_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/{archive_format}{/ref}",
+        "downloads_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/downloads",
+        "issues_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues{/number}",
+        "pulls_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls{/number}",
+        "milestones_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/milestones{/number}",
+        "notifications_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/notifications{?since,all,participating}",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/labels{/name}",
+        "releases_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/releases{/id}",
+        "deployments_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/deployments",
+        "created_at": "2018-03-09T02:39:55Z",
+        "updated_at": "2018-03-12T06:55:53Z",
+        "pushed_at": "2018-03-17T06:35:25Z",
+        "git_url": "git://github.com/gregswindle/github-resource-converter.git",
+        "ssh_url": "git@github.com:gregswindle/github-resource-converter.git",
+        "clone_url":
+          "https://github.com/gregswindle/github-resource-converter.git",
+        "svn_url": "https://github.com/gregswindle/github-resource-converter",
+        "homepage": null,
+        "size": 289,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": "JavaScript",
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": true,
+        "has_pages": false,
+        "forks_count": 1,
+        "mirror_url": null,
+        "archived": false,
+        "open_issues_count": 4,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit"
+        },
+        "forks": 1,
+        "open_issues": 4,
+        "watchers": 0,
+        "default_branch": "master"
+      }
+    },
+    "_links": {
+      "self": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/4"
+      },
+      "html": {
+        "href":
+          "https://github.com/gregswindle/github-resource-converter/pull/4"
+      },
+      "issue": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/4"
+      },
+      "comments": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/4/comments"
+      },
+      "review_comments": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/4/comments"
+      },
+      "review_comment": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/comments{/number}"
+      },
+      "commits": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/4/commits"
+      },
+      "statuses": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/statuses/2d4aa4e0ff16b16cc97b42efd81be8e59b0cabd9"
+      }
+    },
+    "author_association": "OWNER"
+  },
+  {
+    "url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/3",
+    "id": 175682506,
+    "html_url":
+      "https://github.com/gregswindle/github-resource-converter/pull/3",
+    "diff_url":
+      "https://github.com/gregswindle/github-resource-converter/pull/3.diff",
+    "patch_url":
+      "https://github.com/gregswindle/github-resource-converter/pull/3.patch",
+    "issue_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/issues/3",
+    "number": 3,
+    "state": "open",
+    "locked": false,
+    "title": "ci(licenses): add license scan report and status",
+    "user": {
+      "login": "fossabot",
+      "id": 29791463,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/29791463?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fossabot",
+      "html_url": "https://github.com/fossabot",
+      "followers_url": "https://api.github.com/users/fossabot/followers",
+      "following_url":
+        "https://api.github.com/users/fossabot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fossabot/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/fossabot/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/fossabot/subscriptions",
+      "organizations_url": "https://api.github.com/users/fossabot/orgs",
+      "repos_url": "https://api.github.com/users/fossabot/repos",
+      "events_url": "https://api.github.com/users/fossabot/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/fossabot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "body":
+      "Your FOSSA integration was successful! Attached in this PR is a badge and license report to track scan status in your README.\n\nBelow are docs for integrating FOSSA license checks into your CI:\n\n- [CircleCI](http://fossa.io/docs/integrating-tools/circleci/)\n- [TravisCI](http://fossa.io/docs/integrating-tools/travisci/)\n- [Jenkins](https://github.com/fossas/fossa-jenkins-plugin)\n- [Other](https://github.com/fossas/license-cli)",
+    "created_at": "2018-03-17T04:22:04Z",
+    "updated_at": "2018-03-17T04:31:49Z",
+    "closed_at": null,
+    "merged_at": null,
+    "merge_commit_sha": "bb6cca343497f473e6fb034a0659ba71bc3c2790",
+    "assignee": {
+      "login": "gregswindle",
+      "id": 2849690,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gregswindle",
+      "html_url": "https://github.com/gregswindle",
+      "followers_url": "https://api.github.com/users/gregswindle/followers",
+      "following_url":
+        "https://api.github.com/users/gregswindle/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/gregswindle/subscriptions",
+      "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+      "repos_url": "https://api.github.com/users/gregswindle/repos",
+      "events_url": "https://api.github.com/users/gregswindle/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/gregswindle/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "assignees": [
+      {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      }
+    ],
+    "requested_reviewers": [
+      {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      }
+    ],
+    "requested_teams": [],
+    "labels": [],
+    "milestone": {
+      "url":
+        "https://api.github.com/repos/gregswindle/github-resource-converter/milestones/1",
+      "html_url":
+        "https://github.com/gregswindle/github-resource-converter/milestone/1",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/github-resource-converter/milestones/1/labels",
+      "id": 3194777,
+      "number": 1,
+      "title": "Command-line interface (CLI)",
+      "description":
+        "Provide a command-line interface (CLI) that can generate CSVs for all issues in a GitHub (or GitHub Enterprise) repository.",
+      "creator": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "open_issues": 4,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2018-03-17T04:27:06Z",
+      "updated_at": "2018-03-17T06:35:50Z",
+      "due_on": "2018-03-17T07:00:00Z",
+      "closed_at": null
+    },
+    "commits_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/3/commits",
+    "review_comments_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/3/comments",
+    "review_comment_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/comments{/number}",
+    "comments_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/issues/3/comments",
+    "statuses_url":
+      "https://api.github.com/repos/gregswindle/github-resource-converter/statuses/70010ce84c5e0f21e3d13cd5b35f28bbd1f29cc2",
+    "head": {
+      "label": "fossabot:master",
+      "ref": "master",
+      "sha": "70010ce84c5e0f21e3d13cd5b35f28bbd1f29cc2",
+      "user": {
+        "login": "fossabot",
+        "id": 29791463,
+        "avatar_url": "https://avatars0.githubusercontent.com/u/29791463?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fossabot",
+        "html_url": "https://github.com/fossabot",
+        "followers_url": "https://api.github.com/users/fossabot/followers",
+        "following_url":
+          "https://api.github.com/users/fossabot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fossabot/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/fossabot/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/fossabot/subscriptions",
+        "organizations_url": "https://api.github.com/users/fossabot/orgs",
+        "repos_url": "https://api.github.com/users/fossabot/repos",
+        "events_url": "https://api.github.com/users/fossabot/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/fossabot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "repo": {
+        "id": 125596390,
+        "name": "github-resource-converter",
+        "full_name": "fossabot/github-resource-converter",
+        "owner": {
+          "login": "fossabot",
+          "id": 29791463,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/29791463?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/fossabot",
+          "html_url": "https://github.com/fossabot",
+          "followers_url": "https://api.github.com/users/fossabot/followers",
+          "following_url":
+            "https://api.github.com/users/fossabot/following{/other_user}",
+          "gists_url": "https://api.github.com/users/fossabot/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/fossabot/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/fossabot/subscriptions",
+          "organizations_url": "https://api.github.com/users/fossabot/orgs",
+          "repos_url": "https://api.github.com/users/fossabot/repos",
+          "events_url":
+            "https://api.github.com/users/fossabot/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/fossabot/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "private": false,
+        "html_url": "https://github.com/fossabot/github-resource-converter",
+        "description":
+          "Export GitHub Issues to CSV, JSON, and YAML: the connective tissue for data exchange",
+        "fork": true,
+        "url":
+          "https://api.github.com/repos/fossabot/github-resource-converter",
+        "forks_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/forks",
+        "keys_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/keys{/key_id}",
+        "collaborators_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/collaborators{/collaborator}",
+        "teams_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/teams",
+        "hooks_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/hooks",
+        "issue_events_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/issues/events{/number}",
+        "events_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/events",
+        "assignees_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/assignees{/user}",
+        "branches_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/branches{/branch}",
+        "tags_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/tags",
+        "blobs_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/git/blobs{/sha}",
+        "git_tags_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/git/tags{/sha}",
+        "git_refs_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/git/refs{/sha}",
+        "trees_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/git/trees{/sha}",
+        "statuses_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/statuses/{sha}",
+        "languages_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/languages",
+        "stargazers_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/stargazers",
+        "contributors_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/contributors",
+        "subscribers_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/subscribers",
+        "subscription_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/subscription",
+        "commits_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/commits{/sha}",
+        "git_commits_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/git/commits{/sha}",
+        "comments_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/comments{/number}",
+        "issue_comment_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/issues/comments{/number}",
+        "contents_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/contents/{+path}",
+        "compare_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/compare/{base}...{head}",
+        "merges_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/merges",
+        "archive_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/{archive_format}{/ref}",
+        "downloads_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/downloads",
+        "issues_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/issues{/number}",
+        "pulls_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/pulls{/number}",
+        "milestones_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/milestones{/number}",
+        "notifications_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/notifications{?since,all,participating}",
+        "labels_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/labels{/name}",
+        "releases_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/releases{/id}",
+        "deployments_url":
+          "https://api.github.com/repos/fossabot/github-resource-converter/deployments",
+        "created_at": "2018-03-17T04:21:58Z",
+        "updated_at": "2018-03-17T04:22:05Z",
+        "pushed_at": "2018-03-17T04:22:04Z",
+        "git_url": "git://github.com/fossabot/github-resource-converter.git",
+        "ssh_url": "git@github.com:fossabot/github-resource-converter.git",
+        "clone_url":
+          "https://github.com/fossabot/github-resource-converter.git",
+        "svn_url": "https://github.com/fossabot/github-resource-converter",
+        "homepage": null,
+        "size": 170,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": "JavaScript",
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": true,
+        "has_pages": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit"
+        },
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master"
+      }
+    },
+    "base": {
+      "label": "gregswindle:master",
+      "ref": "master",
+      "sha": "9f2834469f368f0d64a6e2a075c3de02d84048ff",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "repo": {
+        "id": 124477396,
+        "name": "github-resource-converter",
+        "full_name": "gregswindle/github-resource-converter",
+        "owner": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "private": false,
+        "html_url": "https://github.com/gregswindle/github-resource-converter",
+        "description":
+          "Export GitHub Issues to CSV, JSON, and YAML: the connective tissue for data exchange",
+        "fork": false,
+        "url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter",
+        "forks_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/forks",
+        "keys_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/keys{/key_id}",
+        "collaborators_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/collaborators{/collaborator}",
+        "teams_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/teams",
+        "hooks_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/hooks",
+        "issue_events_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/events{/number}",
+        "events_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/events",
+        "assignees_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/assignees{/user}",
+        "branches_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/branches{/branch}",
+        "tags_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/tags",
+        "blobs_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/blobs{/sha}",
+        "git_tags_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/tags{/sha}",
+        "git_refs_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/refs{/sha}",
+        "trees_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/trees{/sha}",
+        "statuses_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/statuses/{sha}",
+        "languages_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/languages",
+        "stargazers_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/stargazers",
+        "contributors_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/contributors",
+        "subscribers_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/subscribers",
+        "subscription_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/subscription",
+        "commits_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/commits{/sha}",
+        "git_commits_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/git/commits{/sha}",
+        "comments_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/comments{/number}",
+        "issue_comment_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/comments{/number}",
+        "contents_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/contents/{+path}",
+        "compare_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/compare/{base}...{head}",
+        "merges_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/merges",
+        "archive_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/{archive_format}{/ref}",
+        "downloads_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/downloads",
+        "issues_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues{/number}",
+        "pulls_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls{/number}",
+        "milestones_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/milestones{/number}",
+        "notifications_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/notifications{?since,all,participating}",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/labels{/name}",
+        "releases_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/releases{/id}",
+        "deployments_url":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/deployments",
+        "created_at": "2018-03-09T02:39:55Z",
+        "updated_at": "2018-03-12T06:55:53Z",
+        "pushed_at": "2018-03-17T06:35:25Z",
+        "git_url": "git://github.com/gregswindle/github-resource-converter.git",
+        "ssh_url": "git@github.com:gregswindle/github-resource-converter.git",
+        "clone_url":
+          "https://github.com/gregswindle/github-resource-converter.git",
+        "svn_url": "https://github.com/gregswindle/github-resource-converter",
+        "homepage": null,
+        "size": 289,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": "JavaScript",
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": true,
+        "has_pages": false,
+        "forks_count": 1,
+        "mirror_url": null,
+        "archived": false,
+        "open_issues_count": 4,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit"
+        },
+        "forks": 1,
+        "open_issues": 4,
+        "watchers": 0,
+        "default_branch": "master"
+      }
+    },
+    "_links": {
+      "self": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/3"
+      },
+      "html": {
+        "href":
+          "https://github.com/gregswindle/github-resource-converter/pull/3"
+      },
+      "issue": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/3"
+      },
+      "comments": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/issues/3/comments"
+      },
+      "review_comments": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/3/comments"
+      },
+      "review_comment": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/comments{/number}"
+      },
+      "commits": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/pulls/3/commits"
+      },
+      "statuses": {
+        "href":
+          "https://api.github.com/repos/gregswindle/github-resource-converter/statuses/70010ce84c5e0f21e3d13cd5b35f28bbd1f29cc2"
+      }
+    },
+    "author_association": "NONE"
+  }
+]

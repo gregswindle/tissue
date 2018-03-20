@@ -1,6 +1,6 @@
 # `github-resource-converter`
 
-> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-opened.svg"> Convert GitHub Issues and Pull Requests to JSON and CSV from a Terminal or within your Node.js app.
+> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/desktop-download.svg"> Convert GitHub Issues and Pull Requests to JSON and CSV from a Terminal or within your Node.js app.
 
 [![The MIT License][license-image]][license-url]
 [![FOSSA Status][fossa-image]][fossa-url]
@@ -18,27 +18,62 @@
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
 
-* [Getting started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
+* [Overview](#overview)
+* [Installation](#installation)
+  * [For Terminal/command-line usage](#for-terminalcommand-line-usage)
+  * [As a application dependency](#as-a-application-dependency)
 * [Usage](#usage)
-  * [Required command-line flags](#required-command-line-flags)
-    * [Example: generate a CSV of issues from a GitHub SaaS (github.com) repository](#example-generate-a-csv-of-issues-from-a-github-saas-githubcom-repository)
-    * [Example: generate a CSV of issues from a GitHub Enterprise repository](#example-generate-a-csv-of-issues-from-a-github-enterprise-repository)
-  * [Optional command-line flags](#optional-command-line-flags)
+  * [Formats: CSV and JSON](#formats-csv-and-json)
+  * [Resource types: issues, pull requests, and all](#resource-types-issues-pull-requests-and-all)
+  * [Filtering](#filtering)
+  * [Exporting](#exporting)
+    * [Issues](#issues)
+    * [Pull Requests](#pull-requests)
+    * [All (issues and pull requests)](#all-issues-and-pull-requests)
+  * [Command-line flags](#command-line-flags)
   * [Errors](#errors)
   * [Info](#info)
+* [Version](#version)
 * [Contributing](#contributing)
 * [License](#license)
   <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
-## Getting started
+## Overview
 
-### Prerequisites
+`github-resource-converter` exports your GitHub (and GitHub Enterprise) repositories' Issues and Pull Requests to `CSV` and `JSON` file formats. It's useful whenever you need to:
 
-1.  `github-resource-converter` requires [Node.js ![External link][icon-octicon-link-external]](https://nodejs.org/), and `npm`, which installs with Node.js.
+* **Use spreadsheets** to analyze, modify, print, or summarize large amounts of data with Pivot Tables and other important financial or statistical operations
 
-1.  To avoid rate-limiting, you should [create a personal access token ![External link][icon-octicon-link-external]](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token.
+  _Example:_
+
+  > ```bash
+  > # Convert all GitHub issues to CSV:
+  > $ github-resource-converter \
+  >   --owner foo \
+  >   --repo  bar
+  > # => Saved "foo-bar-issues-export.2018-03-20T02_11_04_356Z.csv".
+  > ```
+
+* **Share data** with other tools like GitLab and JIRA.
+
+  _Example:_
+
+  > ```bash
+  > # Convert and save all GitHub Enterprise
+  > # Pull Requests as JSON (using the grc alias):
+  > $ grc \
+  >   --owner gregswindle \
+  >   --repo github-resource-converter \
+  >   --resource-type pr \
+  >   --dest './docs/reports/export.json'
+  > # Saved "docs/reports/gregswindle-github-resource-converter-pr-export.2018-03-20T02_18_33_682Z.json".
+  > ```
+
+## Installation
+
+1.  **Required:** `github-resource-converter` is written in JavaScript (CommonJS) for [Node.js ![External link][icon-octicon-link-external]](https://nodejs.org/), which must be installed prior to use. Node.js requires **npm**, which is used for installing dependencies. (**npm** installs with Node.js.)
+
+1.  **Recommended:** To avoid rate-limiting, you should [create a personal access token ![External link][icon-octicon-link-external]](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token.
 
     * **MacOS and Unix**
 
@@ -58,12 +93,14 @@
         C:\usr\local\etc\github-resource-center\envvars\.env
       ```
 
-### Installation
+### For Terminal/command-line usage
 
 ```bash
 # Install globally to execute from a Terminal/command-line
 $ npm i -g github-resource-converter
 ```
+
+### As a application dependency
 
 ```bash
 # Install as a dependency within a Node.js app
@@ -72,86 +109,203 @@ $ npm i --save github-resource-converter
 
 ## Usage
 
-> ![info][icon-octicon-info] The following examples assume that `github-resource-converter` is:
->
-> 1.  Installed globally, and
-> 1.  Invoked from a Terminal (command-line interface)
+> <img align="left" alt="terminal" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/terminal.svg"> The following examples assume that `github-resource-converter` is installed globally and invoked from a Terminal (command-line interface)
 
-Open a terminal and run:
+### Formats: CSV and JSON
 
-```bash
-$ github-resource-converter \
-  --owner gregswindle \
-  --repo github-resource-converter \
-  --dest './docs/gregswindle-github-resource-converter-issues.csv'
+* CSV is the default format.
+* JSON formatting requires a `--dest` value with a `.json` file extension.
 
-# Or use the grc alias:
-$ grc --owner gregswindle --repo github-resource-converter --dest './docs/gregswindle-github-resource-converter-issues.csv'
-```
+### Resource types: issues, pull requests, and all
 
-### Required command-line flags
+* `issues` is the default `resource-type`.
+* `prs` require a `--resource-type` or `-t` value of
+
+  * `pr`
+  * `prs`
+  * `pull_request`
+  * `pull_requests`
+
+* `--resource-type all` will export all `issues` and `prs` into a single file.
+
+### Filtering
+
+Filtering is currently unavailable: for now, it's all or nothing. We're happily accepting pull requests, however!
+
+### Exporting
+
+#### Issues
+
+* **CSV**
+
+  _GitHub:_
+
+  > ```bash
+  > # GET https://api.github.com/rrepos/:owner/:repo/issues
+  > $ github-resource-converter \
+  >   --owner gregswindle \
+  >   --repo  github-resource-converter \
+  >   --dest  './docs/reports/export.csv'
+  > ```
+
+  _GitHub Enterprise:_
+
+  > ```bash
+  > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/issues
+  > $ grc --base-url https://api.ecorp.com/api/v3 \
+  >   --owner evilcorp \
+  >   --repo ecoin
+  > ```
+
+* **JSON**
+
+  _GitHub:_
+
+  > ```bash
+  > # GET https://api.github.com/repos/:owner/:repo/issues
+  > $ github-resource-converter \
+  >   --owner gregswindle \
+  >   --repo  github-resource-converter \
+  >   --dest  './docs/reports/export.json'
+  > ```
+
+  _GitHub Enterprise:_
+
+  > ```bash
+  > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/issues
+  > $ grc --base-url https://api.ecorp.com/api/v3 \
+  >   --owner evilcorp \
+  >   --repo ecoin
+  >   --dest ./export.json
+  > ```
+
+#### Pull Requests
+
+* **CSV**
+
+  _GitHub:_
+
+  > ```bash
+  > # GET https://api.github.com/repos/:owner/:repo/pulls
+  > $ github-resource-converter \
+  >   --owner gregswindle \
+  >   --repo  github-resource-converter \
+  >   --resource-type pr
+  > ```
+
+  _GitHub Enterprise:_
+
+  > ```bash
+  > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/pulls
+  > $ grc --base-url https://api.ecorp.com/api/v3 \
+  >   --owner evilcorp \
+  >   --repo ecoin \
+  >   --resource-type pr
+  > ```
+
+* **JSON**
+
+  _GitHub:_
+
+  > ```bash
+  > # GET https://api.github.com/repos/:owner/:repo/pulls
+  > $ github-resource-converter \
+  >   --owner gregswindle \
+  >   --repo  github-resource-converter \
+  >   --resource-type pr
+  >   --dest './export.json'
+  > ```
+
+  _GitHub Enterprise:_
+
+  > ```bash
+  > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/pulls
+  > $ grc --base-url https://api.ecorp.com/api/v3 \
+  >   --owner evilcorp \
+  >   --repo ecoin \
+  >   --resource-type pr
+  >   --dest './export.json'
+  > ```
+
+#### All (issues and pull requests)
+
+* **CSV**
+
+  _GitHub:_
+
+  > ```bash
+  > # GET https://api.github.com/repos/:owner/:repo/pulls
+  > $ github-resource-converter \
+  >   --owner gregswindle \
+  >   --repo  github-resource-converter \
+  >   --resource-type all
+  > ```
+
+* _GitHub Enterprise:_
+
+  > ```bash
+  > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/pulls
+  > $ grc --base-url https://api.ecorp.com/api/v3 \
+  >   --owner evilcorp \
+  >   --repo ecoin \
+  >   --resource-type all
+  > ```
+
+* **JSON**
+
+  _GitHub:_
+
+  > ```bash
+  > # GET https://api.github.com/repos/:owner/:repo/pulls
+  > $ github-resource-converter \
+  >   --owner gregswindle \
+  >   --repo  github-resource-converter \
+  >   --resource-type all
+  >   --dest './export.json'
+  > ```
+
+* _GitHub Enterprise:_
+
+  > ```bash
+  > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/pulls
+  > $ grc --base-url https://api.ecorp.com/api/v3 \
+  >   --owner evilcorp \
+  >   --repo ecoin \
+  >   --resource-type all
+  >   --dest './export.json'
+  > ```
+
+### Command-line flags
 
 <dl>
-  <dt><code>--owner</code></dt>
-  <dd><p>The GitHub account name or organization name.</p></dd>
-  <dt><code>--repo</code></dt>
-  <dd><p>The name of the GitHub (or GitHub Enterprise) repository.</p></dd>
-</dl>
-
----
-
-#### Example: generate a CSV of issues from a GitHub SaaS (github.com) repository
-
-Given the URL for `github-resource-converter` (this project):
-
-```HTTP
-https://github.com/gregswindle/github-resource-converter.git
-#                  ⬆️          ⬆️
-#                  owner      repo
-```
-
-The minium amount of CLI flags for _all_ issues at
-`https://github.com/gregswindle/github-resource-converter.git` would therefore be:
-
-```bash
-# Invoke https://api.github.com/repos/gregswindle/github-resource-converter/issues
-$ grc --owner gregswindle --repo github-resource-converter
-```
-
----
-
-#### Example: generate a CSV of issues from a GitHub Enterprise repository
-
-Export all issues from a private, on-premise GitHub Enterprise repoository to CSV:
-
-```bash
-# Invoke https://api.github.com/repos/gregswindle/github-resource-converter/issues
-$ grc --host api.ecorp.com \
-  --owner evilcorp \
-  --path-prefix 'api/v3'
-  --repo ecoin \
-```
-
----
-
-### Optional command-line flags
-
-<dl>
-  <dt><code>--dest</code></dt>
+  <dt><code>--owner, -o</code></dt>
+  <dd><p><strong>Required.</strong> The GitHub account name or organization name.</p></dd>
+  <dt><code>--repo, -r</code></dt>
+  <dd><p><strong>Required.</strong> The name of the GitHub (or GitHub Enterprise) repository.</p></dd>
+  <dt><code>--base-url</code></dt>
+  <dd><p>The GitHub REST API v3 URL origin, or a GitHub Enterprise URL origin and path-prefix.</p>
+    <p>Default value: <code>https://api.github.com</code>.</p>
+  </dd>
+  <dt><code>--dest, -d</code></dt>
   <dd><p>The destination path and file name of the CSV.</p>
-    <p>Default value: <code>./issues.csv</code>.</p>
+    <p>Default value: <code>./export.csv</code>.</p>
   </dd>
-  <dt><code>--host</code></dt>
-  <dd>The name of the GitHub (or GitHub Enterprise) repository.
-    <br><br>Default value: <code>api.github.com</code>.
+  <dt><code>--no-auto-filename</code></dt>
+  <dd><p>Disable automatic file naming.</p>
+    <p>Default value: <code>false</code>.</p>
   </dd>
-  <dt><code>--path-prefix</code></dt>
-  <dd>For GitHub Enterprise instances, the value that must occur to fulfill a REST API v3 request, e.g., <code>api/v3/</code>.
-    <br><br>Default value: "" (an empty <code>string</code>).
-  </dd>
-  <dt><code>--protocol</code></dt>
-  <dd>The access mechanism for the requested repository.
-    <br><br>Default value: <code>https:</code>.
+  <dt><code>--resource-type, -t</code></dt>
+  <dd><p>Declares whether to convert and export Issues, Pull Requests, or All.</p>
+    <table>
+      <tr>
+        <th>Default value</th>
+        <th>Valid values</th>
+      </tr>
+      <tr>
+        <td><sampl>issues</sampl></td>
+        <td><sampl>all, issue, issues, pr, prs, pull_request, pull_requests</sampl></td>
+      </tr>
+    </table>
   </dd>
 </dl>
 
@@ -161,91 +315,63 @@ Errors are written to the console (`stdout`) as JSON:
 
 ```bash
 # Attempt to fetch issues from a repository that doesn't exist
-$ grc --owner repo --repo foobar
-[github-resource-converter] 2018-03-12T07:44:36.727Z ERROR HttpError: {
-  "name": "github-resource-converter",
-  "hostname": "localhost",
-  "pid": 32036,
-  "level": 50,
-  "err": {
-    "message": {
-      "message": "Not Found",
-      "documentation_url": "https://developer.github.com/v3"
-    },
-    "name": "HttpError",
-    "stack": "HttpError: {\"message\":\"Not Found\",\"documentation_url\":\"https://developer.github.com/v3\"}\n    at response.text.then.message (/path/to/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-    "code": 404
-  },
-  "msg": {
-    "message": "Not Found",
-    "documentation_url": "https://developer.github.com/v3"
-  },
-  "time": "2018-03-12T07:44:36.727Z",
-  "v": 0
-}
+$ grc --owner example --repo error
+[2018-03-20T02:31:24.737Z] ERROR: github-resource-converter/48219 on User.router.home: {"message":"Not Found","documentation_url":"https://developer.github.com/v3/issues/#list-issues-for-a-repository"}
+  HttpError: {"message":"Not Found","documentation_url":"https://developer.github.com/v3/issues/#list-issues-for-a-repository"}
+      at response.text.then.message (/p/a/t/h/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
 ```
 
 ### Info
 
 The `--help` flag displays all options:
 
-```text
+```shell
 $ grc --help
-Convert GitHub resources (Issues) into CSV, etc.
+
+  Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.
 
   Usage
+
     $ grc [options] [info]
     $ github-resource-converter [options] [info]
+
   Options
-    --dest, -o       The CSV's destination path and file name.
-                      [Default: './issues.csv']
-    --host, -h        The domain name of the server. Set this value
-                      for GitHub Enterprise instances.
-                      [Default: 'api.github.com']
-    --owner, -o       The GitHub account name or organization name.
-    --path-prefix, -p For GitHub Enterprise instances, the value that
-                      must occur to fulfill a REST API v3 request, e.g.,
-                      'api/v3/'.
-                      [Default: '']
-    --protocol, -s    The access mechanism for the requested repository.
-                      [Default: 'https:']
-    --repo, -r        The name of the GitHub (or GitHub enterprise)
-                      repository.
+
+    --base-url           The GitHub REST API v3 URL origin, or a
+                         GitHub Enterprise URL origin and path-prefix.
+                         [Default: 'https://api.github.com']
+    --dest,          -d  The CSV's destination path and file name.
+                         [Default: './resources.csv']
+    --no-auto-filename   Disable automatic file naming.
+                         [Default: false]
+    --owner,         -o  The GitHub account name or organization name.
+    --repo,          -r  The name of the GitHub (or GitHub enterprise)
+                         repository.
+    --resource-type, -t  "issues", "prs", or "all".
+                         [Default: 'issues']
+
   Info
-    --help            Show this dialog.
-    --version         Display the installed semantic version.
+
+    --help     Show this dialog.
+    --version  Display the installed semantic version.
+
   Examples
+
     $ grc --owner github --repo hub
-    // => Exported CSV to /path/of/cwd/issues.csv.
+      // => Exported CSV to /path/of/cwd/issues.csv.
 
     $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'
-    // => Exported CSV to /path/to/reports/issues/2018-05-10.csv.
+      // => Exported CSV to /path/to/reports/issues/YYYY-MM-DD.csv.
 
-    $ grc --owner error --repo example
-      [github-resource-converter] 2018-03-12T07:36:31.681Z ERROR HttpError: {
-      'name': 'github-resource-converter',
-      'hostname': 'localhost',
-      'pid': 30937,
-      'level': 50,
-      'err': {
-        'message': {
-          'message': 'Not Found',
-          'documentation_url': 'https://developer.github.com/v3'
-        },
-        'name': 'HttpError',
-        'stack': 'HttpError: {"message":"Not Found","documentation_url":"https://developer.github.com/v3"}
-      at response.text.then.message (/path/to/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)
-      at <anonymous>
-      at process._tickCallback (internal/process/next_tick.js:188:7)',
-        'code': 404
-      },
-      'msg': {
-        'message': 'Not Found',
-        'documentation_url': 'https://developer.github.com/v3'
-      },
-      'time': '2018-03-12T07:36:31.681Z',
-      'v': 0
-    }
+    $ grc --owner example --repo error
+      // =>
+      [2018-03-19T08:04:06.596Z] ERROR: github-resource-converter/00000 on localhost: Cannot destructure property `data` of 'undefined' or 'null'.
+        TypeError: Cannot destructure property `data` of 'undefined' or 'null'.
+            at paginate (/p/a/t/h/github-resource-converter/lib/base-resource-converter.js:39:16)
+            at <anonymous>
+            at process._tickCallback (internal/process/next_tick.js:188:7
 ```
 
 Use the `--version` flag to see which version you have installed:
@@ -254,6 +380,10 @@ Use the `--version` flag to see which version you have installed:
 $ github-resource-converter --version
 # => 1.0.0-alpha
 ```
+
+## Version
+
+The latest semantic version of `github-resource-converter` is 1.0.0-alpha.
 
 ## Contributing
 
@@ -308,7 +438,7 @@ Read the [NOTICE ![External link][icon-octicon-link-external]](https://app.fossa
 [appveyor-url]: https://ci.appveyor.com/project/gregswindle/github-resource-converter
 [codacy-image]: https://img.shields.io/codacy/grade/b3ac6aaaa3cf41d0897959c1e5d732a3.svg?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/github-resource-converter?utm_source=github.com&utm_medium=referral&utm_content=gregswindle/github-resource-converter&utm_campaign=Badge_Grade
-[coveralls-image]: https://coveralls.io/repos/gregswindle/github-resource-converter/badge.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/github/gregswindle/github-resource-converter/master.svg
 [coveralls-url]: https://coveralls.io/r/gregswindle/github-resource-converter
 [daviddm-dev-image]: https://david-dm.org/gregswindle/github-resource-converter/dev-status.svg?theme=shields.io&style=flat-square
 [daviddm-dev-url]: https://david-dm.org/gregswindle/github-resource-converter?type=dev
@@ -330,11 +460,11 @@ Read the [NOTICE ![External link][icon-octicon-link-external]](https://app.fossa
 <!-- ⛔️ Contributing ⛔️  -->
 
 [code-of-conduct-url]: https://github.com/gregswindle/github-resource-converter/blob/master/.github/CODE_OF_CONDUCT.md
-[contributing-image]: https://img.shields.io/badge/read---CONTRIBUTING%20Guidelines---yellow.svg?style=for-the-badge&label=read+the
+[contributing-image]: https://img.shields.io/badge/read-CONTRIBUTING%20Guidelines-yellow.svg?style=for-the-badge&label=read+the
 [contributing-url]: https://github.com/gregswindle/github-resource-converter/blob/master/.github/CONTRIBUTING.md
-[issues-new-defect-image]: https://img.shields.io/badge/report---defect---lightgrey.svg?style=for-the-badge&label=report+a
+[issues-new-defect-image]: https://img.shields.io/badge/report-defect-lightgrey.svg?style=for-the-badge&label=report+a
 [issues-new-defect-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=fix%28affected-scope%29%3A+50-character-defect-summary&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Defect&template=defect-report.md
-[issues-new-feat-image]: https://img.shields.io/badge/request---feature---blue.svg?style=for-the-badge&label=request+a
+[issues-new-feat-image]: https://img.shields.io/badge/request-feature-blue.svg?style=for-the-badge&label=request+a
 [issues-new-feat-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=feat%28affected-scope%29%3A+50-character-change-proposal-summary&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Feature&template=feature-request.md
 [issues-url]: https://github.com/gregswindle/github-resource-converter/issues
 [makeapullrequest-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square

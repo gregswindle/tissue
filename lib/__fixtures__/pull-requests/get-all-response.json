@@ -1,0 +1,2399 @@
+{
+  "data": [
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/214",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/214/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/214/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/214/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/214",
+      "id": 296964763,
+      "number": 214,
+      "title": "Update mocha to the latest version 🚀",
+      "user": {
+        "login": "greenkeeper[bot]",
+        "id": 23040076,
+        "avatar_url": "https://avatars3.githubusercontent.com/in/505?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/greenkeeper%5Bbot%5D",
+        "html_url": "https://github.com/apps/greenkeeper",
+        "followers_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/followers",
+        "following_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/following{/other_user}",
+        "gists_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/subscriptions",
+        "organizations_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/greenkeeper%5Bbot%5D/repos",
+        "events_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/received_events",
+        "type": "Bot",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 614010420,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/greenkeeper",
+          "name": "greenkeeper",
+          "color": "c2c2c2",
+          "default": false
+        },
+        {
+          "id": 612590083,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20low",
+          "name": "priority: low",
+          "color": "c2e0c6",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 3,
+      "created_at": "2018-02-14T03:31:26Z",
+      "updated_at": "2018-03-07T23:11:12Z",
+      "closed_at": null,
+      "author_association": "NONE",
+      "pull_request": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/pulls/214",
+        "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/214",
+        "diff_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/pull/214.diff",
+        "patch_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/pull/214.patch"
+      },
+      "body":
+        "\n## Version **5.0.1** of [mocha](https://github.com/mochajs/mocha) was just published.\n\n<table>\n  <tr>\n    <th align=left>\n      Dependency\n    </td>\n    <td>\n      mocha\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Current Version\n    </td>\n    <td>\n      5.0.0\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Type\n    </td>\n    <td>\n      devDependency\n    </td>\n  </tr>\n</table>\n\nThe version **5.0.1** is **not covered** by your **current version range**.\n\nIf you don’t accept this pull request, your project will work just like it did before. However, you might be missing out on a bunch of new features, fixes and/or performance improvements from the dependency update.\n\nIt might be worth looking into these changes and trying to get this project onto the latest version of mocha.\n\nIf you have a solid test suite and good coverage, a passing build is a strong indicator that you can take advantage of these changes directly by merging the proposed change into your project. If the build fails or you don’t have such unconditional trust in your tests, this branch is a great starting point for you to work on the update.\n\n\n---\n\n\n<details>\n<summary>Commits</summary>\n<p>The new version differs by 15 commits.</p>\n<ul>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/09ce746aa925d35317f2624fd36c77a31bb68e24\"><code>09ce746</code></a> <code>Release v5.0.1</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/70027b60da7f409a40ea267e207aceac1ec1d286\"><code>70027b6</code></a> <code>update changelog for v5.0.1 [ci skip]</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/44aae9f66db2efca550e5c9ac0dedaeac52d7e9e\"><code>44aae9f</code></a> <code>add working wallaby config</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/412cf278784d56b04dc165f88e8fb7999f437958\"><code>412cf27</code></a> <code>[Update] license year</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/b7377b380202d2c0d5634dcb89dc50ea69961fb3\"><code>b7377b3</code></a> <code>rename help-wanted to \"help wanted\" in stale.yml</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/d975a6a8455edb07477dc37a427c268aa59713ff\"><code>d975a6a</code></a> <code>fix memory leak when run in v8; closes #3119</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/3509029e5da38daca0d650094117600b6617a862\"><code>3509029</code></a> <code>update .gitignore to only ignore root mocha.js [ci skip]</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/b57f6234b75a1b25e0244ad9d04c4451414ee321\"><code>b57f623</code></a> <code>fix: When using --delay, .only() no longer works. Issue  #1838</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/cd743228f0999ebfe8f88f224d6d61bc063de8ed\"><code>cd74322</code></a> <code>Slight copy update on docs for test directory</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/f687d2b0fb2e04b9ec9edfdfe58ce3ea513de369\"><code>f687d2b</code></a> <code>update docs for the glob</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/14fc03090413b038672ca80fd9cbbfb0ccfc0826\"><code>14fc030</code></a> <code>Add all supported wallaby editors</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/2e7e4c0c576996b87ca5a3bf226953bfa978d97a\"><code>2e7e4c0</code></a> <code>rename \"common-mistake\" label to \"faq\"</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/bca57f438037b7ce2906b4b8f7ab4b9fba5d8102\"><code>bca57f4</code></a> <code>clarify docs on html, xunit and 3p reporters; closes #1906</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/2fe2d0116e80f37956fcf799c96276ffb8dddab5\"><code>2fe2d01</code></a> <code>Revert \"fix travis \"before script\" script\"</code></li>\n<li><a href=\"https://urls.greenkeeper.io/mochajs/mocha/commit/c0ac1b96a5856c9ae6a4fdd028f1bb89593f723a\"><code>c0ac1b9</code></a> <code>fix travis \"before script\" script</code></li>\n</ul>\n<p>See the <a href=\"https://urls.greenkeeper.io/mochajs/mocha/compare/cc4a8183ae63974297d74442a9787bcb8c78fd28...09ce746aa925d35317f2624fd36c77a31bb68e24\">full diff</a></p>\n</details>\n\n<details>\n  <summary>FAQ and help</summary>\n\n  There is a collection of [frequently asked questions](https://greenkeeper.io/faq.html). If those don’t help, you can always [ask the humans behind Greenkeeper](https://github.com/greenkeeperio/greenkeeper/issues/new).\n</details>\n\n\n---\n\n\nYour [Greenkeeper](https://greenkeeper.io) bot :palm_tree:\n\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/214/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/213",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/213/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/213/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/213/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/213",
+      "id": 296715557,
+      "number": 213,
+      "title": "Update eslint-plugin-jsdoc to the latest version 🚀",
+      "user": {
+        "login": "greenkeeper[bot]",
+        "id": 23040076,
+        "avatar_url": "https://avatars3.githubusercontent.com/in/505?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/greenkeeper%5Bbot%5D",
+        "html_url": "https://github.com/apps/greenkeeper",
+        "followers_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/followers",
+        "following_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/following{/other_user}",
+        "gists_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/subscriptions",
+        "organizations_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/greenkeeper%5Bbot%5D/repos",
+        "events_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/greenkeeper%5Bbot%5D/received_events",
+        "type": "Bot",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 614010420,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/greenkeeper",
+          "name": "greenkeeper",
+          "color": "c2c2c2",
+          "default": false
+        },
+        {
+          "id": 612590083,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20low",
+          "name": "priority: low",
+          "color": "c2e0c6",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 2,
+      "created_at": "2018-02-13T12:11:54Z",
+      "updated_at": "2018-02-20T15:24:05Z",
+      "closed_at": null,
+      "author_association": "NONE",
+      "pull_request": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/pulls/213",
+        "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/213",
+        "diff_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/pull/213.diff",
+        "patch_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/pull/213.patch"
+      },
+      "body":
+        "\n## Version **3.4.0** of [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc) was just published.\n\n<table>\n  <tr>\n    <th align=left>\n      Dependency\n    </td>\n    <td>\n      eslint-plugin-jsdoc\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Current Version\n    </td>\n    <td>\n      3.3.1\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Type\n    </td>\n    <td>\n      devDependency\n    </td>\n  </tr>\n</table>\n\nThe version **3.4.0** is **not covered** by your **current version range**.\n\nIf you don’t accept this pull request, your project will work just like it did before. However, you might be missing out on a bunch of new features, fixes and/or performance improvements from the dependency update.\n\nIt might be worth looking into these changes and trying to get this project onto the latest version of eslint-plugin-jsdoc.\n\nIf you have a solid test suite and good coverage, a passing build is a strong indicator that you can take advantage of these changes directly by merging the proposed change into your project. If the build fails or you don’t have such unconditional trust in your tests, this branch is a great starting point for you to work on the update.\n\n\n---\n\n\n<details>\n<summary>Commits</summary>\n<p>The new version differs by 1 commits.</p>\n<ul>\n<li><a href=\"https://urls.greenkeeper.io/gajus/eslint-plugin-jsdoc/commit/c8eb609b3b71b4f0ad9f51f362966b3be30a0005\"><code>c8eb609</code></a> <code>feat: improve RequireDescriptionCompleteSentence (#59)</code></li>\n</ul>\n<p>See the <a href=\"https://urls.greenkeeper.io/gajus/eslint-plugin-jsdoc/compare/9ffa44c8b2741f0bf2c367070a9715234766a966...c8eb609b3b71b4f0ad9f51f362966b3be30a0005\">full diff</a></p>\n</details>\n\n<details>\n  <summary>FAQ and help</summary>\n\n  There is a collection of [frequently asked questions](https://greenkeeper.io/faq.html). If those don’t help, you can always [ask the humans behind Greenkeeper](https://github.com/greenkeeperio/greenkeeper/issues/new).\n</details>\n\n\n---\n\n\nYour [Greenkeeper](https://greenkeeper.io) bot :palm_tree:\n\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/213/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/187",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/187/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/187/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/187/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/187",
+      "id": 288389943,
+      "number": 187,
+      "title":
+        "feat(responsibilities): display objects' duties and descriptions",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590073,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20medium",
+          "name": "priority: medium",
+          "color": "fbca04",
+          "default": false
+        },
+        {
+          "id": 612590089,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20docs",
+          "name": "type: docs",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590085,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20test",
+          "name": "type: test",
+          "color": "bfd4f2",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 7,
+      "created_at": "2018-01-14T07:44:20Z",
+      "updated_at": "2018-02-21T16:14:53Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "pull_request": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/pulls/187",
+        "html_url": "https://github.com/gregswindle/eslint-plugin-crc/pull/187",
+        "diff_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/pull/187.diff",
+        "patch_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/pull/187.patch"
+      },
+      "body":
+        "## Description of change\r\n\r\nAdd CRC Model descriptions and responsibilities.\r\n\r\n---\r\n\r\n:memo: See [CRC Model report sample](https://github.com/gregswindle/eslint-plugin-crc/wiki/CRC-Model-report-sample) in the `eslint-plugin-crc` Wiki for the latest results.\r\n\r\n---\r\n\r\n### Associated issue(s)\r\n\r\n1. Closes #44.\r\n1. Resolves #136 (dependency drift)\r\n1. Resolves #137 (dependency drift)\r\n1. Resolves #142 (dependency drift)\r\n1. Resolves #146 (dependency drift)\r\n1. Resolves #150 (dependency drift)\r\n1. Resolves #152 (dependency drift)\r\n1. Resolves #153 (dependency drift)\r\n1. Resolves #156 (dependency drift)\r\n1. Resolves #161 (dependency drift)\r\n1. Resolves #162 (dependency drift)\r\n1. Resolves #164 (dependency drift)\r\n1. Resolves #165 (dependency drift)\r\n1. Resolves #168 (dependency drift)\r\n1. Resolves #169 (dependency drift)\r\n1. Resolves #172 (dependency drift)\r\n1. Resolves #173 (dependency drift)\r\n1. Resolves #175 (dependency drift)\r\n1. Resolves #177 (dependency drift)\r\n1. Resolves #182 (dependency drift)\r\n1. Resolves #183 (dependency drift)\r\n1. Resolves #213 (dependency drift)\r\n1. Resolves #214 (dependency drift)\r\n1. Resolves #215 (dependency drift)\r\n1. Resolves #216 (dependency drift)\r\n1. Resolves #218 (dependency drift)\r\n1. Resolves #219 (dependency drift)\r\n1. Resolves #220 (dependency drift)\r\n1. Resolves #221 (dependency drift)\r\n1. Resolves #222 (dependency drift)\r\n1. Resolves #223 (dependency drift)\r\n1. Resolves #224 (dependency drift)\r\n1. Resolves #225 (dependency drift)\r\n1. Resolves #227 (dependency drift)\r\n\r\n- [x] The acceptance criteria for all associated issues have been completed, tested, and validated.\r\n\r\n### PR check-list\r\n\r\n> **:white_check_mark: Please review and check the appropriate items.**\r\n\r\n#### 1. **Code standards compliance**\r\n[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)\r\n\r\n- [x] `ESLint` passes.\r\n\r\n#### 2. **Code quality**. [![Quality Gate][sonar-gate-img]][sonar-gate-url]\r\n\r\n- [x] The quality gateways pass with an \"A\" grade.\r\n\r\n| Measure             | Scores                                                             |\r\n|:--------------------|:-------------------------------------------------------------------|\r\n| **`Complexity`**      | [![Complexity][sonar-complexity-img]][sonar-complexity-url]<br>[![Cognitive complexity][sonar-cognitive-img]][sonar-cognitive-url] |\r\n| **`Duplications`**    | [![Duplications][sonar-duplications-img]][sonar-duplications-url]  |\r\n| **`Issues`**          | [![Issues][sonar-issues-img]][sonar-issues-url]                    |\r\n| **`Maintainability`** | [![Code smells][sonar-code-smells-img]][sonar-code-smells-url]<br>[![Maintainability][sonar-maintainability-img]][sonar-maintainability-url]<br>[![Technical debt][sonar-tech-debt-img]][sonar-tech-debt-url] |\r\n| **`Reliability`**     | [![Reliability][sonar-reliability-img]][sonar-reliability-url]     |\r\n| **`Security`**        | [![Security][sonar-security-img]][sonar-security-url]              |\r\n\r\n#### 3. **Test coverage** [![Coverage Status][coveralls-img]][coveralls-url]\r\n\r\n- [x] The source code is 100% covered with passing specs.\r\n\r\n> **:information_source: These tasks are not required to open a PR, and may be addresses while the PR is open.**\r\n\r\n[cla-individual-url]: https://www.clahub.com/agreements/gregswindle/eslint-plugin-crc\r\n[codecov-image]: https://codecov.io/gh/gregswindle/eslint-plugin-crc/branch/master/graph/badge.svg\r\n[codecov-url]: https://codecov.io/gh/gregswindle/eslint-plugin-crc\r\n[coveralls-img]: https://coveralls.io/repos/github/gregswindle/eslint-plugin-crc/badge.svg\r\n[coveralls-url]: https://coveralls.io/github/gregswindle/eslint-plugin-crc\r\n[sonar-code-smells-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=code_smells\r\n[sonar-code-smells-url]: https://sonarcloud.io/component_measures/metric/code_smells/list?id=gregswindle-eslint-plugin-crc\r\n[sonar-cognitive-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=cognitive_complexity\r\n[sonar-cognitive-url]: https://sonarcloud.io/component_measures/metric/cognitive_complexity/list?id=gregswindle-eslint-plugin-crc\r\n[sonar-complexity-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=function_complexity\r\n[sonar-complexity-url]: https://sonarcloud.io/component_measures/domain/Complexity?id=gregswindle-eslint-plugin-crc\r\n[sonar-coverage-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=coverage\r\n[sonar-coverage-url]: https://sonarcloud.io/component_measures/domain/Coverage?id=gregswindle-eslint-plugin-crc\r\n[sonar-duplications-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=duplicated_line_density\r\n[sonar-duplications-url]: https://sonarcloud.io/component_measures/domain/Duplications?id=gregswindle-eslint-plugin-crc\r\n[sonar-gate-img]: http://sonarcloud.io/api/badges/gate?key=gregswindle-eslint-plugin-crc\r\n[sonar-gate-url]: http://sonarcloud.io/dashboard/index/gregswindle-eslint-plugin-crc\r\n[sonar-issues-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=blocker_violations\r\n[sonar-issues-url]: https://sonarcloud.io/component_measures/domain/Issues?id=gregswindle-eslint-plugin-crc\r\n[sonar-maintainability-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=new_maintainability_rating\r\n[sonar-maintainability-url]: https://sonarcloud.io/component_measures/domain/Maintainability?id=gregswindle-eslint-plugin-crc\r\n[sonar-reliability-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=new_reliability_rating\r\n[sonar-reliability-url]: https://sonarcloud.io/component_measures/domain/Reliability?id=gregswindle-eslint-plugin-crc\r\n[sonar-security-img]: http://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=vulnerabilities\r\n[sonar-security-url]: https://sonarcloud.io/component_measures/metric/vulnerabilities/list?id=gregswindle-eslint-plugin-crc\r\n[sonar-tech-debt-img]:  https://sonarcloud.io/api/badges/measure?key=gregswindle-eslint-plugin-crc&metric=sqale_debt_ratio\r\n[sonar-tech-debt-url]: https://sonarcloud.io/component_measures/metric/sqale_index/list?id=gregswindle-eslint-plugin-crc\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/187/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/186",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/186/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/186/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/186/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/186",
+      "id": 288380161,
+      "number": 186,
+      "title": "epic(reports): generate CRC Model reports",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 740731309,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/epic",
+          "name": "epic",
+          "color": "3E4B9E",
+          "default": false
+        },
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590073,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20medium",
+          "name": "priority: medium",
+          "color": "fbca04",
+          "default": false
+        },
+        {
+          "id": 612590072,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20in-progress",
+          "name": "status: in-progress",
+          "color": "0052cc",
+          "default": false
+        },
+        {
+          "id": 612590078,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20build",
+          "name": "type: build",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590091,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20ci",
+          "name": "type: ci",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590089,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20docs",
+          "name": "type: docs",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590088,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20style",
+          "name": "type: style",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590085,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20test",
+          "name": "type: test",
+          "color": "bfd4f2",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 0,
+      "created_at": "2018-01-14T03:49:08Z",
+      "updated_at": "2018-01-14T03:49:11Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## Epic summary\r\n\r\nAs a software product delivery stakeholder,\r\nI want a simple portrayal of the software that models my domain\r\nIn order to communicate with a common vocabulary based on community goals.\r\n\r\n## Acceptance criteria\r\n\r\n- [ ] 1. Reports in the form of CRC Models can be generated and shared.\r\n- [ ] 2. CRC Model report generation can be automated and incorporated into CI/CD.\r\n\r\n#### :zap: Rule developers _must_ use the `eslint:rule` subgenerator!\r\n> When you create a new rule, be sure to use the `eslint:rule` subgenerator, since it will\r\n> 1. Create a stubbed rule,\r\n> 2. The rule's stubbed BDD specs,\r\n> 3. As well as the rule's documentation.\r\n>\r\n> See [`eslint-plugin` development environment][eslint-plugin-dev-env-url] for details.\r\n\r\n<!-- DEFECTS -->\r\n<!--- If you're describing a bug, tell us what should happen -->\r\n<!-- ## Expected Behavior -->\r\n\r\n\r\n<!-- ## Current Behavior -->\r\n<!--- If describing a bug, tell us what happens instead of the expected behavior -->\r\n<!--- If suggesting a change/improvement, explain the difference from current behavior -->\r\n\r\n<!-- ## Possible Solution -->\r\n<!--- Not obligatory, but suggest a fix/reason for the bug, -->\r\n<!--- or ideas how to implement the addition or change -->\r\n\r\n<!-- ## Steps to Reproduce (for bugs) -->\r\n<!--- Provide a link to a live example, or an unambiguous set of steps to -->\r\n<!--- reproduce this bug. Include code to reproduce, if relevant -->\r\n<!-- 1.\r\n2.\r\n3.\r\n4. -->\r\n\r\n<!-- ## Context -->\r\n<!--- How has this issue affected you? What are you trying to accomplish? -->\r\n<!--- Providing context helps us come up with a solution that is most useful in the real world -->\r\n\r\n<!-- ## Your Environment -->\r\n<!--- Include as many relevant details about the environment you experienced the Type: Defect in -->\r\n<!-- * Version used:\r\n* Environment name and version (e.g. Chrome 39, node.js 5.4):\r\n* Operating System and version (desktop or mobile):\r\n* Link to your project: -->\r\n\r\n[eslint-plugin-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/186/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/185",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/185/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/185/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/185/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/185",
+      "id": 288379808,
+      "number": 185,
+      "title":
+        "feat(collaborators): list objects, modules, and functions that an object uses",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 722098125,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/help%20wanted",
+          "name": "help wanted",
+          "color": "c2e0c6",
+          "default": true
+        },
+        {
+          "id": 612590069,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20high",
+          "name": "priority: high",
+          "color": "eb6420",
+          "default": false
+        },
+        {
+          "id": 612590094,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20available",
+          "name": "status: available",
+          "color": "bfe5bf",
+          "default": false
+        },
+        {
+          "id": 612590078,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20build",
+          "name": "type: build",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590089,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20docs",
+          "name": "type: docs",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590085,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20test",
+          "name": "type: test",
+          "color": "bfd4f2",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": null,
+      "assignees": [],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 0,
+      "created_at": "2018-01-14T03:38:56Z",
+      "updated_at": "2018-01-14T03:41:42Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## User story\r\n\r\nAs a developer/designer,\r\nI need to see the full list of dependencies invoked within an object\r\nIn order to maintain a [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) [GRASP](https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)) of my software.\r\n\r\n## Acceptance criteria\r\n\r\n- [ ] 1. Every prototypical object invoked by an object appears as a \"Collaborator.\"\r\n- [ ] 2. Each Collaborator entry has an array of invocation ranges.\r\n\r\n#### :zap: Rule developers _must_ use the `eslint:rule` subgenerator!\r\n> When you create a new rule, be sure to use the `eslint:rule` subgenerator, since it will\r\n> 1. Create a stubbed rule,\r\n> 2. The rule's stubbed BDD specs,\r\n> 3. As well as the rule's documentation.\r\n>\r\n> See [`eslint-plugin` development environment][eslint-plugin-dev-env-url] for details.\r\n\r\n<!-- DEFECTS -->\r\n<!--- If you're describing a bug, tell us what should happen -->\r\n<!-- ## Expected Behavior -->\r\n\r\n\r\n<!-- ## Current Behavior -->\r\n<!--- If describing a bug, tell us what happens instead of the expected behavior -->\r\n<!--- If suggesting a change/improvement, explain the difference from current behavior -->\r\n\r\n<!-- ## Possible Solution -->\r\n<!--- Not obligatory, but suggest a fix/reason for the bug, -->\r\n<!--- or ideas how to implement the addition or change -->\r\n\r\n<!-- ## Steps to Reproduce (for bugs) -->\r\n<!--- Provide a link to a live example, or an unambiguous set of steps to -->\r\n<!--- reproduce this bug. Include code to reproduce, if relevant -->\r\n<!-- 1.\r\n2.\r\n3.\r\n4. -->\r\n\r\n<!-- ## Context -->\r\n<!--- How has this issue affected you? What are you trying to accomplish? -->\r\n<!--- Providing context helps us come up with a solution that is most useful in the real world -->\r\n\r\n<!-- ## Your Environment -->\r\n<!--- Include as many relevant details about the environment you experienced the Type: Defect in -->\r\n<!-- * Version used:\r\n* Environment name and version (e.g. Chrome 39, node.js 5.4):\r\n* Operating System and version (desktop or mobile):\r\n* Link to your project: -->\r\n\r\n[eslint-plugin-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/185/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/184",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/184/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/184/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/184/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/184",
+      "id": 288378361,
+      "number": 184,
+      "title":
+        "feat(printing): paginate printed reports with one CRC model per page",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 722099951,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/good%20first%20issue",
+          "name": "good first issue",
+          "color": "0e8a16",
+          "default": true
+        },
+        {
+          "id": 722098125,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/help%20wanted",
+          "name": "help wanted",
+          "color": "c2e0c6",
+          "default": true
+        },
+        {
+          "id": 612590083,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20low",
+          "name": "priority: low",
+          "color": "c2e0c6",
+          "default": false
+        },
+        {
+          "id": 612590094,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20available",
+          "name": "status: available",
+          "color": "bfe5bf",
+          "default": false
+        },
+        {
+          "id": 612590078,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20build",
+          "name": "type: build",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590088,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20style",
+          "name": "type: style",
+          "color": "bfd4f2",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": null,
+      "assignees": [],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 0,
+      "created_at": "2018-01-14T03:05:38Z",
+      "updated_at": "2018-02-16T03:21:56Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## User story\r\n\r\nAs an software product delivery stakeholder,\r\nI want to print CRC reports with one CRC model per page\r\nIn order to facilitate collocated design discussions.\r\n\r\n## Acceptance criteria\r\n\r\n- [ ] 1. Printed copies of CRC Model reports have one and only one CRC model per page.\r\n- [ ] 2. If GitHub-flavored markdown does _not_ support features like CSS's [`page-break-after`](https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-after), CRC Model reports should support an option that does, e.g., PDF.\r\n\r\n#### :zap: Rule developers _must_ use the `eslint:rule` subgenerator!\r\n> When you create a new rule, be sure to use the `eslint:rule` subgenerator, since it will\r\n> 1. Create a stubbed rule,\r\n> 2. The rule's stubbed BDD specs,\r\n> 3. As well as the rule's documentation.\r\n>\r\n> See [`eslint-plugin` development environment][eslint-plugin-dev-env-url] for details.\r\n\r\n<!-- DEFECTS -->\r\n<!--- If you're describing a bug, tell us what should happen -->\r\n<!-- ## Expected Behavior -->\r\n\r\n\r\n<!-- ## Current Behavior -->\r\n<!--- If describing a bug, tell us what happens instead of the expected behavior -->\r\n<!--- If suggesting a change/improvement, explain the difference from current behavior -->\r\n\r\n<!-- ## Possible Solution -->\r\n<!--- Not obligatory, but suggest a fix/reason for the bug, -->\r\n<!--- or ideas how to implement the addition or change -->\r\n\r\n<!-- ## Steps to Reproduce (for bugs) -->\r\n<!--- Provide a link to a live example, or an unambiguous set of steps to -->\r\n<!--- reproduce this bug. Include code to reproduce, if relevant -->\r\n<!-- 1.\r\n2.\r\n3.\r\n4. -->\r\n\r\n<!-- ## Context -->\r\n<!--- How has this issue affected you? What are you trying to accomplish? -->\r\n<!--- Providing context helps us come up with a solution that is most useful in the real world -->\r\n\r\n<!-- ## Your Environment -->\r\n<!--- Include as many relevant details about the environment you experienced the Type: Defect in -->\r\n<!-- * Version used:\r\n* Environment name and version (e.g. Chrome 39, node.js 5.4):\r\n* Operating System and version (desktop or mobile):\r\n* Link to your project: -->\r\n\r\n[eslint-plugin-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/184/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/141",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/141/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/141/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/141/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/141",
+      "id": 281699658,
+      "number": 141,
+      "title":
+        "feat(complexity): summarize cyclomatic complexity metrics for each CrcModel.class",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590094,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20available",
+          "name": "status: available",
+          "color": "bfe5bf",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": null,
+      "assignees": [],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 0,
+      "created_at": "2017-12-13T10:35:18Z",
+      "updated_at": "2018-01-14T03:41:42Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## User story\r\nAs an API producer and consumer,\r\nI want to quickly assess every object's cyclomatic complexity\r\nIn order to identify objects that might require refactoring.\r\n\r\n## Acceptance criteria\r\n\r\n- [ ] 1. `CrcModel.prototype` has a `meta` object.\r\n- [ ] 2. `CrcModel.prototype.meta` has a property called `complexity`.\r\n- [ ] 3. `meta.complexity` provides complexity metrics for every \"class\".\r\n\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/141/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/93",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/93/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/93/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/93/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/93",
+      "id": 271227510,
+      "number": 93,
+      "title": "build(dependencies): update outdated packages",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 740731309,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/epic",
+          "name": "epic",
+          "color": "3E4B9E",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": null,
+      "comments": 0,
+      "created_at": "2017-11-04T21:23:45Z",
+      "updated_at": "2017-12-09T23:37:24Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## Epic\r\n\r\nAs an plugin producer and consumer,\r\nI must update this module's dependencies\r\nIn order to avoid security vulnerabilities.\r\n\r\n[eslint-plugin-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/93/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/80",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/80/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/80/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/80/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/80",
+      "id": 263136147,
+      "number": 80,
+      "title": "ci(release): publish to NPM",
+      "user": {
+        "login": "jeffrose",
+        "id": 618161,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/618161?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jeffrose",
+        "html_url": "https://github.com/jeffrose",
+        "followers_url": "https://api.github.com/users/jeffrose/followers",
+        "following_url":
+          "https://api.github.com/users/jeffrose/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jeffrose/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/jeffrose/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/jeffrose/subscriptions",
+        "organizations_url": "https://api.github.com/users/jeffrose/orgs",
+        "repos_url": "https://api.github.com/users/jeffrose/repos",
+        "events_url": "https://api.github.com/users/jeffrose/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/jeffrose/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590083,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20low",
+          "name": "priority: low",
+          "color": "c2e0c6",
+          "default": false
+        },
+        {
+          "id": 612590075,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20on-hold",
+          "name": "status: on-hold",
+          "color": "e11d21",
+          "default": false
+        },
+        {
+          "id": 612590078,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20build",
+          "name": "type: build",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590080,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20chore",
+          "name": "type: chore",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590089,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20docs",
+          "name": "type: docs",
+          "color": "bfd4f2",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 7,
+      "created_at": "2017-10-05T14:00:37Z",
+      "updated_at": "2018-01-14T03:24:53Z",
+      "closed_at": null,
+      "author_association": "NONE",
+      "body":
+        "<!-- DEFECTS -->\r\n<!--- If you're describing a bug, tell us what should happen -->\r\n## Expected Behavior\r\nI should be able to install the plugin from NPM.\r\n\r\n## Current Behavior\r\n<!--- If describing a bug, tell us what happens instead of the expected behavior -->\r\n<!--- If suggesting a change/improvement, explain the difference from current behavior -->\r\nIt is not available in NPM.\r\n```\r\n$ npm install eslint-plugin-crc\r\nnpm ERR! Darwin 16.7.0\r\nnpm ERR! argv \"/Users/jeffrose/.nvm/versions/node/v6.10.2/bin/node\" \"/Users/jeffrose/.nvm/versions/node/v6.10.2/bin/npm\" \"install\" \"eslint-plugin-crc\"\r\nnpm ERR! node v6.10.2\r\nnpm ERR! npm  v4.3.0\r\nnpm ERR! code E404\r\n\r\nnpm ERR! 404 Registry returned 404 for GET on https://registry.npmjs.org/eslint-plugin-crc\r\nnpm ERR! 404 \r\nnpm ERR! 404  'eslint-plugin-crc' is not in the npm registry.\r\nnpm ERR! 404 You should bug the author to publish it (or use the name yourself!)\r\nnpm ERR! 404 \r\nnpm ERR! 404 Note that you can also install from a\r\nnpm ERR! 404 tarball, folder, http url, or git url.\r\n```\r\n\r\n<!-- ## Possible Solution -->\r\n<!--- Not obligatory, but suggest a fix/reason for the bug, -->\r\n<!--- or ideas how to implement the addition or change -->\r\n\r\n<!-- ## Steps to Reproduce (for bugs) -->\r\n<!--- Provide a link to a live example, or an unambiguous set of steps to -->\r\n<!--- reproduce this bug. Include code to reproduce, if relevant -->\r\n<!-- 1.\r\n2.\r\n3.\r\n4. -->\r\n\r\n<!-- ## Context -->\r\n<!--- How has this issue affected you? What are you trying to accomplish? -->\r\n<!--- Providing context helps us come up with a solution that is most useful in the real world -->\r\n\r\n<!-- ## Your Environment -->\r\n<!--- Include as many relevant details about the environment you experienced the Type: Defect in -->\r\n<!-- * Version used:\r\n* Environment name and version (e.g. Chrome 39, node.js 5.4):\r\n* Operating System and version (desktop or mobile):\r\n* Link to your project: -->\r\n\r\n[eslint-plugin-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/80/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/44",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/44/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/44/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/44/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/44",
+      "id": 231200926,
+      "number": 44,
+      "title":
+        "feat(responsibilities): extract object responsibilities from JSDoc comments",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590073,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20medium",
+          "name": "priority: medium",
+          "color": "fbca04",
+          "default": false
+        },
+        {
+          "id": 612590072,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20in-progress",
+          "name": "status: in-progress",
+          "color": "0052cc",
+          "default": false
+        },
+        {
+          "id": 612590089,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20docs",
+          "name": "type: docs",
+          "color": "bfd4f2",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590085,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20test",
+          "name": "type: test",
+          "color": "bfd4f2",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 0,
+      "created_at": "2017-05-24T23:36:28Z",
+      "updated_at": "2018-02-11T23:37:09Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## User story\r\n\r\nAs an engineer, analyst, or designer,\r\nI need to understand an object's stated purpose\r\nIn order to determine whether its design could be improved.\r\n\r\n## Acceptance criteria\r\n\r\n- [x] 1. [`doctrine`](https://github.com/eslint/doctrine) parses [`JSDoc`](http://usejsdoc.org) comments to create`Responsibility` objects.\r\n- [x] 2. `Responsibility` objects are associated with source objects.\r\n- [x] 3. `Responsibilities` are output as enumerated lists in a CRC Model's \"Responsibilities\" section.\r\n- [x] 4. Class descriptions display under a CRC Model's **Name** whenever JSDoc annotations exist for them.",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/44/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/21",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/21/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/21/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/21/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/21",
+      "id": 219876132,
+      "number": 21,
+      "title":
+        "chore(semantic-intent): discuss applicability of Conceptual Graphs to infer software's semantic intent with John Sowa",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590083,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/priority:%20low",
+          "name": "priority: low",
+          "color": "c2e0c6",
+          "default": false
+        },
+        {
+          "id": 612590075,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20on-hold",
+          "name": "status: on-hold",
+          "color": "e11d21",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 1,
+      "created_at": "2017-04-06T12:02:47Z",
+      "updated_at": "2018-01-14T03:28:16Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "<!--- Provide a general summary of the issue in the Title above -->\r\n## Issue type\r\n\r\n- [x] Feedback, suggestions, or questions\r\n\r\n## Expected Behavior\r\n<!--- If you're describing a bug, tell us what should happen -->\r\n<!--- If you're suggesting a change/improvement, tell us how it should work -->\r\nProvide AI-generated responsibilities based on AST structure, identifier names, code comments, and JSDoc annotations.\r\n\r\n## Current Behavior\r\n<!--- If describing a bug, tell us what happens instead of the expected behavior -->\r\n<!--- If suggesting a change/improvement, explain the difference from current behavior -->\r\nThis project is still in its research phase.\r\n\r\n## Possible Solution\r\n<!--- Not obligatory, but suggest a fix/reason for the bug, -->\r\n<!--- or ideas how to implement the addition or change -->\r\nI'm particularly interested in whether John Sowa's [Conceptual Graphs](http://www.jfsowa.com/cg/index.htm) would be useful for discovering and expressing the semantic intent of source code. Dr. Sowa's email address appears to be sowa@west.poly.edu.\r\n\r\n## Your Environment\r\n<!--- Include as many relevant details about the environment you experienced the bug in -->\r\n### Version used\r\nN/A. The immediate groundwork is based on Nodejs v7.7.3, but I'll evaluate other languages:\r\n\r\n* Scala\r\n* Python\r\n\r\n### Operating System and version (desktop)\r\n\r\n> :computer: **Mac environment info**\r\n> Run the following commands from a Terminal, then copy and paste them here:\r\n> * `sw_vers && uname`\r\n> * `system_profiler` (optional: this takes several minutes to complete)\r\n\r\n```\r\nProductName:\tMac OS X\r\nProductVersion:\t10.12.4\r\nBuildVersion:\t16E195\r\nDarwin\r\n```\r\n\r\n### Link to your project\r\n\r\n[`eslint-plugin-crc`](https://github.com/gregswindle/eslint-plugin-crc)\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/21/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/3",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/3/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/3/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/3/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/3",
+      "id": 212935418,
+      "number": 3,
+      "title": "feat(reports): add hyperlinks to collaborators",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590094,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20available",
+          "name": "status: available",
+          "color": "bfe5bf",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 0,
+      "created_at": "2017-03-09T04:56:09Z",
+      "updated_at": "2018-01-14T03:41:42Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## User story\r\n\r\nAs a developer/designer, \r\nI want the option to view the a collaborator's CRC Model \r\nIn order to examine the relationship between collaborators and the objects that depends on them.\r\n\r\n## Acceptance criteria\r\n\r\n- [ ] 1. Collaborators themselves are hyperlinked to their Class/Object definition source code's branch from which the report was generated.\r\n- [ ] 2. Each collaborator has hyperlinked to the line numbers in which the dependent Class/Object declares them.\r\n- [ ] 3. The declaration links are in the format of `[line-number:column-number]`, e.g., `[20:18]`.",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/3/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    },
+    {
+      "url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/2",
+      "repository_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc",
+      "labels_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/2/labels{/name}",
+      "comments_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/2/comments",
+      "events_url":
+        "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/2/events",
+      "html_url": "https://github.com/gregswindle/eslint-plugin-crc/issues/2",
+      "id": 212934670,
+      "number": 2,
+      "title": "feat(reports): hyperlink object names to source code",
+      "user": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [
+        {
+          "id": 612590077,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/eslint:%20formatter",
+          "name": "eslint: formatter",
+          "color": "5319e7",
+          "default": false
+        },
+        {
+          "id": 612590094,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/status:%20available",
+          "name": "status: available",
+          "color": "bfe5bf",
+          "default": false
+        },
+        {
+          "id": 612590093,
+          "url":
+            "https://api.github.com/repos/gregswindle/eslint-plugin-crc/labels/type:%20feature",
+          "name": "type: feature",
+          "color": "5319e7",
+          "default": false
+        }
+      ],
+      "state": "open",
+      "locked": false,
+      "assignee": {
+        "login": "gregswindle",
+        "id": 2849690,
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gregswindle",
+        "html_url": "https://github.com/gregswindle",
+        "followers_url": "https://api.github.com/users/gregswindle/followers",
+        "following_url":
+          "https://api.github.com/users/gregswindle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gregswindle/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/gregswindle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+        "repos_url": "https://api.github.com/users/gregswindle/repos",
+        "events_url":
+          "https://api.github.com/users/gregswindle/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/gregswindle/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        }
+      ],
+      "milestone": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1",
+        "html_url":
+          "https://github.com/gregswindle/eslint-plugin-crc/milestone/1",
+        "labels_url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/milestones/1/labels",
+        "id": 2373611,
+        "number": 1,
+        "title": "MVP 1",
+        "description":
+          "The first minimally viable product must provide accurate reports for ES5 and ES6 POJOs (plain old JavaScript objects), with the prototypical object's\r\n\r\n1. Collaborators,\r\n1. Complexity scores,\r\n1. Description (if available),\r\n1. Name,\r\n1. Prototype,\r\n1. References,\r\n1. Resource path,\r\n1. Responsibilities, and\r\n1. Source code (formatted with syntax highlights).",
+        "creator": {
+          "login": "gregswindle",
+          "id": 2849690,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/2849690?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gregswindle",
+          "html_url": "https://github.com/gregswindle",
+          "followers_url": "https://api.github.com/users/gregswindle/followers",
+          "following_url":
+            "https://api.github.com/users/gregswindle/following{/other_user}",
+          "gists_url":
+            "https://api.github.com/users/gregswindle/gists{/gist_id}",
+          "starred_url":
+            "https://api.github.com/users/gregswindle/starred{/owner}{/repo}",
+          "subscriptions_url":
+            "https://api.github.com/users/gregswindle/subscriptions",
+          "organizations_url": "https://api.github.com/users/gregswindle/orgs",
+          "repos_url": "https://api.github.com/users/gregswindle/repos",
+          "events_url":
+            "https://api.github.com/users/gregswindle/events{/privacy}",
+          "received_events_url":
+            "https://api.github.com/users/gregswindle/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "open_issues": 18,
+        "closed_issues": 50,
+        "state": "open",
+        "created_at": "2017-03-09T05:04:48Z",
+        "updated_at": "2018-03-06T09:12:26Z",
+        "due_on": "2018-02-23T08:00:00Z",
+        "closed_at": null
+      },
+      "comments": 0,
+      "created_at": "2017-03-09T04:48:39Z",
+      "updated_at": "2018-01-14T03:41:41Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body":
+        "## User story\r\n\r\nAs a developer/designer,\r\nI must be able to quickly evaluate the source code of the Class/Object modeled \r\nin order to analyze it quickly.\r\n\r\n## Acceptance criterion\r\n\r\n- [ ] The link goes to the Class/Object file of the repository branch from which the report was generated.\r\n",
+      "reactions": {
+        "url":
+          "https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues/2/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0
+      }
+    }
+  ],
+  "meta": {
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers":
+      "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+    "cache-control": "public, max-age=60, s-maxage=60",
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-security-policy": "default-src 'none'",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Mon, 19 Mar 2018 01:01:48 GMT",
+    "etag": "W/\"5c0bc48c1231b1a41973c4ce806a8c73\"",
+    "link":
+      "<https://api.github.com/repositories/83913414/issues?dest=.%2Fexport.csv&noTimestamp=false&pathPrefix=&defaultIssueOptions=%5Bobject+Object%5D&defaultOctokitOptions=%5Bobject+Object%5D&defaultOptions=%5Bobject+Object%5D&page=1>; rel=\"prev\", <https://api.github.com/repositories/83913414/issues?dest=.%2Fexport.csv&noTimestamp=false&pathPrefix=&defaultIssueOptions=%5Bobject+Object%5D&defaultOctokitOptions=%5Bobject+Object%5D&defaultOptions=%5Bobject+Object%5D&page=1>; rel=\"first\"",
+    "referrer-policy":
+      "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "server": "GitHub.com",
+    "status": "200 OK",
+    "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+    "transfer-encoding": "chunked",
+    "vary": "Accept",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-github-media-type": "github.squirrel-girl-preview",
+    "x-github-request-id": "F800:23E7:F33B78:1E95F78:5AAF0BFC",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "49",
+    "x-ratelimit-reset": "1521421778",
+    "x-runtime-rack": "0.174464",
+    "x-xss-protection": "1; mode=block"
+  }
+}

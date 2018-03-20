@@ -1,6 +1,7 @@
 {
   "name": "github-resource-converter",
-  "description": "Convert GitHub resources (Issues) into CSV, etc.",
+  "description":
+    "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
   "version": "1.0.0-alpha",
   "author": {
     "name": "Greg Swindle",
@@ -32,8 +33,10 @@
   "dependencies": {
     "@octokit/rest": "15.2.1",
     "bunyan": "1.8.12",
+    "bunyan-format": "0.2.1",
     "chalk": "2.3.2",
     "dotenv": "5.0.1",
+    "insight": "0.10.0",
     "jsonexport": "2.0.11",
     "lodash": "4.17.5",
     "meow": "4.0.0",
@@ -80,7 +83,7 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "eslintIgnore": ["lib/__tests_/coverage/**", "world.js"],
+  "eslintIgnore": ["lib/__tests_/coverage/**"],
   "files": ["lib"],
   "homepage": "https://github.com/gregswindle/github-resource-converter#readme",
   "jest": {
@@ -99,7 +102,29 @@
     "testEnvironment": "node",
     "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
   },
-  "keywords": ["csv", "github", "issue", "issues"],
+  "keywords": [
+    "QA",
+    "convert",
+    "converter",
+    "converter",
+    "csv",
+    "export",
+    "github",
+    "google sheets",
+    "issue",
+    "json",
+    "pr",
+    "pull request",
+    "pull-request",
+    "quality assurance",
+    "quality-assurance",
+    "reporting",
+    "reports",
+    "save",
+    "sheets",
+    "spreadsheets",
+    "testing"
+  ],
   "license": "MIT",
   "lint-staged": {
     "*.js": ["npm run lint:js", "git add"],
@@ -131,6 +156,8 @@
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
     "security:nsp:scan": "nsp check",
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "test:watch": "jest --watch",
+    "test:watch:all": "jest --watchAll"
   }
 }

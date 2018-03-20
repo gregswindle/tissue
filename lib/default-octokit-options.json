@@ -1,9 +1,0 @@
-{
-  "owner": null,
-  "repo": null,
-  "headers": {
-    "Accept":
-      "application/vnd.github.v3+json, application/vnd.github.symmetra-preview+json",
-    "user-agent": "gregswindle/github-tissues v0.1.0"
-  }
-}

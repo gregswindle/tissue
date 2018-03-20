@@ -44,4 +44,4 @@ In order to {achieve value}.
 
 <!-- ⛔️  Do not remove anything below this comment. ⛔️  -->
 
-[icon-info-image]: ../docs/img/icons8/icon-info-50.png
+[icon-info-image]: ./assets/img/icons8/icon-info-50.png
