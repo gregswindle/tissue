@@ -155,8 +155,8 @@
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
     "security:nsp:scan": "nsp check",
-    "test": "jest lib/__tests__/*.test.js --forceExit",
-    "test:watch": "jest lib/__tests__/*.test.js --watch",
-    "test:watch:all": "jest lib/__tests__/*.test.js --watchAll"
+    "test": "jest ./lib/__tests__/*.test.js --forceExit",
+    "test:watch": "jest ./lib/__tests__/*.test.js --watch",
+    "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
   }
 }
