@@ -34,5 +34,5 @@ test_script:
   - node --version
   - npm --version
   - cd %APPVEYOR_BUILD_FOLDER%
-  - %APPVEYOR_BUILD_FOLDER%/node_modules/.bin/jest %APPVEYOR_BUILD_FOLDER%/lib/__tests__/*.test.js
+  - .\node_modules\.bin\jest %APPVEYOR_BUILD_FOLDER%\lib\__tests__\*.test.js
   # - npm test
