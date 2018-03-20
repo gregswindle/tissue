@@ -19,8 +19,8 @@ script:
   - npm test
 
 after_script:
-  - 'cat ./docs/reports/coverage/lcov.info | coveralls'
-  - 'cat ./docs/reports/coverage/lcov.info | codacy-coverage'
+  # - 'cat ./lib/__tests__/coverage/lcov.info | coveralls'
+  - 'cat ./lib/__tests__/coverage/lcov.info | codacy-coverage'
 
 deploy:
   provider: script
