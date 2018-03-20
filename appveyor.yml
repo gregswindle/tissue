@@ -33,5 +33,6 @@ clone_depth: 1
 test_script:
   - node --version
   - npm --version
-  - cd C:\projects\github-resource-converter\
-  - npm test
+  - cd %APPVEYOR_BUILD_FOLDER%
+  - %APPVEYOR_BUILD_FOLDER%/node_modules/.bin/jest %APPVEYOR_BUILD_FOLDER%/lib/__tests__/*.test.js
+  # - npm test

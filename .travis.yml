@@ -19,11 +19,14 @@ before_script:
 #   - npm prune
 
 script:
-  - npm test
+  - echo $TRAVIS_BUILD_DIR
+  - echo $(pwd)
+  # - npm test
+  - $TRAVIS_BUILD_DIR/node_modules/.bin/jest $TRAVIS_BUILD_DIR/lib/__tests__/*.test.js
 
 after_script:
-  - npm run posttest:ci:coverage:codacy
-  # - cat $TRAVIS_BUILD_DIR/lib/__tests__/coverage/lcov.info | codacy-coverage --token $CODACY_PROJECT_TOKEN
+  # - npm run posttest:ci:coverage:codacy
+  - cat $TRAVIS_BUILD_DIR/lib/__tests__/coverage/lcov.info | codacy-coverage --token $CODACY_PROJECT_TOKEN
   # - 'cat ./lib/__tests__/coverage/lcov.info | coveralls'
   # - 'cat ./lib/__tests__/coverage/lcov.info | codacy-coverage'
 
