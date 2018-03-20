@@ -21,14 +21,15 @@ before_script:
 script:
   - echo $TRAVIS_BUILD_DIR
   - echo $(pwd)
+  - npm run test:config
   # - npm test
-  - $TRAVIS_BUILD_DIR/node_modules/.bin/jest $TRAVIS_BUILD_DIR/lib/__tests__/*.test.js
+  - $TRAVIS_BUILD_DIR/node_modules/.bin/jest $TRAVIS_BUILD_DIR/lib/__tests__/*.js
 
 after_script:
   # - npm run posttest:ci:coverage:codacy
-  - cat $TRAVIS_BUILD_DIR/lib/__tests__/coverage/lcov.info | codacy-coverage
-  # - 'cat ./lib/__tests__/coverage/lcov.info | coveralls'
-  # - 'cat ./lib/__tests__/coverage/lcov.info | codacy-coverage'
+  - cat $TRAVIS_BUILD_DIR/tmp/reports/coverage/lcov.info | codacy-coverage
+  # - 'cat ./tmp/reports/coverage/lcov.info | coveralls'
+  # - 'cat ./tmp/reports/coverage/lcov.info | codacy-coverage'
 
 deploy:
   provider: script

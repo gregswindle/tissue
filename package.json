@@ -89,7 +89,7 @@
   "jest": {
     "automock": false,
     "collectCoverage": true,
-    "coverageDirectory": "lib/__tests__/coverage",
+    "coverageDirectory": "tmp/reports/coverage",
     "coverageThreshold": {
       "global": {
         "branches": 100,
@@ -108,7 +108,7 @@
       "./lib/__tests__/*.js"
     ],
     "testEnvironment": "node",
-    "testPathIgnorePatterns": ["./lib/__tests__/coverage/*.js"]
+    "testPathIgnorePatterns": ["./tmp/reports/coverage/*.js"]
   },
   "keywords": [
     "QA",
@@ -158,7 +158,7 @@
     "lint:manifest": "fixpack",
     "lint:md": "prettier ./**/*.md -prose-wrap always --write",
     "posttest:ci:coverage:codacy":
-      "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
+      "cat ./tmp/reports/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
     "prepublish": "lec lib/cli.js -c LF && nsp check",
