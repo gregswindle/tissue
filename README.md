@@ -17,26 +17,25 @@
 ## Table of contents
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
-
-* [Overview](#overview)
-* [Installation](#installation)
+- [Overview](#overview)
+- [Installation](#installation)
   * [For Terminal/command-line usage](#for-terminalcommand-line-usage)
   * [As a application dependency](#as-a-application-dependency)
-* [Usage](#usage)
+- [Usage](#usage)
   * [Formats: CSV and JSON](#formats-csv-and-json)
   * [Resource types: issues, pull requests, and all](#resource-types-issues-pull-requests-and-all)
   * [Filtering](#filtering)
   * [Exporting](#exporting)
-    * [Issues](#issues)
-    * [Pull Requests](#pull-requests)
-    * [All (issues and pull requests)](#all-issues-and-pull-requests)
+    + [Issues](#issues)
+    + [Pull Requests](#pull-requests)
+    + [All (issues and pull requests)](#all-issues-and-pull-requests)
   * [Command-line flags](#command-line-flags)
   * [Errors](#errors)
   * [Info](#info)
-* [Version](#version)
-* [Contributing](#contributing)
-* [License](#license)
-  <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
+- [Version](#version)
+- [Contributing](#contributing)
+- [License](#license)
+<!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
 ## Overview
 

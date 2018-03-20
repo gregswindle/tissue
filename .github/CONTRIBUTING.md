@@ -22,56 +22,55 @@
 ## Table of contents
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
-
-* [1. Issues](#1-issues)
+- [1. Issues](#1-issues)
   * [1.1. Create Issues for feature requests and defects.](#11-create-issues-for-feature-requests-and-defects)
   * [1.2. Format titles with **`type(scope): subject`**.](#12-format-titles-with-typescope-subject)
   * [1.3. Fill out the issue template.](#13-fill-out-the-issue-template)
   * [1.4. Label the issue (optional).](#14-label-the-issue-optional)
   * [1.5. Monitor your issue for questions.](#15-monitor-your-issue-for-questions)
   * [1.6. Your issue will be either accepted for work, or declined.](#16-your-issue-will-be-either-accepted-for-work-or-declined)
-* [2. **Git**](#2-git)
+- [2. **Git**](#2-git)
   * [2.1. **Rules**](#21-rules)
-    * [2.1.1. Makes changes in a topic branch.](#211-makes-changes-in-a-topic-branch)
-    * [2.1.2. Favor the topic branch naming recommendation `type/issue-change-name`.](#212-favor-the-topic-branch-naming-recommendation-typeissue-change-name)
-    * [2.1.3. Branch out from `master`.](#213-branch-out-from-master)
-    * [2.1.4. **_Never_** push into the `master` branch. **_Always_** submit a Pull Request.](#214-_never_-push-into-the-master-branch-_always_-submit-a-pull-request)
-    * [2.1.5. Submit a Pull Request as soon as possible.](#215-submit-a-pull-request-as-soon-as-possible)
-    * [2.1.6. Rebase your local `master` branch before you ask for PR approvals.](#216-rebase-your-local-master-branch-before-you-ask-for-pr-approvals)
-    * [2.1.7. Resolve rebase conflicts before Pull Request reviews.](#217-resolve-rebase-conflicts-before-pull-request-reviews)
-    * [2.1.8. Add reviewers and the label `Status: Needs Review` when the topic branch is ready.](#218-add-reviewers-and-the-label-status-needs-review-when-the-topic-branch-is-ready)
-    * [2.1.9. Delete local and remote topic branches after merging.](#219-delete-local-and-remote-topic-branches-after-merging)
-    * [2.1.10. Protect your `master` branch.](#2110-protect-your-master-branch)
+    + [2.1.1. Makes changes in a topic branch.](#211-makes-changes-in-a-topic-branch)
+    + [2.1.2. Favor the topic branch naming recommendation `type/issue-change-name`.](#212-favor-the-topic-branch-naming-recommendation-typeissue-change-name)
+    + [2.1.3. Branch out from `master`.](#213-branch-out-from-master)
+    + [2.1.4. **_Never_** push into the `master` branch. **_Always_** submit a Pull Request.](#214-_never_-push-into-the-master-branch-_always_-submit-a-pull-request)
+    + [2.1.5. Submit a Pull Request as soon as possible.](#215-submit-a-pull-request-as-soon-as-possible)
+    + [2.1.6. Rebase your local `master` branch before you ask for PR approvals.](#216-rebase-your-local-master-branch-before-you-ask-for-pr-approvals)
+    + [2.1.7. Resolve rebase conflicts before Pull Request reviews.](#217-resolve-rebase-conflicts-before-pull-request-reviews)
+    + [2.1.8. Add reviewers and the label `Status: Needs Review` when the topic branch is ready.](#218-add-reviewers-and-the-label-status-needs-review-when-the-topic-branch-is-ready)
+    + [2.1.9. Delete local and remote topic branches after merging.](#219-delete-local-and-remote-topic-branches-after-merging)
+    + [2.1.10. Protect your `master` branch.](#2110-protect-your-master-branch)
   * [2.2. **Feature-branch-workflow**](#22-feature-branch-workflow)
-    * [2.2.1. Initialize a Git repository in the product directory (_for new repositories only_).](#221-initialize-a-git-repository-in-the-product-directory-_for-new-repositories-only_)
-    * [2.2.2. Checkout a new `feat`ure or `fix` branch.](#222-checkout-a-new-feature-or-fix-branch)
-    * [2.2.3. Make Changes.](#223-make-changes)
-    * [2.2.4. Follow the Conventional Commits Specification for commit messages.](#224-follow-the-conventional-commits-specification-for-commit-messages)
-    * [2.2.5. Sync with remote to get changes you’ve missed.](#225-sync-with-remote-to-get-changes-youve-missed)
-    * [2.2.6. Update your topic branch with the latest changes from `master` by interactive rebase.](#226-update-your-topic-branch-with-the-latest-changes-from-master-by-interactive-rebase)
-    * [2.2.7. Resolve conflicts (if any occur), and continue rebase.](#227-resolve-conflicts-if-any-occur-and-continue-rebase)
-    * [2.2.8. Push your branch with the `-f` flag (if necessary).](#228-push-your-branch-with-the--f-flag-if-necessary)
-    * [2.2.9. Submit a Pull Request.](#229-submit-a-pull-request)
-    * [2.2.10. Once accepted, the Pull request will be merged, closed, and deleted by an administrator.](#2210-once-accepted-the-pull-request-will-be-merged-closed-and-deleted-by-an-administrator)
-    * [2.2.11. Remove your local topic branch if you're done.](#2211-remove-your-local-topic-branch-if-youre-done)
+    + [2.2.1. Initialize a Git repository in the product directory (_for new repositories only_).](#221-initialize-a-git-repository-in-the-product-directory-_for-new-repositories-only_)
+    + [2.2.2. Checkout a new `feat`ure or `fix` branch.](#222-checkout-a-new-feature-or-fix-branch)
+    + [2.2.3. Make Changes.](#223-make-changes)
+    + [2.2.4. Follow the Conventional Commits Specification for commit messages.](#224-follow-the-conventional-commits-specification-for-commit-messages)
+    + [2.2.5. Sync with remote to get changes you’ve missed.](#225-sync-with-remote-to-get-changes-youve-missed)
+    + [2.2.6. Update your topic branch with the latest changes from `master` by interactive rebase.](#226-update-your-topic-branch-with-the-latest-changes-from-master-by-interactive-rebase)
+    + [2.2.7. Resolve conflicts (if any occur), and continue rebase.](#227-resolve-conflicts-if-any-occur-and-continue-rebase)
+    + [2.2.8. Push your branch with the `-f` flag (if necessary).](#228-push-your-branch-with-the--f-flag-if-necessary)
+    + [2.2.9. Submit a Pull Request.](#229-submit-a-pull-request)
+    + [2.2.10. Once accepted, the Pull request will be merged, closed, and deleted by an administrator.](#2210-once-accepted-the-pull-request-will-be-merged-closed-and-deleted-by-an-administrator)
+    + [2.2.11. Remove your local topic branch if you're done.](#2211-remove-your-local-topic-branch-if-youre-done)
   * [2.3. **Tell your boss how Git enables collaborative process models.**](#23-tell-your-boss-how-git-enables-collaborative-process-models)
-    * [2.3.1. Explain that inner and open source are _process models_.](#231-explain-that-inner-and-open-source-are-_process-models_)
-    * [2.3.2. Describe a typical Git workflow in collaborative terms.](#232-describe-a-typical-git-workflow-in-collaborative-terms)
-* [3. **Code standards**](#3-code-standards)
+    + [2.3.1. Explain that inner and open source are _process models_.](#231-explain-that-inner-and-open-source-are-_process-models_)
+    + [2.3.2. Describe a typical Git workflow in collaborative terms.](#232-describe-a-typical-git-workflow-in-collaborative-terms)
+- [3. **Code standards**](#3-code-standards)
   * [3.1. Use the Standard JS Style.](#31-use-the-standard-js-style)
   * [3.2. Use ESLint to analyze source code.](#32-use-eslint-to-analyze-source-code)
-* [4. **Unit testing**](#4-unit-testing)
+- [4. **Unit testing**](#4-unit-testing)
   * [4.1. Write Jest tests.](#41-write-jest-tests)
   * [4.2. Reach 100% code coverage.](#42-reach-100%25-code-coverage)
-* [5. **Directory structure**](#5-directory-structure)
-* [6. **Logging**](#6-logging)
-* [7. **Dependencies**](#7-dependencies)
-* [8. **APIs**](#8-apis)
+- [5. **Directory structure**](#5-directory-structure)
+- [6. **Logging**](#6-logging)
+- [7. **Dependencies**](#7-dependencies)
+- [8. **APIs**](#8-apis)
   * [8.1 **API design**](#81-api-design)
   * [8.2 **API security**](#82-api-security)
   * [8.3 **API documentation**](#83-api-documentation)
-* [9. **Licensing**](#9-licensing)
-  <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
+- [9. **Licensing**](#9-licensing)
+<!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
 ## 1. Issues
 
@@ -1126,46 +1125,44 @@
 `github-resource-converter` requires the following tech stack to either run, build, test, or deploy:
 
 <!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:dev=true) -->
-
-| **Dependency**                                                                                               | **Description**                                                                                                             | **Version** | **License**  | **Type** |
-| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------ | -------- |
-| [@semantic-release/changelog@2.0.1](https://github.com/semantic-release/changelog#readme)                    | Set of semantic-release plugins for creating or updating a changelog file                                                   | 2.0.1       | MIT          | dev      |
-| [@semantic-release/git@4.0.1](https://github.com/semantic-release/git#readme)                                | Set of semantic-release plugins to publish to a git repository                                                              | 4.0.1       | MIT          | dev      |
-| [@semantic-release/npm@3.2.2](https://github.com/semantic-release/npm#readme)                                | Set of semantic-release plugins to publish to a npm registry                                                                | 3.2.2       | MIT          | dev      |
-| [ajv@6.2.1](https://github.com/epoberezkin/ajv)                                                              | Another JSON Schema Validator                                                                                               | 6.2.1       | MIT          | dev      |
-| [ajv-keywords@3.1.0](https://github.com/epoberezkin/ajv-keywords#readme)                                     | Custom JSON-Schema keywords for Ajv validator                                                                               | 3.1.0       | MIT          | dev      |
-| [codacy-coverage@2.1.0](https://github.com/codacy/node-codacy-coverage)                                      | Code Coverage reporter for Codacy.com                                                                                       | 2.1.0       | MIT          | dev      |
-| [commitplease@3.2.0](https://github.com/jzaefferer/commitplease#readme)                                      | Validates strings as commit messages                                                                                        | 3.2.0       | MIT          | dev      |
-| [coveralls@3.0.0](https://github.com/nickmerwin/node-coveralls#readme)                                       | takes json-cov output into stdin and POSTs to coveralls.io                                                                  | 3.0.0       | BSD-2-Clause | dev      |
-| [eslint@4.18.2](https://eslint.org)                                                                          | An AST-based pattern checker for JavaScript.                                                                                | 4.18.2      | MIT          | dev      |
-| [eslint-config-prettier@^2.4.0](https://github.com/prettier/eslint-config-prettier#readme)                   | Turns off all rules that are unnecessary or might conflict with Prettier.                                                   | 2.9.0       | MIT          | dev      |
-| [eslint-config-scanjs@1.0.0-beta4](https://github.com/mozfreddyb/eslint-config-scanjs#readme)                | umbrella config to get scanjs-like functionality from eslint                                                                | 1.0.0-beta4 | MPL-2.0      | dev      |
-| [eslint-config-standard@11.0.0](https://github.com/standard/eslint-config-standard)                          | JavaScript Standard Style - ESLint Shareable Config                                                                         | 11.0.0      | MIT          | dev      |
-| [eslint-config-xo@0.20.1](https://github.com/xojs/eslint-config-xo#readme)                                   | ESLint shareable config for XO                                                                                              | 0.20.1      | MIT          | dev      |
-| [eslint-plugin-import@2.9.0](https://github.com/benmosher/eslint-plugin-import)                              | Import with sanity.                                                                                                         | 2.9.0       | MIT          | dev      |
-| [eslint-plugin-jsdoc@3.5.0](https://github.com/gajus/eslint-plugin-jsdoc#readme)                             | JSDoc linting rules for ESLint.                                                                                             | 3.5.0       | BSD-3-Clause | dev      |
-| [eslint-plugin-json@1.2.0](https://github.com/azeemba/eslint-plugin-json#readme)                             | Lint JSON files                                                                                                             | 1.2.0       | ISC          | dev      |
-| [eslint-plugin-no-unsafe-innerhtml@1.0.16](https://github.com/mozfreddyb/eslint-plugin-no-unsafe-innerhtml/) | custom ESLint rule to disallows unsafe innerHTML, outerHTML and insertAdjacentHTML                                          | 1.0.16      | MPL-2.0      | dev      |
-| [eslint-plugin-node@6.0.1](https://github.com/mysticatea/eslint-plugin-node#readme)                          | Additional ESLint's rules for Node.js                                                                                       | 6.0.1       | MIT          | dev      |
-| [eslint-plugin-prettier@^2.2.0](https://github.com/prettier/eslint-plugin-prettier#readme)                   | Runs prettier as an eslint rule                                                                                             | 2.6.0       | MIT          | dev      |
-| [eslint-plugin-promise@3.7.0](https://github.com/xjamundx/eslint-plugin-promise#readme)                      | Enforce best practices for JavaScript promises                                                                              | 3.7.0       | ISC          | dev      |
-| [eslint-plugin-security@1.4.0](https://github.com/nodesecurity/eslint-plugin-security#readme)                | Security rules for eslint                                                                                                   | 1.4.0       | Apache-2.0   | dev      |
-| [eslint-plugin-standard@3.0.1](https://github.com/xjamundx/eslint-plugin-standard#readme)                    | ESlint Plugin for the Standard Linter                                                                                       | 3.0.1       | MIT          | dev      |
-| [eslint-plugin-unicorn@4.0.2](https://github.com/sindresorhus/eslint-plugin-unicorn#readme)                  | Various awesome ESLint rules                                                                                                | 4.0.2       | MIT          | dev      |
-| [eslint-plugin-xss@0.1.9](https://github.com/Rantanen/eslint-plugin-xss#readme)                              | Validates XSS related issues of mixing HTML and non-HTML content in variables.                                              | 0.1.9       | ISC          | dev      |
-| [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack)                                                    | cli tool that cleans up package.json files.                                                                                 | 2.3.1       | MIT          | dev      |
-| [husky@^0.14.3](https://github.com/typicode/husky)                                                           | Prevents bad commit or push (git hooks, pre-commit/precommit, pre-push/prepush, post-merge/postmerge and all that stuff...) | 0.14.3      | MIT          | dev      |
-| [jest@^22.4.2](http://facebook.github.io/jest/)                                                              | Delightful JavaScript Testing.                                                                                              | 22.4.2      | MIT          | dev      |
-| [lec@^1.0.1](https://github.com/iShafayet/lec)                                                               | Command Line Wrapper for Line Ending Corrector (An utility that makes sure your files have consistent line endings)         | 1.0.1       | MIT          | dev      |
-| [lint-staged@7.0.0](https://github.com/okonet/lint-staged#readme)                                            | Lint files staged by git                                                                                                    | 7.0.0       | MIT          | dev      |
-| [markdown-magic@0.1.21](https://github.com/DavidWells/markdown-magic#readme)                                 | Automatically update markdown files with content from external sources                                                      | 0.1.21      | MIT          | dev      |
-| [markdown-magic-dependency-table@1.3.2](https://github.com/camacho/markdown-magic-dependency-table#readme)   | Generate table of information about dependencies automatically in markdown                                                  | 1.3.2       | MIT          | dev      |
-| [markdown-magic-install-command@1.3.1](https://github.com/camacho/markdown-magic-install-command#readme)     | Print install command for markdown file                                                                                     | 1.3.1       | MIT          | dev      |
-| [markdown-magic-package-scripts@1.2.1](https://github.com/camacho/markdown-magic-package-scripts#readme)     | Print list of scripts in package.json with descriptions                                                                     | 1.2.1       | MIT          | dev      |
-| [nsp@^3.2.1](https://github.com/nodesecurity/nsp#readme)                                                     | The Node Security (nodesecurity.io) command line interface                                                                  | 3.2.1       | Apache-2.0   | dev      |
-| [prettier@1.11.1](https://prettier.io)                                                                       | Prettier is an opinionated code formatter                                                                                   | 1.11.1      | MIT          | dev      |
-| [semantic-release@15.0.2](https://github.com/semantic-release/semantic-release#readme)                       | Automated semver compliant package publishing                                                                               | 15.0.2      | MIT          | dev      |
-
+| **Dependency** | **Description** | **Version** | **License** | **Type** |
+| -------------- | --------------- | ----------- | ----------- | -------- |
+ | [@semantic-release/changelog@2.0.1](https://github.com/semantic-release/changelog#readme) | Set of semantic-release plugins for creating or updating a changelog file | 2.0.1 | MIT | dev | 
+ | [@semantic-release/git@4.0.1](https://github.com/semantic-release/git#readme) | Set of semantic-release plugins to publish to a git repository | 4.0.1 | MIT | dev | 
+ | [@semantic-release/npm@3.2.2](https://github.com/semantic-release/npm#readme) | Set of semantic-release plugins to publish to a npm registry | 3.2.2 | MIT | dev | 
+ | [ajv@6.2.1](https://github.com/epoberezkin/ajv) | Another JSON Schema Validator | 6.2.1 | MIT | dev | 
+ | [ajv-keywords@3.1.0](https://github.com/epoberezkin/ajv-keywords#readme) | Custom JSON-Schema keywords for Ajv validator | 3.1.0 | MIT | dev | 
+ | [codacy-coverage@2.1.0](https://github.com/codacy/node-codacy-coverage) | Code Coverage reporter for Codacy.com | 2.1.0 | MIT | dev | 
+ | [commitplease@3.2.0](https://github.com/jzaefferer/commitplease#readme) | Validates strings as commit messages | 3.2.0 | MIT | dev | 
+ | [coveralls@3.0.0](https://github.com/nickmerwin/node-coveralls#readme) | takes json-cov output into stdin and POSTs to coveralls.io | 3.0.0 | BSD-2-Clause | dev | 
+ | [eslint@4.18.2](https://eslint.org) | An AST-based pattern checker for JavaScript. | 4.18.2 | MIT | dev | 
+ | [eslint-config-prettier@^2.4.0](https://github.com/prettier/eslint-config-prettier#readme) | Turns off all rules that are unnecessary or might conflict with Prettier. | 2.9.0 | MIT | dev | 
+ | [eslint-config-scanjs@1.0.0-beta4](https://github.com/mozfreddyb/eslint-config-scanjs#readme) | umbrella config to get scanjs-like functionality from eslint | 1.0.0-beta4 | MPL-2.0 | dev | 
+ | [eslint-config-standard@11.0.0](https://github.com/standard/eslint-config-standard) | JavaScript Standard Style - ESLint Shareable Config | 11.0.0 | MIT | dev | 
+ | [eslint-config-xo@0.20.1](https://github.com/xojs/eslint-config-xo#readme) | ESLint shareable config for XO | 0.20.1 | MIT | dev | 
+ | [eslint-plugin-import@2.9.0](https://github.com/benmosher/eslint-plugin-import) | Import with sanity. | 2.9.0 | MIT | dev | 
+ | [eslint-plugin-jsdoc@3.5.0](https://github.com/gajus/eslint-plugin-jsdoc#readme) | JSDoc linting rules for ESLint. | 3.5.0 | BSD-3-Clause | dev | 
+ | [eslint-plugin-json@1.2.0](https://github.com/azeemba/eslint-plugin-json#readme) | Lint JSON files | 1.2.0 | ISC | dev | 
+ | [eslint-plugin-no-unsafe-innerhtml@1.0.16](https://github.com/mozfreddyb/eslint-plugin-no-unsafe-innerhtml/) | custom ESLint rule to disallows unsafe innerHTML, outerHTML and insertAdjacentHTML | 1.0.16 | MPL-2.0 | dev | 
+ | [eslint-plugin-node@6.0.1](https://github.com/mysticatea/eslint-plugin-node#readme) | Additional ESLint's rules for Node.js | 6.0.1 | MIT | dev | 
+ | [eslint-plugin-prettier@^2.2.0](https://github.com/prettier/eslint-plugin-prettier#readme) | Runs prettier as an eslint rule | 2.6.0 | MIT | dev | 
+ | [eslint-plugin-promise@3.7.0](https://github.com/xjamundx/eslint-plugin-promise#readme) | Enforce best practices for JavaScript promises | 3.7.0 | ISC | dev | 
+ | [eslint-plugin-security@1.4.0](https://github.com/nodesecurity/eslint-plugin-security#readme) | Security rules for eslint | 1.4.0 | Apache-2.0 | dev | 
+ | [eslint-plugin-standard@3.0.1](https://github.com/xjamundx/eslint-plugin-standard#readme) | ESlint Plugin for the Standard Linter | 3.0.1 | MIT | dev | 
+ | [eslint-plugin-unicorn@4.0.2](https://github.com/sindresorhus/eslint-plugin-unicorn#readme) | Various awesome ESLint rules | 4.0.2 | MIT | dev | 
+ | [eslint-plugin-xss@0.1.9](https://github.com/Rantanen/eslint-plugin-xss#readme) | Validates XSS related issues of mixing HTML and non-HTML content in variables. | 0.1.9 | ISC | dev | 
+ | [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack) | cli tool that cleans up package.json files. | 2.3.1 | MIT | dev | 
+ | [husky@^0.14.3](https://github.com/typicode/husky) | Prevents bad commit or push (git hooks, pre-commit/precommit, pre-push/prepush, post-merge/postmerge and all that stuff...) | 0.14.3 | MIT | dev | 
+ | [jest@^22.4.2](http://facebook.github.io/jest/) | Delightful JavaScript Testing. | 22.4.2 | MIT | dev | 
+ | [lec@^1.0.1](https://github.com/iShafayet/lec) | Command Line Wrapper for Line Ending Corrector (An utility that makes sure your files have consistent line endings) | 1.0.1 | MIT | dev | 
+ | [lint-staged@7.0.0](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.0.0 | MIT | dev | 
+ | [markdown-magic@0.1.21](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.21 | MIT | dev | 
+ | [markdown-magic-dependency-table@1.3.2](https://github.com/camacho/markdown-magic-dependency-table#readme) | Generate table of information about dependencies automatically in markdown | 1.3.2 | MIT | dev | 
+ | [markdown-magic-install-command@1.3.1](https://github.com/camacho/markdown-magic-install-command#readme) | Print install command for markdown file | 1.3.1 | MIT | dev | 
+ | [markdown-magic-package-scripts@1.2.1](https://github.com/camacho/markdown-magic-package-scripts#readme) | Print list of scripts in package.json with descriptions | 1.2.1 | MIT | dev | 
+ | [nsp@^3.2.1](https://github.com/nodesecurity/nsp#readme) | The Node Security (nodesecurity.io) command line interface | 3.2.1 | Apache-2.0 | dev | 
+ | [prettier@1.11.1](https://prettier.io) | Prettier is an opinionated code formatter | 1.11.1 | MIT | dev | 
+ | [semantic-release@15.0.2](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 15.0.2 | MIT | dev | 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## 8. **APIs**

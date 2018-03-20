@@ -98,8 +98,8 @@
         "statements": 100
       }
     },
-    "projects": ["<rootDir>"],
     "rootDir": ".",
+    "testMatch": ["<rootDir>/__tests__/*.js"],
     "testEnvironment": "node",
     "testPathIgnorePatterns": ["./tmp/reports/coverage/*.js"]
   },
@@ -130,7 +130,7 @@
   "lint-staged": {
     "*.js": ["npm run lint:js", "git add"],
     "*.json": ["npm run lint:json", "git add"],
-    "*.md": ["npm run lint:md", "git add"]
+    "*.md": ["npm run lint:md", "npm run docs", "git add"]
   },
   "main": "lib/index.js",
   "prettier": {
