@@ -101,7 +101,6 @@
     "projects": ["<rootDir>"],
     "rootDir": "./",
     "testEnvironment": "node",
-    "testMatch": ["<rootDir>/lib/__tests__/*.test.js"],
     "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
   },
   "keywords": [
