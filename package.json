@@ -99,9 +99,16 @@
       }
     },
     "projects": ["<rootDir>"],
-    "rootDir": "./",
+    "rootDir": ".",
+    "testMatch": [
+      "<rootDir>/lib/__tests__/**/*.js?(x),**/?(*.)(spec|test).js?(x)",
+      "<rootDir>/lib/__tests__/*.(spec|test).js",
+      "./lib/__tests__/*.(spec|test).js",
+      "<rootDir>/lib/__tests__/*.js",
+      "./lib/__tests__/*.js"
+    ],
     "testEnvironment": "node",
-    "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
+    "testPathIgnorePatterns": ["./lib/__tests__/coverage/*.js"]
   },
   "keywords": [
     "QA",
