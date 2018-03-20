@@ -98,7 +98,10 @@
         "statements": 100
       }
     },
+    "projects": ["<rootDir>"],
+    "rootDir": "./",
     "testEnvironment": "node",
+    "testMatch": ["<rootDir>/lib/__tests__/*.test.js"],
     "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
   },
   "keywords": [
@@ -148,6 +151,8 @@
       "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
     "lint:manifest": "fixpack",
     "lint:md": "prettier ./**/*.md -prose-wrap always --write",
+    "posttest:ci:coverage:codacy":
+      "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
     "prepublish": "lec lib/cli.js -c LF && nsp check",
@@ -155,7 +160,8 @@
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
     "security:nsp:scan": "nsp check",
-    "test": "jest ./lib/__tests__/*.test.js --forceExit",
+    "test": "jest ./lib/__tests__/*.test.js",
+    "test:config": "jest --showConfig",
     "test:watch": "jest ./lib/__tests__/*.test.js --watch",
     "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
   }

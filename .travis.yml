@@ -11,16 +11,21 @@ os:
 notifications:
   webhooks: https://app.fossa.io/hooks/travisci
 
-# before_script:
+git:
+  depth: 1
+
+before_script:
+   - npm dedupe
 #   - npm prune
-#   - npm dedupe
 
 script:
   - npm test
 
 after_script:
+  - npm run posttest:ci:coverage:codacy
+  # - cat $TRAVIS_BUILD_DIR/lib/__tests__/coverage/lcov.info | codacy-coverage --token $CODACY_PROJECT_TOKEN
   # - 'cat ./lib/__tests__/coverage/lcov.info | coveralls'
-  - 'cat ./lib/__tests__/coverage/lcov.info | codacy-coverage'
+  # - 'cat ./lib/__tests__/coverage/lcov.info | codacy-coverage'
 
 deploy:
   provider: script

@@ -13,8 +13,8 @@ const config = {
   }
 }
 
-const markdownPath = path.join(__dirname, '**/*.md')
+let markdownPath = path.join(__dirname, '**/*.md')
 markdownMagic(markdownPath, config)
 
-markdownPath = path.join(__dirname, '../../*.md')
+markdownPath = path.join(__dirname, '../*.md')
 markdownMagic(markdownPath, config)

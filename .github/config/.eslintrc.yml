@@ -18,7 +18,7 @@ env:
   es6: true
   jasmine: true
   jest: true
-  mocha: true
+  mocha: false
   node: true
 plugins:
 - import
@@ -99,7 +99,7 @@ rules:
   indent:
   - error
   - 2
-  - SwitchCase: 4
+  - SwitchCase: 2
   key-spacing:
   - error
   - beforeColon: false
