@@ -84,13 +84,13 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "eslintIgnore": ["lib/__tests_/coverage/**"],
+  "eslintIgnore": ["lib/__tests__/coverage/**"],
   "files": ["lib"],
   "homepage": "https://github.com/gregswindle/github-resource-converter#readme",
   "jest": {
     "automock": false,
     "collectCoverage": true,
-    "coverageDirectory": "lib/__tests_/coverage",
+    "coverageDirectory": "lib/__tests__/coverage",
     "coverageThreshold": {
       "global": {
         "branches": 100,

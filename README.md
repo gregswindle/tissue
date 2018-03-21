@@ -11,7 +11,7 @@
 [![Development Dependency Status][daviddm-dev-image]][daviddm-dev-url]<br>
 [![MacOS and Ubuntu build statuses][travis-image]][travis-url]
 [![Windows build status][appveyor-image]][appveyor-url]
-[![Coverage percentage][coveralls-image]][coveralls-url]
+[![Coverage percentage][codacy-coverage-image]][codacy-url]
 [![Codacy][codacy-image]][codacy-url]
 
 ## Table of contents
@@ -22,8 +22,8 @@
   * [For Terminal/command-line usage](#for-terminalcommand-line-usage)
   * [As a application dependency](#as-a-application-dependency)
 - [Usage](#usage)
-  * [Formats: CSV and JSON](#formats-csv-and-json)
-  * [Resource types: issues, pull requests, and all](#resource-types-issues-pull-requests-and-all)
+  * [Formatting (`--dest export.[csv|json]`)](#formatting---dest-exportcsvjson)
+  * [Resource types (`--resource-type`)](#resource-types---resource-type)
   * [Filtering](#filtering)
   * [Exporting](#exporting)
     + [Issues](#issues)
@@ -110,12 +110,16 @@ $ npm i --save github-resource-converter
 
 > <img align="left" alt="terminal" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/terminal.svg"> The following examples assume that `github-resource-converter` is installed globally and invoked from a Terminal (command-line interface)
 
-### Formats: CSV and JSON
+### Formatting (`--dest export.[csv|json]`)
+
+> You can convert GitHub (Enterprise) Issues and Pull Requests into two file formats: `CSV` and `JSON`.
 
 * CSV is the default format.
 * JSON formatting requires a `--dest` value with a `.json` file extension.
 
-### Resource types: issues, pull requests, and all
+### Resource types (`--resource-type`)
+
+> Convert and export GitHub (Enterprise) by `--resource-type`: `issues`, `pull_requests`, or both (`all`).
 
 * `issues` is the default `resource-type`.
 * `prs` require a `--resource-type` or `-t` value of
@@ -129,7 +133,10 @@ $ npm i --save github-resource-converter
 
 ### Filtering
 
-Filtering is currently unavailable: for now, it's all or nothing. We're happily accepting pull requests, however!
+> ![alert][icon-octicon-alert] **Filtering is currently unavailable.**
+>
+> If you're interested in [CONTRIBUTING](#contributing) to features like filters--e.g., only select
+> "open" issues--we're happily accepting pull requests!
 
 ### Exporting
 
@@ -427,15 +434,17 @@ Contributions in the form of GitHub pull requests are welcome. Before embarking 
 
 [MIT](./LICENSE) © [Greg Swindle](https://github.com/gregswindle).
 
-Read the [NOTICE ![External link][icon-octicon-link-external]](https://app.fossa.io/reports/07123904-7d26-40a6-b6af-c74e82a53789) for all third-party software that `github-resource-converter` uses.
+Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for all third-party software that `github-resource-converter` uses.
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter?ref=badge_large)
 
 <!-- ⛔️ CI Services ⛔️  -->
 
+[notice-url]: https://app.fossa.io/reports/07123904-7d26-40a6-b6af-c74e82a53789
 [appveyor-image]: https://img.shields.io/appveyor/ci/gregswindle/github-resource-converter.svg?style=flat-square&logo=appveyor&label=Windows%20build
 [appveyor-url]: https://ci.appveyor.com/project/gregswindle/github-resource-converter
 [codacy-image]: https://img.shields.io/codacy/grade/b3ac6aaaa3cf41d0897959c1e5d732a3.svg?style=flat-square
+[codacy-coverage-image]: https://img.shields.io/codacy/coverage/b3ac6aaaa3cf41d0897959c1e5d732a3.svg?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/github-resource-converter?utm_source=github.com&utm_medium=referral&utm_content=gregswindle/github-resource-converter&utm_campaign=Badge_Grade
 [coveralls-image]: https://img.shields.io/coveralls/github/gregswindle/github-resource-converter/master.svg
 [coveralls-url]: https://coveralls.io/r/gregswindle/github-resource-converter
