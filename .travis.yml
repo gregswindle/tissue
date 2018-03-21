@@ -25,8 +25,8 @@ script:
   - npm test
 
 after_script:
-  # - npm run posttest:ci:coverage:codacy
-  - cat $TRAVIS_BUILD_DIR/coverage/lcov.info | codacy-coverage
+  - npm run posttest:ci:coverage:codacy
+  # - cat $TRAVIS_BUILD_DIR/lib/__tests__/coverage/lcov.info | codacy-coverage
 
 deploy:
   provider: script

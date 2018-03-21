@@ -159,7 +159,8 @@
       "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
     "lint:manifest": "fixpack",
     "lint:md": "prettier ./**/*.md -prose-wrap always --write",
-    "posttest:ci:coverage:codacy": "cat ./coverage/lcov.info | codacy-coverage",
+    "posttest:ci:coverage:codacy":
+      "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
     "prepublish": "lec lib/cli.js -c LF && nsp check",
