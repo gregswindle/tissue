@@ -31,7 +31,7 @@
   },
   "contributors": [],
   "dependencies": {
-    "@octokit/rest": "15.2.1",
+    "@octokit/rest": "15.2.5",
     "bunyan": "1.8.12",
     "bunyan-format": "0.2.1",
     "chalk": "2.3.2",
@@ -46,12 +46,12 @@
     "@semantic-release/changelog": "2.0.1",
     "@semantic-release/git": "4.0.1",
     "@semantic-release/npm": "3.2.2",
-    "ajv": "6.2.1",
+    "ajv": "6.3.0",
     "ajv-keywords": "3.1.0",
-    "codacy-coverage": "2.1.0",
+    "codacy-coverage": "2.1.1",
     "commitplease": "3.2.0",
     "coveralls": "3.0.0",
-    "eslint": "4.18.2",
+    "eslint": "4.19.0",
     "eslint-config-prettier": "^2.4.0",
     "eslint-config-scanjs": "1.0.0-beta4",
     "eslint-config-standard": "11.0.0",
@@ -79,7 +79,7 @@
     "markdown-magic-package-scripts": "1.2.1",
     "nsp": "^3.2.1",
     "prettier": "1.11.1",
-    "semantic-release": "15.0.2"
+    "semantic-release": "15.1.3"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -146,6 +146,20 @@
     "semi": false,
     "singleQuote": true
   },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ],
+    "publish": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
   "repository": "https://github.com/gregswindle/github-resource-converter.git",
   "scripts": {
     "docs": "npm run docs:toc",
@@ -159,7 +173,8 @@
       "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
     "lint:manifest": "fixpack",
     "lint:md": "prettier ./**/*.md -prose-wrap always --write",
-    "posttest:ci:coverage:codacy": "cat ./coverage/lcov.info | codacy-coverage",
+    "posttest:ci:coverage:codacy":
+      "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
     "prepublish": "lec lib/cli.js -c LF && nsp check",
