@@ -148,9 +148,6 @@ typings/
 
 # .eslintignore
 
-*.bundle.js
-*.spec.js
-*.test.js
 **/coverage/**
 /.nyc_output/*
 /build/**
@@ -164,7 +161,6 @@ typings/
 /tests/fixtures/**
 /tests/performance/**
 /tmp/**
-test.js
 
 # Ignore CSVs
 
