@@ -4,8 +4,10 @@
 
 [![The MIT License][license-image]][license-url]
 [![FOSSA Status][fossa-image]][fossa-url]
-[![NPM version][npm-image]][npm-url]
-[![NPMS score][npms-image]][npms-url]<br>
+[![NPM version][npm-image]][npm-url]<br>
+
+<!-- [![NPMS score][npms-image]][npms-url] -->
+
 [![NSP Status][nsp-image]][nsp-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Development Dependency Status][daviddm-dev-image]][daviddm-dev-url]<br>
@@ -437,6 +439,10 @@ Contributions in the form of GitHub pull requests are welcome. Before embarking 
 Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for all third-party software that `github-resource-converter` uses.
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter?ref=badge_large)
+
+---
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/github-resource-converter.svg)](https://greenkeeper.io/)
 
 <!-- ⛔️ CI Services ⛔️  -->
 
