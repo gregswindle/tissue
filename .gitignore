@@ -165,3 +165,7 @@ typings/
 # Ignore CSVs
 
 *.csv
+
+# SonarCloud
+
+.scannerwork/
