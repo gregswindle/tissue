@@ -90,7 +90,7 @@
   "jest": {
     "automock": false,
     "collectCoverage": true,
-    "coverageDirectory": "coverage",
+    "coverageDirectory": "lib/__tests_/coverage",
     "coverageThreshold": {
       "global": {
         "branches": 100,
@@ -101,9 +101,8 @@
     },
     "moduleDirectories": ["node_modules", "lib"],
     "testMatch": [
-      "<rootDir>/__tests__/base-resource-converter.test.js",
-      "<rootDir>/__tests__/file-exporter.test.js",
-      "<rootDir>/__tests__/(.*).js"
+      "<rootDir>/lib/__tests__/**/*.test.js",
+      "<rootDir>/lib/__tests__/*.test.js"
     ],
     "watchman": false
   },
