@@ -34,6 +34,39 @@
   * [Command-line flags](#command-line-flags)
   * [Errors](#errors)
   * [Info](#info)
+- [API](#api)
+  * [`grc.authenticate({token, type, key})`](#grcauthenticatetoken-type-key)
+    + [Parameters](#parameters)
+    + [Return type: `void`](#return-type-void)
+    + [Examples](#examples)
+  * [`async grc.getAll({})`](#async-grcgetall)
+    + [Parameters](#parameters-1)
+    + [Return type: `array`](#return-type-array)
+    + [Examples](#examples-1)
+  * [`grc.issues.getForRepo`](#grcissuesgetforrepo)
+    + [Parameters](#parameters-2)
+    + [Return type](#return-type)
+    + [Examples](#examples-2)
+  * [`grc.logger`](#grclogger)
+    + [Parameters](#parameters-3)
+    + [Return type](#return-type-1)
+    + [Examples](#examples-3)
+  * [`grc.options`](#grcoptions)
+    + [Parameters](#parameters-4)
+    + [Return type](#return-type-2)
+    + [Examples](#examples-4)
+  * [`grc.pullRequests.getForRepo`](#grcpullrequestsgetforrepo)
+    + [Parameters](#parameters-5)
+    + [Return type](#return-type-3)
+    + [Examples](#examples-5)
+  * [`async grc.save({data, dest})`](#async-grcsavedata-dest)
+    + [Parameters](#parameters-6)
+    + [Return type](#return-type-4)
+    + [Examples](#examples-6)
+  * [`async grc.toCsv({data=[]})`](#async-grctocsvdata)
+    + [Parameters](#parameters-7)
+    + [Return type](#return-type-5)
+    + [Examples](#examples-7)
 - [Version](#version)
 - [Contributing](#contributing)
 - [License](#license)
@@ -389,6 +422,277 @@ $ github-resource-converter --version
 # => 1.0.0-alpha
 ```
 
+## API
+
+### `grc.authenticate({token, type, key})`
+
+> ![Info][icon-octicon-info] Most GitHub API calls don't require authentication. Rules of thumb:
+>
+> 1.  If you can see the information by visiting the site without being logged in, you don't have to be authenticated to retrieve the same information through the API.
+> 1.  If you want to change data, you have to be authenticated.
+>
+> octokit/rest.js. (2018). GitHub. Retrieved 21 March 2018, from <https://github.com/octokit/rest.js#authentication>
+
+#### Parameters
+
+| Name  | Type   | Description                                                      | Notes |
+| :---- | :----- | :--------------------------------------------------------------- | :---- |
+| key   | String |                                                                  |       |
+| token | String |                                                                  |       |
+| type  | Enum   | `basic`, `oauth`, `oauth-key-secret`, `token`, and `integration` |       |
+
+#### Return type: `void`
+
+#### Examples
+
+```js
+// Token (https://github.com/settings/tokens)
+grc.authenticate({
+  token: 'secrettoken123',
+  type: 'token'
+})
+```
+
+### `async grc.getAll({})`
+
+Retrieve all Issues and Pull Requests from a GitHub project.
+
+#### Parameters
+
+| Name  | Type   | Description                                                      | Notes |
+| :---- | :----- | :--------------------------------------------------------------- | :---- |
+| key   | String |                                                                  |       |
+| token | String |                                                                  |       |
+| type  | Enum   | `basic`, `oauth`, `oauth-key-secret`, `token`, and `integration` |       |
+
+#### Return type: `array<any>`
+
+#### Examples
+
+### `grc.issues.getForRepo`
+
+#### Parameters
+
+#### Return type
+
+#### Examples
+
+### `grc.logger`
+
+#### Parameters
+
+#### Return type
+
+#### Examples
+
+### `grc.options`
+
+#### Parameters
+
+#### Return type
+
+#### Examples
+
+### `grc.pullRequests.getForRepo`
+
+Retrieve an array of all pull requests for a project.
+
+```js
+const result = await grc.pullRequests.getForRepo({
+  owner,
+  repo,
+  base,
+  direction,
+  head,
+  page,
+  per_page,
+  sort,
+  state
+})
+```
+
+#### Parameters
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 30%">Field</th>
+      <th style="width: 10%">Type</th>
+      <th style="width: 60%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="code">owner</td>
+      <td>
+        string
+      </td>
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <td class="code">repo</td>
+      <td>
+        string
+      </td>
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <td class="code">state
+        <span class="label label-optional">optional</span>
+      </td>
+      <td>
+        string
+      </td>
+      <td>
+
+        <p class="default-value">Default value:
+          <code>open</code>
+        </p>
+
+        <p class="type-size">Allowed values:
+          <code>open</code>,
+          <code>closed</code>,
+          <code>all</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="code">head
+        <span class="label label-optional">optional</span>
+      </td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>Filter pulls by head user and branch name in the format of user:ref-name. Example: github:new-script-format.</p>
+
+
+      </td>
+    </tr>
+    <tr>
+      <td class="code">base
+        <span class="label label-optional">optional</span>
+      </td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>Filter pulls by base branch name. Example: gh-pages.</p>
+
+
+      </td>
+    </tr>
+    <tr>
+      <td class="code">sort
+        <span class="label label-optional">optional</span>
+      </td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>Possible values are:
+          <code>created</code>,
+          <code>updated</code>,
+          <code>popularity</code>,
+          <code>long-running</code>, Default:
+          <code>created</code>
+        </p>
+        <p class="default-value">Default value:
+          <code>created</code>
+        </p>
+
+        <p class="type-size">Allowed values:
+          <code>created</code>,
+          <code>updated</code>,
+          <code>popularity</code>,
+          <code>long-running</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="code">direction
+        <span class="label label-optional">optional</span>
+      </td>
+      <td>
+        string
+      </td>
+      <td>
+
+        <p class="default-value">Default value:
+          <code>desc</code>
+        </p>
+
+        <p class="type-size">Allowed values:
+          <code>asc</code>,
+          <code>desc</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="code">page
+        <span class="label label-optional">optional</span>
+      </td>
+      <td>
+        number
+      </td>
+      <td>
+        <p>Page number of the results to fetch.</p>
+
+
+      </td>
+    </tr>
+    <tr>
+      <td class="code">per_page
+        <span class="label label-optional">optional</span>
+      </td>
+      <td>
+        number
+      </td>
+      <td>
+        <p>A custom page size up to 100. Default is 30.</p>
+        <p class="default-value">Default value:
+          <code>30</code>
+        </p>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+#### Return type
+
+#### Examples
+
+### `async grc.save({data, dest})`
+
+```js
+await grc.save({
+  data,
+  './export.csv'
+})
+```
+
+Export a collection of Issues or Pull Requests to your local filesystem.
+
+#### Parameters
+
+#### Return type
+
+#### Examples
+
+### `async grc.toCsv({data=[]})`
+
+#### Parameters
+
+#### Return type
+
+#### Examples
+
 ## Version
 
 The latest semantic version of `github-resource-converter` is 1.0.0-alpha.
@@ -447,7 +751,7 @@ Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for a
 <!-- ⛔️ CI Services ⛔️  -->
 
 [notice-url]: https://app.fossa.io/reports/07123904-7d26-40a6-b6af-c74e82a53789
-[appveyor-image]: https://img.shields.io/appveyor/ci/gregswindle/github-resource-converter.svg?style=flat-square&logo=appveyor&label=Windows%20build
+[appveyor-image]: https://img.shields.io/appveyor/ci/gregswindle/github-resource-converter.svg?style=flat-square&logo=appveyor&label=windows%20build
 [appveyor-url]: https://ci.appveyor.com/project/gregswindle/github-resource-converter
 [codacy-image]: https://img.shields.io/codacy/grade/b3ac6aaaa3cf41d0897959c1e5d732a3.svg?style=flat-square
 [codacy-coverage-image]: https://img.shields.io/codacy/coverage/b3ac6aaaa3cf41d0897959c1e5d732a3.svg?style=flat-square
@@ -468,7 +772,7 @@ Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for a
 [npms-url]: https://npms.io/search?q=github-resource-converter
 [nsp-image]: https://nodesecurity.io/orgs/gregswindle/projects/b0a38d7a-29c1-4607-a724-e283b44f1618/badge
 [nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/b0a38d7a-29c1-4607-a724-e283b44f1618
-[travis-image]: https://img.shields.io/travis/gregswindle/github-resource-converter.svg?branch=master&style=flat-square&label=MacOS%20%26%20Ubuntu%20builds&logo=travis
+[travis-image]: https://img.shields.io/travis/gregswindle/github-resource-converter.svg?branch=master&style=flat-square&label=macOS%20%7C%20ubuntu%20builds&logo=travis
 [travis-url]: https://travis-ci.org/gregswindle/github-resource-converter
 
 <!-- ⛔️ Contributing ⛔️  -->
