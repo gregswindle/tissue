@@ -4,17 +4,14 @@
 
 [![The MIT License][license-image]][license-url]
 [![FOSSA Status][fossa-image]][fossa-url]
-[![NPM version][npm-image]][npm-url]<br>
-
-<!-- [![NPMS score][npms-image]][npms-url] -->
-
+[![NPM version][npm-image]][npm-url]<br><!-- [![NPMS score][npms-image]][npms-url] -->
 [![NSP Status][nsp-image]][nsp-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Development Dependency Status][daviddm-dev-image]][daviddm-dev-url]<br>
 [![MacOS and Ubuntu build statuses][travis-image]][travis-url]
 [![Windows build status][appveyor-image]][appveyor-url]
 [![Coverage percentage][codacy-coverage-image]][codacy-url]
-[![Codacy][codacy-image]][codacy-url]
+[![Codacy code quality][codacy-image]][codacy-url]
 
 ## Table of contents
 
