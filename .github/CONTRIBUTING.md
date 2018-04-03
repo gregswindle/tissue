@@ -32,7 +32,7 @@
 - [2. **Git**](#2-git)
   * [2.1. **Rules**](#21-rules)
     + [2.1.1. Makes changes in a topic branch.](#211-makes-changes-in-a-topic-branch)
-    + [2.1.2. Favor the topic branch naming recommendation `type/issue-change-name`.](#212-favor-the-topic-branch-naming-recommendation-typeissue-change-name)
+    + [2.1.2. Favor the topic branch naming convention `GH-{ISSUE_NUMBER}-type-scope`.](#212-favor-the-topic-branch-naming-convention-gh-issue_number-type-scope)
     + [2.1.3. Branch out from `master`.](#213-branch-out-from-master)
     + [2.1.4. **_Never_** push into the `master` branch. **_Always_** submit a Pull Request.](#214-_never_-push-into-the-master-branch-_always_-submit-a-pull-request)
     + [2.1.5. Submit a Pull Request as soon as possible.](#215-submit-a-pull-request-as-soon-as-possible)
@@ -53,9 +53,6 @@
     + [2.2.9. Submit a Pull Request.](#229-submit-a-pull-request)
     + [2.2.10. Once accepted, the Pull request will be merged, closed, and deleted by an administrator.](#2210-once-accepted-the-pull-request-will-be-merged-closed-and-deleted-by-an-administrator)
     + [2.2.11. Remove your local topic branch if you're done.](#2211-remove-your-local-topic-branch-if-youre-done)
-  * [2.3. **Tell your boss how Git enables collaborative process models.**](#23-tell-your-boss-how-git-enables-collaborative-process-models)
-    + [2.3.1. Explain that inner and open source are _process models_.](#231-explain-that-inner-and-open-source-are-_process-models_)
-    + [2.3.2. Describe a typical Git workflow in collaborative terms.](#232-describe-a-typical-git-workflow-in-collaborative-terms)
 - [3. **Code standards**](#3-code-standards)
   * [3.1. Use the Standard JS Style.](#31-use-the-standard-js-style)
   * [3.2. Use ESLint to analyze source code.](#32-use-eslint-to-analyze-source-code)
@@ -82,23 +79,23 @@
 
   ---
 
-      <details>
+  <details>
 
-  <summary><img src="./docs/img/icons8/icon-help-48.png" alt="Help" align="middle" height="48" width="48"> Toggle view of the Issue workflow flowchart.</summary>
+    <summary><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/question.svg" alt="Help" align="middle" height="48" width="48"> Toggle view of the <strong>Issue workflow</strong> flowchart.</summary>
 
   ![Issue flowchart][contribution-lifecycle-issues-image]
 
-      </details>
+  </details>
 
   ---
 
-      <details>
+  <details>
 
-  <summary><img src="./docs/img/icons8/icon-help-48.png" alt="Help" align="middle" height="48" width="48"> Toggle view of the Pull Request workflow flowchart.</summary>
+    <summary><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/question.svg" alt="Help" align="middle" height="48" width="48"> Toggle view of the <strong>Pull Request workflow</strong> flowchart.</summary>
 
   ![Pull Request flowchart][contribution-lifecycle-pr-image]
 
-      </details>
+  </details>
 
   ---
 
@@ -147,312 +144,9 @@
 
   > ⌦ We use [`git-labelmaker`][gh-git-labelmaker-url] to categorize Issues (and Pull Requests) consistently. There are four label categories:
   >
-  > * `Type`: the "kind" of product change.
-  > * `Status`: the state of a change.
-  > * `Priority`: the importance and value of a change.
-  > * `Points`: the size/complexity of a change.
-
-  ---
-
-                                                                                                                                                                                                                                                                                                              <details>
-
-                                                                                                                                                                                                                                                                                                          <summary><img src="./docs/img/icons8/icon-help-48.png" alt="Help" align="middle" height="48" width="48"> Toggle view of the Label definitions table.</summary>
-
-                                                                                                                                                                                                                                                                                                        <table class="table table-striped table-bordered">
-
-                                                                                                                                                                                                                                                                                                      <thead>
-
-                                                                                                                                                                                                                                                                                                    <tr>
-
-                                                                                                                                                                                                                                                                                                  <th>Label 🏷</th>
-
-                                                                                                                                                                                                                                                                                                <th>Definition</th>
-
-                                                                                                                                                                                                                                                                                              </tr>
-
-                                                                                                                                                                                                                                                                                            </thead>
-
-                                                                                                                                                                                                                                                                                          <tbody>
-
-                                                                                                                                                                                                                                                                                        <tr>
-
-                                                                                                                                                                                                                                                                                      <td><code>Type: Feature</code></td>
-
-                                                                                                                                                                                                                                                                                    <td><dfn>A distinguished or expected characteristic of a product that either differentiates the product from competitors, or whose absence would be diminish the product’s value.</dfn><br><br><strong>Note</strong> that <code>Type: Feature</code> and <code>Type: Defect</code> are mutually exclusive: an Issue cannot be both a feature and a defect.</td>
-
-                                                                                                                                                                                                                                                                                  </tr>
-
-                                                                                                                                                                                                                                                                                <tr>
-
-                                                                                                                                                                                                                                                                              <td><code>Type: Defect</code></td>
-
-                                                                                                                                                                                                                                                                            <td><dfn>A flaw, fault, or abnormality that deviates from or prevents the product’s expected behavior.</dfn><br><br><strong>Note</strong> that <code>Type: Feature</code> and <code>Type: Defect</code> are mutually exclusive: an Issue cannot be both a feature and a defect.</td>
-
-                                                                                                                                                                                                                                                                          </tr>
-
-                                                                                                                                                                                                                                                                        <tr>
-
-                                                                                                                                                                                                                                                                      <td><code>CLA: Signed</code></td>
-
-                                                                                                                                                                                                                                                                    <td><dfn>The person who submitted a product change has signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
-
-                                                                                                                                                                                                                                                                  </tr>
-
-                                                                                                                                                                                                                                                                <tr>
-
-                                                                                                                                                                                                                                                              <td><code>CLA: Unsigned</code></td>
-
-                                                                                                                                                                                                                                                            <td><dfn>The person who submitted a product change has **<em>not</em>**signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
-
-                                                                                                                                                                                                                                                          </tr>
-
-                                                                                                                                                                                                                                                        <tr>
-
-                                                                                                                                                                                                                                                      <td><code>Priority: Critical</code></td>
-
-                                                                                                                                                                                                                                                    <td><code>Type: Feature</code>: <dfn>The proposed enhancement is essential to the success of your product.</dfn><br><br><code>Type: Defect</code>: <dfn>Your product no longer functions due to internal, <code>FATAL</code> errors, and must be addressed immediately in order to maintain consumer loyalty.</dfn></td>
-
-                                                                                                                                                                                                                                                  </tr>
-
-                                                                                                                                                                                                                                                <tr>
-
-                                                                                                                                                                                                                                              <td><code>Priority: High</code></td>
-
-                                                                                                                                                                                                                                            <td><code>Type: Feature</code>: <dfn>The proposed enhancement is central to product’s value proposition, and should be implemented as soon as possible.</dfn><br><br><code>Type: Defect</code>: <dfn>The product functions overall, but with an issue that risks consumer abandonment.</dfn></td>
-
-                                                                                                                                                                                                                                          </tr>
-
-                                                                                                                                                                                                                                        <tr>
-
-                                                                                                                                                                                                                                      <td><code>Priority: Medium</code></td>
-
-                                                                                                                                                                                                                                    <td><code>Type: Feature</code> or <code>Type: Defect</code>:  <dfn>The proposed change should be implemented as long as no <code>Priority: Critical</code> or <code>Priority: High</code> issues exists.</dfn></td>
-
-                                                                                                                                                                                                                                  </tr>
-
-                                                                                                                                                                                                                                <tr>
-
-                                                                                                                                                                                                                              <td><code>Priority: Low</code></td>
-
-                                                                                                                                                                                                                            <td><code>Type: Feature</code>: <dfn>A proposal that minimally affects the product’s value.</dfn><br><br><code>Type: Defect</code>: <dfn>Represents “cosmetic” problems like misspelled words or misaligned text that do not affect branding and marketing strategy.</dfn></td>
-
-                                                                                                                                                                                                                          </tr>
-
-                                                                                                                                                                                                                        <tr>
-
-                                                                                                                                                                                                                      <td><code>Status: Abandoned</code></td>
-
-                                                                                                                                                                                                                    <td><code>Type: Feature</code> or <code>Type: Defect</code>: <dfn>The team and community have neglected, forgotten, discarded, or ignored resolving a Issue.</dfn></td>
-
-                                                                                                                                                                                                                  </tr>
-
-                                                                                                                                                                                                                <tr>
-
-                                                                                                                                                                                                              <td><code>Status: Accepted</code></td>
-
-                                                                                                                                                                                                            <td><code>Type: Feature</code> or <code>Type: Defect</code>: <dfn>The product owner or maintainers agreed to a product change proposal.</dfn></td>
-
-                                                                                                                                                                                                          </tr>
-
-                                                                                                                                                                                                        <tr>
-
-                                                                                                                                                                                                      <td><code>Status: Available</code></td>
-
-                                                                                                                                                                                                    <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The change proposal is ready for team and community members to work on.</dfn></td>
-
-                                                                                                                                                                                                  </tr>
-
-                                                                                                                                                                                                <tr>
-
-                                                                                                                                                                                              <td><code>Status: Blocked</code></td>
-
-                                                                                                                                                                                            <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The proposed change cannot be addressed until another issue has been resolved.</dfn><br><br><strong>Note</strong> that the Issue blocking the proposed change SHOULD be referenced in the <code>Blocked</code> Issue’s description field.</td>
-
-                                                                                                                                                                                          </tr>
-
-                                                                                                                                                                                        <tr>
-
-                                                                                                                                                                                      <td><code>Status: Completed</code></td>
-
-                                                                                                                                                                                    <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The issue has been resolved and all acceptance criteria validated.</dfn></td>
-
-                                                                                                                                                                                  </tr>
-
-                                                                                                                                                                                <tr>
-
-                                                                                                                                                                              <td><code>Status: In Progress</code></td>
-
-                                                                                                                                                                            <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The team or community is actively working on the Issue’s resolution.</dfn></td>
-
-                                                                                                                                                                          </tr>
-
-                                                                                                                                                                        <tr>
-
-                                                                                                                                                                      <td><code>Status: On Hold</code></td>
-
-                                                                                                                                                                    <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Product Owner has (temporarily) postponed Issue resolution.</dfn><br><br><strong>Note</strong> that the <em>reason</em> for postponement should be stated in the Issue’s description field.</td>
-
-                                                                                                                                                                  </tr>
-
-                                                                                                                                                                <tr>
-
-                                                                                                                                                              <td><code>Status: Pending</code></td>
-
-                                                                                                                                                            <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>product change or resolution is either awaiting the Product Owner’s decision.</dfn> Ideally, the Product Owner should declare why they’re undecided somewhere in the Issue thread.</td>
-
-                                                                                                                                                          </tr>
-
-                                                                                                                                                        <tr>
-
-                                                                                                                                                      <td><code>Status: Rejected</code></td>
-
-                                                                                                                                                    <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Product Owner has declined a change proposal.</dfn><br><br><strong>Note</strong> that the Product Owner should politely explain why they dismissed the change request.</td>
-
-                                                                                                                                                  </tr>
-
-                                                                                                                                                <tr>
-
-                                                                                                                                              <td><code>Status: Review Needed</code></td>
-
-                                                                                                                                            <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The person working on an Issue has requested help or discussion.</dfn> When applied to a Pull Request, <code>Status: Review Needed</code> <dfn>signifies that the PR is ready for evaluation (and potentially, approval).</dfn></td>
-
-                                                                                                                                          </tr>
-
-                                                                                                                                        <tr>
-
-                                                                                                                                      <td><code>Status: Revision Needed</code></td>
-
-                                                                                                                                    <td><code>Type: Feature</code> and <code>Type: Defect</code>: <dfn>The Issue is not ready for evaluation because of incomplete or insufficient information.</dfn></td>
-
-                                                                                                                                  </tr>
-
-                                                                                                                                <tr>
-
-                                                                                                                              <td><code>Type: Breaking Change</code></td>
-
-                                                                                                                            <td><dfn>The change introduces backward incompatibility with previous product versions.</dfn><br><br><strong><code>Type: Breaking Change</code> MUST be recorded with a</strong> <ol><br><li>Git commit message,<br><li>An increment (+1) in the product’s Semantic Version’s MAJOR version,<br><li><code>CHANGELOG</code> entry, and<br><li>Updated API documentation.</ol></td>
-
-                                                                                                                          </tr>
-
-                                                                                                                        <tr>
-
-                                                                                                                      <td><code>Type: Build</code></td>
-
-                                                                                                                    <td><dfn>Changes to the process that convert source code into a stand-alone form that can be run on a computer or to the form itself.</dfn></td>
-
-                                                                                                                  </tr>
-
-                                                                                                                <tr>
-
-                                                                                                              <td><code>Type: Chore</code></td>
-
-                                                                                                            <td><dfn>Miscellaneous non-functional changes such as typographical fixes or source code repository initialization</dfn>, e.g., <code>chore(scm): scaffold product directory structure</code></td>
-
-                                                                                                          </tr>
-
-                                                                                                        <tr>
-
-                                                                                                      <td><code>Type: CI</code></td>
-
-                                                                                                    <td><dfn>Continuous Integration (CI) changes, i.e., automated build, test, an quality assurance tasks.</dfn></td>
-
-                                                                                                  </tr>
-
-                                                                                                <tr>
-
-                                                                                              <td><code>Type: Docs</code></td>
-
-                                                                                            <td><dfn>The introduction of or revisions to natural language documents or source code comments.</dfn></td>
-
-                                                                                          </tr>
-
-                                                                                        <tr>
-
-                                                                                      <td><code>Type: Duplicate</code></td>
-
-                                                                                    <td><dfn>An Issue that shares the same characteristics as a previously reported issue.</dfn> <br><br><strong>Note</strong> that  product maintainers should reference the original Issue and close the <code>Type: Duplicate</code> Issue.</td>
-
-                                                                                  </tr>
-
-                                                                                <tr>
-
-                                                                              <td><code>Type: Feedback</code></td>
-
-                                                                            <td><dfn>A response to a <code>Type: Question</code> or voluntary information used as a basis for improvement.</td>
-
-                                                                          </tr>
-
-                                                                        <tr>
-
-                                                                      <td><code>Type: Fix</code></td>
-
-                                                                    <td><dfn>A change intended to repair a <code>Type: Defect</code> Issue.</td>
-
-                                                                  </tr>
-
-                                                                <tr>
-
-                                                              <td><code>Type: Performance</code></td>
-
-                                                            <td><dfn>A change intended to reduce product latency.</td>
-
-                                                          </tr>
-
-                                                        <tr>
-
-                                                      <td><code>Type: Question</code></td>
-
-                                                    <td><dfn>A request for information.</td>
-
-                                                  </tr>
-
-                                                <tr>
-
-                                              <td><code>Type: Refactor</code></td>
-
-                                            <td><dfn>Source code design improvements that do not affect product behavior.</td>
-
-                                          </tr>
-
-                                        <tr>
-
-                                      <td><code>Type: Revert</code></td>
-
-                                    <td><dfn>Changes that return the product’s source code to previous Git commit hash.</td>
-
-                                  </tr>
-
-                                <tr>
-
-                              <td><code>Type: Spike</code></td>
-
-                            <td><dfn>A technical or design <em>experiment</em> that investigates a possible solution.</dfn> <br><br><strong>Note</strong> that spike solutions are, by definition, <em>throwaway</em> solutions that should <strong>NEVER</strong> be added to a product release.</td>
-
-                          </tr>
-
-                        <tr>
-
-                      <td><code>Type: Style</code></td>
-
-                    <td><dfn>Issues that address code standard <em>or</em> brand compliance.</td>
-
-                  </tr>
-
-                <tr>
-
-              <td><code>Type: Test</code></td>
-
-            <td><dfn>Issues that prove intended behavior or substantiate “definitions of done.”</dfn> <br><br><code>Type: Test</code> can also refer to changes that result in broader code coverage.</td>
-
-          </tr>
-
-        </tbody>
-
-      </table>
-
-  </details>
-
-  ---
+  > * `type`: the "kind" of product change.
+  > * `status`: the state of a change.
+  > * `priority`: the importance and value of a change.
 
 * ### 1.5. Monitor your issue for questions.
 
@@ -485,75 +179,25 @@
   > * [Feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) for small-ish codebases, or
   > * [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) for large applications and monoliths
 
-* #### 2.1.2. Favor the topic branch naming recommendation `type/issue-change-name`.
+* #### 2.1.2. Favor the topic branch naming convention `GH-{ISSUE_NUMBER}-type-scope`.
 
   _Why:_
 
-  > ⌦ Although not required, our team prefixes branches with the type of change being introduced, followed by a forward slash and the issue id.
+  > ⌦ Although not required, our team prefixes branches with the GitHub issue number, followed by the type of change being introduced, followed by the scope of changes.
   >
-  > Pattern: `type/issueId-subject`<br>
-  > Icon legend: ![Bitbucket branch prefix][icon-bitbucket-20-image] Bitbucket
-  > ![GitHub branch prefix][icon-github-20-image] GitHub
+  > **Examples:**
   >
-  > <dt>
-
-                                                                                                                  <dt><code>bugfix/</code></dt>
-
-                                                                                                              <dd><img src="./docs/img/icons8/icon-bitbucket-20.png" alt="Applies to Bitbucket branches"> Defect (bug) repair issues.</dd>
-
-                                                                                                          <dt><code>build/</code></dt>
-
-                                                                                                      <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Issues related to product builds.</dd>
-
-                                                                                                  <dt><code>ci/</code></dt>
-
-                                                                                              <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Issues related to continuous integration, delivery, and deployment tasks.</dd>
-
-                                                                                          <dt><code>docs/</code></dt>
-
-                                                                                      <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Issues related to documentation.</dd>
-
-                                                                                  <dt><code>feat/</code></dt>
-
-                                                                              <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> New feature or enhancement requests.</dd>
-
-                                                                          <dt><code>feature/</code></dt>
-
-                                                                      <dd><img src="./docs/img/icons8/icon-bitbucket-20.png" alt="Applies to Bitbucket branches"> New feature or enhancement requests.</dd>
-
-                                                                  <dt><code>fix/</code></dt>
-
-                                                              <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Defect (bug) repair issues.</dd>
-
-                                                          <dt></dt>
-
-                                                      <dd><img src="./docs/img/icons8/icon-bitbucket-20.png" alt="Applies to Bitbucket branches"> `hotfix/`</dd>
-
-                                                  <dt><code>perf/</code></dt>
-
-                                              <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Performance improvement issues.</dd>
-
-                                          <dt><code>refactor/</code></dt>
-
-                                      <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Source code design **improvements that do not affect product behavior**.</dd>
-
-                                  <dt><code>revert/</code></dt>
-
-                              <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Tasks that revert to a previous commit hash.</dd>
-
-                          <dt><code>spike/</code></dt>
-
-                      <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Issues related in solution investigation.</dd>
-
-                  <dt><code>style/</code></dt>
-
-              <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Issues related to style guideline compliance, especially `ESLint` errors and warnings.</dd>
-
-          <dt><code>test/</code></dt>
-
-      <dd><img src="./docs/img/icons8/icon-github-filled-20.png" alt="Applies to GitHub branches"> Test coverage tasks.</dd>
-
-  </dl>
+  > * **feat**: a new feature, e.g., `GH-1-feat-cli-add-authz`.
+  > * **fix**: a defect/bug repair, e.g., `GH-2-fix-api-logging-error`.
+  > * **build**: changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm), e.g., `GH-8-build-add-markdown-toc`.
+  > * **chore**: changes that don't modify src or test files, e.g., `GH-10-remove-unused-files`.
+  > * **ci**: changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs), e.g., `GH-9-ci-travis-deploy-semantic-release`.
+  > * **docs**: documentation changes, e.g., `GH-3-docs-readme-revise-api`.
+  > * **perf**: change that improves performance `GH-6-perf-quicksort`.
+  > * **refactor**: code changes that improve design, but neither fixes a bug nor adds a feature, e.g., `GH-5-refactor-extract-class`.
+  > * **revert**: reverts a previous commit, e.g., `GH-11-revert-7f87cc2`.
+  > * **style**: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc), e.g., `GH-4-style-lint`.
+  > * **test**: add missing tests or correct existing tests, e.g., `GH-7-test-complete-coverage`.
 
 * #### 2.1.3. Branch out from `master`.
 
@@ -629,10 +273,10 @@
 
   ```sh
   # For a new feature branch:
-  git checkout -b feat/<issueId>-scope-of-change
+  git checkout -b GH-<issueId>-feat-scope-of-change
 
   # For branches that address defects:
-  git checkout -b fix/<issueId>-scope-of-change
+  git checkout -b GH-<issueId>-fix-scope-of-change
   ```
 
 - #### 2.2.3. Make Changes.
@@ -854,60 +498,6 @@
     done
   ```
 
-### 2.3. **Tell your boss how Git enables collaborative process models.**
-
-![Leadership](./docs/img/icons8/icon-leadership-filled.png)
-
-* **Git enables collaboration with structured (business) process models.** Git is a collaboration tool that grants people the opportunity to contribute to software products using simple and consistent process models called workflows.
-
-  ---
-
-                                                      <details>
-
-                                                  <summary><img src="./docs/img/icons8/icon-help-48.png" alt="Help" align="middle" height="48" width="48"> Toggle view of a workflow example.</summary><br>
-
-                                              <p>⌦ Git is a collaboration tool that grants people the opportunity to contribute to software products using simple and consistent process models called _workflows_.
-
-                                          <ol>
-
-                                      <li>Git **repositories** store software products, as well as the historical changes to these products.<br><br>
-
-                                  <li>Git workflows begin with either **cloning** or **forking** a repository, which **pulls** a duplicate of the entire codebase onto a local computer.<br><br>
-
-                              <li>Contributors then create a local **topic branch** in which they introduce changes—-features, fixes, documentation, tests, and design improvements—-which allows others to develop in parallel.<br><br>
-
-                          <li>Contributors **push** their topic branch to others (usually another `remote` repository called `origin`) and submit **pull requests (PRs)** to their announce their changes. **Pull requests are central to almost all Git workflows, since PRs allow Product Owners and their community to review suggested modifications. Product owners can approve or reject PRs at any time.**<br><br>
-
-                      <li>Other contributors answer the request to **pull** the changes so they can review and test them.<br><br>
-
-                  <li>The changes in the PR are approved.<br><br>
-
-              <li>The topic branch is either **merged** or **rebased** into the the software product.<br><br>
-
-          <li>The topic branch gets deleted, and (ultimately) its changes are delivered to the world.
-
-      </ol>
-
-  </details>
-
-  ---
-
-  _Why:_
-
-  > ⌦ Git can be intimidating, and The Boss (even if that's you!) needs to know why Git is valuable in _business terms._
-
-* #### 2.3.1. Explain that inner and open source are _process models_.
-
-  _Why:_
-
-  > ⌦ Git is a **collaboration** tool that grants people the opportunity to contribute to software products using simple and consistent process models called **workflows.**
-
-* #### 2.3.2. Describe a typical Git workflow in collaborative terms.
-
-  _Why:_
-
-  > ⌦ Many engineers can discuss Git's _technicalities_, but cannot articulate Git's as an applied _technology_ for collaboration.
-
 ## 3. **Code standards**
 
 [![JavaScript Style Guide][standard-js-badge-image]][standard-js-url] [![ESLint logo][eslint-logo-image]][eslint-url]
@@ -1119,8 +709,6 @@
 `github-resource-converter` uses [`bunyan`](https://github.com/trentm/node-bunyan) for logging.
 
 ## 7. **Dependencies**
-
-[![StackShare][stackshare-badge-image]][stackshare-url]
 
 `github-resource-converter` requires the following tech stack to either run, build, test, or deploy:
 
@@ -1345,25 +933,27 @@
 * Use only these 8 status codes to send with you response to describe whether **everything worked**,
   The **client app did something wrong** or The **API did something wrong**.
 
-      _Which ones:_
-      > `200 OK` response represents success for `GET`, `PUT` or `POST` requests.
+  _Which ones:_
 
-      > `201 Created` for when new instance is created. Creating a new instance, using `POST` method returns `201` status code.
+  > `200 OK` response represents success for `GET`, `PUT` or `POST` requests.
+  >
+  > `201 Created` for when new instance is created. Creating a new instance, using `POST` method returns `201` status code.
+  >
+  > `304 Not Modified` response is to minimize information transfer when the recipient already has cached representations.
+  >
+  > `400 Bad Request` for when the request was not processed, as the server could not understand what the client is asking for.
+  >
+  > `401 Unauthorized` for when the request lacks valid credentials and it should re-request with the required credentials.
+  >
+  > `403 Forbidden` means the server understood the request but refuses to authorize it.
+  >
+  > `404 Not Found` indicates that the requested resource was not found.
+  >
+  > `500 Internal Server Error` indicates that the request is valid, but the server could not fulfill it due to some unexpected condition.
 
-      > `304 Not Modified` response is to minimize information transfer when the recipient already has cached representations.
+  _Why:_
 
-      > `400 Bad Request` for when the request was not processed, as the server could not understand what the client is asking for.
-
-      > `401 Unauthorized` for when the request lacks valid credentials and it should re-request with the required credentials.
-
-      > `403 Forbidden` means the server understood the request but refuses to authorize it.
-
-      > `404 Not Found` indicates that the requested resource was not found.
-
-      > `500 Internal Server Error` indicates that the request is valid, but the server could not fulfill it due to some unexpected condition.
-
-      _Why:_
-      > ⌦ Most API providers use a small subset HTTP status codes. For example, the Google GData API uses only 10 status codes, Netflix uses 9, and Digg, only 8. Of course, these responses contain a body with additional information.There are over 70 HTTP status codes. However, most developers don't have all 70 memorized. So if you choose status codes that are not very common you will force application developers away from building their apps and over to wikipedia to figure out what you're trying to tell them. [read more...](https://apigee.com/about/blog/technology/restful-api-design-what-about-errors)
+  > ⌦ Most API providers use a small subset HTTP status codes. For example, the Google GData API uses only 10 status codes, Netflix uses 9, and Digg, only 8. Of course, these responses contain a body with additional information.There are over 70 HTTP status codes. However, most developers don't have all 70 memorized. So if you choose status codes that are not very common you will force application developers away from building their apps and over to wikipedia to figure out what you're trying to tell them. [read more...](https://apigee.com/about/blog/technology/restful-api-design-what-about-errors)
 
 - Provide total numbers of resources in your response.
 - Accept `limit` and `offset` parameters.
@@ -1541,3 +1131,177 @@ Make sure you use resources that you have the rights to use. If you use librarie
 [standard-js-url]: https://github.com/standard/standard
 [standard-version-url]: https://github.com/conventional-changelog/standard-version
 [tech-stack-image]: ./assets/img/icons8/icon-package-filled.png
+
+<!-- ⛔️ Octicon img references ⛔️  -->
+
+[icon-octicon-alert]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg
+[icon-octicon-arrow-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-down.svg
+[icon-octicon-arrow-left]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-left.svg
+[icon-octicon-arrow-right]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg
+[icon-octicon-arrow-small-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-small-down.svg
+[icon-octicon-arrow-small-left]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-small-left.svg
+[icon-octicon-arrow-small-right]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-small-right.svg
+[icon-octicon-arrow-small-up]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-small-up.svg
+[icon-octicon-arrow-up]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-up.svg
+[icon-octicon-beaker]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/beaker.svg
+[icon-octicon-bell]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/bell.svg
+[icon-octicon-bold]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/bold.svg
+[icon-octicon-book]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/book.svg
+[icon-octicon-bookmark]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/bookmark.svg
+[icon-octicon-briefcase]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/briefcase.svg
+[icon-octicon-broadcast]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/broadcast.svg
+[icon-octicon-browser]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/browser.svg
+[icon-octicon-bug]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/bug.svg
+[icon-octicon-calendar]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/calendar.svg
+[icon-octicon-check]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg
+[icon-octicon-checklist]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg
+[icon-octicon-chevron-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/chevron-down.svg
+[icon-octicon-chevron-left]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/chevron-left.svg
+[icon-octicon-chevron-right]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/chevron-right.svg
+[icon-octicon-chevron-up]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/chevron-up.svg
+[icon-octicon-circle-slash]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/circle-slash.svg
+[icon-octicon-circuit-board]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/circuit-board.svg
+[icon-octicon-clippy]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/clippy.svg
+[icon-octicon-clock]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/clock.svg
+[icon-octicon-cloud-download]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/cloud-download.svg
+[icon-octicon-cloud-upload]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/cloud-upload.svg
+[icon-octicon-code]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/code.svg
+[icon-octicon-comment-discussion]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/comment-discussion.svg
+[icon-octicon-comment]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/comment.svg
+[icon-octicon-credit-card]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/credit-card.svg
+[icon-octicon-dash]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/dash.svg
+[icon-octicon-dashboard]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/dashboard.svg
+[icon-octicon-database]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/database.svg
+[icon-octicon-desktop-download]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/desktop-download.svg
+[icon-octicon-device-camera-video]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/device-camera-video.svg
+[icon-octicon-device-camera]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/device-camera.svg
+[icon-octicon-device-desktop]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/device-desktop.svg
+[icon-octicon-device-mobile]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/device-mobile.svg
+[icon-octicon-diff-added]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/diff-added.svg
+[icon-octicon-diff-ignored]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/diff-ignored.svg
+[icon-octicon-diff-modified]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/diff-modified.svg
+[icon-octicon-diff-removed]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/diff-removed.svg
+[icon-octicon-diff-renamed]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/diff-renamed.svg
+[icon-octicon-diff]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/diff.svg
+[icon-octicon-ellipses]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/ellipses.svg
+[icon-octicon-ellipsis]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/ellipsis.svg
+[icon-octicon-eye]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/eye.svg
+[icon-octicon-file-binary]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-binary.svg
+[icon-octicon-file-code]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-code.svg
+[icon-octicon-file-directory]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-directory.svg
+[icon-octicon-file-media]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-media.svg
+[icon-octicon-file-pdf]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-pdf.svg
+[icon-octicon-file-submodule]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-submodule.svg
+[icon-octicon-file-symlink-directory]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-symlink-directory.svg
+[icon-octicon-file-symlink-file]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-symlink-file.svg
+[icon-octicon-file-text]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-text.svg
+[icon-octicon-file-zip]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-zip.svg
+[icon-octicon-file]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file.svg
+[icon-octicon-flame]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/flame.svg
+[icon-octicon-fold]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/fold.svg
+[icon-octicon-gear]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gear.svg
+[icon-octicon-gift]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg
+[icon-octicon-gist-secret]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gist-secret.svg
+[icon-octicon-gist]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gist.svg
+[icon-octicon-git-branch]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/git-branch.svg
+[icon-octicon-git-commit]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/git-commit.svg
+[icon-octicon-git-compare]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/git-compare.svg
+[icon-octicon-git-merge]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/git-merge.svg
+[icon-octicon-git-pull-request]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/git-pull-request.svg
+[icon-octicon-globe]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/globe.svg
+[icon-octicon-grabber]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/grabber.svg
+[icon-octicon-graph]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/graph.svg
+[icon-octicon-heart]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/heart.svg
+[icon-octicon-history]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/history.svg
+[icon-octicon-home]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/home.svg
+[icon-octicon-horizontal-rule]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/horizontal-rule.svg
+[icon-octicon-hubot]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/hubot.svg
+[icon-octicon-inbox]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/inbox.svg
+[icon-octicon-info]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/info.svg
+[icon-octicon-issue-closed]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-closed.svg
+[icon-octicon-issue-opened]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-opened.svg
+[icon-octicon-issue-reopened]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-reopened.svg
+[icon-octicon-italic]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/italic.svg
+[icon-octicon-jersey]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/jersey.svg
+[icon-octicon-key]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/key.svg
+[icon-octicon-keyboard]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/keyboard.svg
+[icon-octicon-law]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/law.svg
+[icon-octicon-light-bulb]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/light-bulb.svg
+[icon-octicon-link-external]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/link-external.svg
+[icon-octicon-link]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/link.svg
+[icon-octicon-list-ordered]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/list-ordered.svg
+[icon-octicon-list-unordered]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/list-unordered.svg
+[icon-octicon-location]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/location.svg
+[icon-octicon-lock]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/lock.svg
+[icon-octicon-logo-gist]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/logo-gist.svg
+[icon-octicon-logo-github]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/logo-github.svg
+[icon-octicon-mail-read]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mail-read.svg
+[icon-octicon-mail-reply]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mail-reply.svg
+[icon-octicon-mail]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mail.svg
+[icon-octicon-mark-github]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mark-github.svg
+[icon-octicon-markdown]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/markdown.svg
+[icon-octicon-megaphone]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/megaphone.svg
+[icon-octicon-mention]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mention.svg
+[icon-octicon-milestone]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/milestone.svg
+[icon-octicon-mirror]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mirror.svg
+[icon-octicon-mortar-board]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mortar-board.svg
+[icon-octicon-mute]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mute.svg
+[icon-octicon-no-newline]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/no-newline.svg
+[icon-octicon-octoface]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/octoface.svg
+[icon-octicon-organization]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg
+[icon-octicon-package]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/package.svg
+[icon-octicon-paintcan]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/paintcan.svg
+[icon-octicon-pencil]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/pencil.svg
+[icon-octicon-person]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/person.svg
+[icon-octicon-pin]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/pin.svg
+[icon-octicon-plug]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/plug.svg
+[icon-octicon-plus-small]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/plus-small.svg
+[icon-octicon-plus]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/plus.svg
+[icon-octicon-primitive-dot]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/primitive-dot.svg
+[icon-octicon-primitive-square]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/primitive-square.svg
+[icon-octicon-pulse]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/pulse.svg
+[icon-octicon-question]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/question.svg
+[icon-octicon-quote]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/quote.svg
+[icon-octicon-radio-tower]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/radio-tower.svg
+[icon-octicon-reply]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/reply.svg
+[icon-octicon-repo-clone]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/repo-clone.svg
+[icon-octicon-repo-force-push]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/repo-force-push.svg
+[icon-octicon-repo-forked]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/repo-forked.svg
+[icon-octicon-repo-pull]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/repo-pull.svg
+[icon-octicon-repo-push]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/repo-push.svg
+[icon-octicon-repo]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/repo.svg
+[icon-octicon-rocket]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rocket.svg
+[icon-octicon-rss]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rss.svg
+[icon-octicon-ruby]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/ruby.svg
+[icon-octicon-search]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/search.svg
+[icon-octicon-server]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/server.svg
+[icon-octicon-settings]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/settings.svg
+[icon-octicon-shield]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/shield.svg
+[icon-octicon-sign-in]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/sign-in.svg
+[icon-octicon-sign-out]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/sign-out.svg
+[icon-octicon-smiley]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg
+[icon-octicon-squirrel]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/squirrel.svg
+[icon-octicon-star]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/star.svg
+[icon-octicon-stop]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/stop.svg
+[icon-octicon-sync]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/sync.svg
+[icon-octicon-tag]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/tag.svg
+[icon-octicon-tasklist]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/tasklist.svg
+[icon-octicon-telescope]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/telescope.svg
+[icon-octicon-terminal]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/terminal.svg
+[icon-octicon-text-size]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/text-size.svg
+[icon-octicon-three-bars]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/three-bars.svg
+[icon-octicon-thumbsdown]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/thumbsdown.svg
+[icon-octicon-thumbsup]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/thumbsup.svg
+[icon-octicon-tools]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/tools.svg
+[icon-octicon-trashcan]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/trashcan.svg
+[icon-octicon-triangle-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/triangle-down.svg
+[icon-octicon-triangle-left]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/triangle-left.svg
+[icon-octicon-triangle-right]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/triangle-right.svg
+[icon-octicon-triangle-up]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/triangle-up.svg
+[icon-octicon-unfold]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/unfold.svg
+[icon-octicon-unmute]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/unmute.svg
+[icon-octicon-unverified]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/unverified.svg
+[icon-octicon-verified]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/verified.svg
+[icon-octicon-versions]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/versions.svg
+[icon-octicon-watch]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/watch.svg
+[icon-octicon-x]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/x.svg

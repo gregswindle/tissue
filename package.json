@@ -147,20 +147,6 @@
     "semi": false,
     "singleQuote": true
   },
-  "release": {
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ],
-    "publish": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ]
-  },
   "repository": "https://github.com/gregswindle/github-resource-converter.git",
   "scripts": {
     "docs": "npm run docs:toc",
