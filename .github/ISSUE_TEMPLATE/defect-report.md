@@ -37,10 +37,24 @@ In order to {achieve value}.
 * > ⌦ Include as many relevant details about the environment
   > ⌦ in which the defect occured.
 
-- Version of `github-resource-converter`:
-- Environment name and version (e.g. Chrome 39, node.js 5.4):
+* > ⌦ Include as many relevant details about the environment
+  > ⌦ in which the defect occured.
+
+- `github-resource-converter` version:
+- Node.js version (`node --version`):
+- NPM version (`npm --version`):
+- Yarn version (`yarn --version`):
 - Operating System and version (desktop or mobile):
-- Link to your project:
+
+  > **💡 MacOS**
+  >
+  > * 1.  Open a Terminal
+  > * 2.  Run
+  >       `system_profiler SPHardwareDataType SPSoftwareDataType -detailLevel mini | pbcopy`
+  > * 3.  Paste (<kbd>command ⌘</kbd> + <kbd>v</kbd>) below:
+
+* Link to your project: N/A
+* Link to RunKit or Repl example:
 
 <!-- ⛔️  Do not remove anything below this comment. ⛔️  -->
 

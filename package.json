@@ -2,7 +2,7 @@
   "name": "github-resource-converter",
   "description":
     "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0",
   "author": {
     "name": "Greg Swindle",
     "email": "greg@swindle.net",
@@ -34,14 +34,12 @@
     "@octokit/rest": "15.2.6",
     "bunyan": "1.8.12",
     "bunyan-format": "0.2.1",
-    "chalk": "2.3.2",
     "dotenv": "5.0.1",
     "fs-extra": "5.0.0",
     "insight": "0.10.1",
     "jsonexport": "2.0.11",
     "lodash": "4.17.5",
-    "meow": "4.0.0",
-    "requireindex": "1.2.0"
+    "meow": "4.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "2.0.1",
@@ -73,21 +71,22 @@
     "jest": "22.4.3",
     "jest-runner-eslint": "0.4.0",
     "lec": "^1.0.1",
-    "lint-staged": "7.0.2",
+    "lint-staged": "7.0.3",
     "markdown-magic": "0.1.21",
     "markdown-magic-dependency-table": "1.3.2",
     "markdown-magic-install-command": "1.3.1",
     "markdown-magic-package-scripts": "1.2.1",
     "nsp": "^3.2.1",
     "prettier": "1.11.1",
-    "semantic-release": "15.1.4"
+    "semantic-release": "15.1.5"
   },
   "engines": {
     "node": ">=8.0.0"
   },
   "eslintIgnore": ["lib/__tests__/coverage/**"],
   "files": ["lib"],
-  "homepage": "https://github.com/gregswindle/github-resource-converter#readme",
+  "homepage":
+    "https://github.com/gregswindle/github-resource-converter/#readme",
   "jest": {
     "automock": false,
     "collectCoverage": true,
@@ -147,7 +146,21 @@
     "semi": false,
     "singleQuote": true
   },
-  "repository": "https://github.com/gregswindle/github-resource-converter.git",
+  "release": {
+    "generateNotes": {
+      "preset": "angular"
+    },
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "verifyConditions": ["@semantic-release/npm", "@semantic-release/git"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregswindle/github-resource-converter.git"
+  },
   "scripts": {
     "docs": "npm run docs:toc",
     "docs:toc":
@@ -164,7 +177,8 @@
       "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
-    "prepublish": "lec lib/cli.js -c LF && nsp check",
+    "prepublish":
+      "lec lib/cli.js -c LF && npm run security && semantic-release -d",
     "prepublishOnly": "npm run prepare",
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",

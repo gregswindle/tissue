@@ -744,14 +744,14 @@
  | [jest@22.4.3](http://facebook.github.io/jest/) | Delightful JavaScript Testing. | 22.4.3 | MIT | dev | 
  | [jest-runner-eslint@0.4.0](https://github.com/jest-community/jest-runner-eslint) | An experimental ESLint runner for Jest | 0.4.0 | MIT | dev | 
  | [lec@^1.0.1](https://github.com/iShafayet/lec) | Command Line Wrapper for Line Ending Corrector (An utility that makes sure your files have consistent line endings) | 1.0.1 | MIT | dev | 
- | [lint-staged@7.0.2](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.0.2 | MIT | dev | 
+ | [lint-staged@7.0.3](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.0.3 | MIT | dev | 
  | [markdown-magic@0.1.21](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.21 | MIT | dev | 
  | [markdown-magic-dependency-table@1.3.2](https://github.com/camacho/markdown-magic-dependency-table#readme) | Generate table of information about dependencies automatically in markdown | 1.3.2 | MIT | dev | 
  | [markdown-magic-install-command@1.3.1](https://github.com/camacho/markdown-magic-install-command#readme) | Print install command for markdown file | 1.3.1 | MIT | dev | 
  | [markdown-magic-package-scripts@1.2.1](https://github.com/camacho/markdown-magic-package-scripts#readme) | Print list of scripts in package.json with descriptions | 1.2.1 | MIT | dev | 
  | [nsp@^3.2.1](https://github.com/nodesecurity/nsp#readme) | The Node Security (nodesecurity.io) command line interface | 3.2.1 | Apache-2.0 | dev | 
  | [prettier@1.11.1](https://prettier.io) | Prettier is an opinionated code formatter | 1.11.1 | MIT | dev | 
- | [semantic-release@15.1.4](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 15.1.4 | MIT | dev | 
+ | [semantic-release@15.1.5](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 15.1.5 | MIT | dev | 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## 8. **APIs**

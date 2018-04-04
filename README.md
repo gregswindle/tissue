@@ -4,7 +4,7 @@
 
 [![The MIT License][license-image]][license-url]
 [![FOSSA Status][fossa-image]][fossa-url]
-[![NPM version][npm-image]][npm-url]<br><!-- [![NPMS score][npms-image]][npms-url] -->
+[![NPM version][npm-image]][npm-url]<br>
 [![NSP Status][nsp-image]][nsp-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Development Dependency Status][daviddm-dev-image]][daviddm-dev-url]<br>
@@ -12,66 +12,57 @@
 [![Windows build status][appveyor-image]][appveyor-url]
 [![Coverage percentage][codacy-coverage-image]][codacy-url]
 [![Codacy code quality][codacy-image]][codacy-url]
+[![NPMS score][npms-image]][npms-url]
 
 ## Table of contents
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
-- [Overview](#overview)
-- [Installation](#installation)
-  * [For Terminal/command-line usage](#for-terminalcommand-line-usage)
-  * [As a application dependency](#as-a-application-dependency)
-- [Usage](#usage)
-  * [Formatting (`--dest export.[csv|json]`)](#formatting---dest-exportcsvjson)
-  * [Resource types (`--resource-type`)](#resource-types---resource-type)
-  * [Filtering](#filtering)
-  * [Exporting](#exporting)
-    + [Issues](#issues)
-    + [Pull Requests](#pull-requests)
-    + [All (issues and pull requests)](#all-issues-and-pull-requests)
-  * [Command-line flags](#command-line-flags)
-  * [Errors](#errors)
-  * [Info](#info)
-- [API](#api)
-  * [`grc.authenticate({token, type, key})`](#grcauthenticatetoken-type-key)
-    + [Parameters](#parameters)
-    + [Return type: `void`](#return-type-void)
-    + [Examples](#examples)
-  * [`async grc.getAll({})`](#async-grcgetall)
-    + [Parameters](#parameters-1)
-    + [Return type: `array`](#return-type-array)
-    + [Examples](#examples-1)
-  * [`grc.issues.getForRepo`](#grcissuesgetforrepo)
-    + [Parameters](#parameters-2)
-    + [Return type](#return-type)
-    + [Examples](#examples-2)
-  * [`grc.logger`](#grclogger)
-    + [Parameters](#parameters-3)
-    + [Return type](#return-type-1)
-    + [Examples](#examples-3)
-  * [`grc.options`](#grcoptions)
-    + [Parameters](#parameters-4)
-    + [Return type](#return-type-2)
-    + [Examples](#examples-4)
-  * [`grc.pullRequests.getForRepo`](#grcpullrequestsgetforrepo)
-    + [Parameters](#parameters-5)
-    + [Return type](#return-type-3)
-    + [Examples](#examples-5)
-  * [`async grc.save({data, dest})`](#async-grcsavedata-dest)
-    + [Parameters](#parameters-6)
-    + [Return type](#return-type-4)
-    + [Examples](#examples-6)
-  * [`async grc.toCsv({data=[]})`](#async-grctocsvdata)
-    + [Parameters](#parameters-7)
-    + [Return type](#return-type-5)
-    + [Examples](#examples-7)
-- [Version](#version)
-- [Contributing](#contributing)
-- [License](#license)
+- [1. Overview](#1-overview)
+- [2. Installation](#2-installation)
+  * [2.1. For Terminal/command-line usage](#21-for-terminalcommand-line-usage)
+  * [2.2. As a application dependency](#22-as-a-application-dependency)
+- [3. Usage](#3-usage)
+  * [3.1. Formatting](#31-formatting)
+  * [3.2. Resource types](#32-resource-types)
+  * [3.3. Filtering](#33-filtering)
+  * [3.4. Exporting](#34-exporting)
+    + [3.4.1. Issues](#341-issues)
+    + [3.4.2. Pull Requests](#342-pull-requests)
+    + [3.4.3. All (open and closed issues and pull requests)](#343-all-open-and-closed-issues-and-pull-requests)
+  * [3.5. Command-line flags](#35-command-line-flags)
+  * [3.6. Errors](#36-errors)
+  * [3.7. Info](#37-info)
+- [4. API](#4-api)
+  * [4.1. `grc.authenticate({token, type, key}): void`](#41-grcauthenticatetoken-type-key-void)
+    + [4.1.1. Parameters](#411-parameters)
+    + [4.1.2. Example](#412-example)
+  * [4.2. `grc.getAll({owner, repo}): Promise`](#42-grcgetallowner-repo-promise)
+    + [4.2.1. Parameters](#421-parameters)
+    + [4.2.2. Examples](#422-examples)
+  * [4.3. `grc.issues.getForRepo({owner, repo}): Promise`](#43-grcissuesgetforrepoowner-repo-promise)
+    + [4.3.1. Parameters](#431-parameters)
+    + [4.3.2. Examples](#432-examples)
+  * [4.4. `grc.logger`](#44-grclogger)
+    + [4.4.1. Methods](#441-methods)
+    + [4.4.2. Examples](#442-examples)
+  * [4.5. `grc.options`](#45-grcoptions)
+  * [4.6. `grc.pullRequests.getForRepo({owner, repo}): Promise`](#46-grcpullrequestsgetforrepoowner-repo-promise)
+    + [4.6.1. Parameters](#461-parameters)
+    + [4.6.2. Examples](#462-examples)
+  * [4.7. `grc.save({data, dest}): Promise`](#47-grcsavedata-dest-promise)
+    + [4.7.1. Parameters](#471-parameters)
+    + [4.7.2. Examples](#472-examples)
+  * [4.8. `grc.toCsv({data=[]}): Promise`](#48-grctocsvdata-promise)
+    + [4.8.1. Parameters](#481-parameters)
+    + [4.8.2. Examples](#482-examples)
+- [5. Version](#5-version)
+- [6. Contributing](#6-contributing)
+- [7. License](#7-license)
 <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
-## Overview
+## 1. Overview
 
-`github-resource-converter` exports your GitHub (and GitHub Enterprise) repositories' Issues and Pull Requests to `CSV` and `JSON` file formats. It's useful whenever you need to:
+`github-resource-converter` (alias `grc`) exports your GitHub and GitHub Enterprise repositories' Issues and Pull Requests to `CSV` and `JSON` file formats. It's helpful whenever you need to:
 
 * **Use spreadsheets** to analyze, modify, print, or summarize large amounts of data with Pivot Tables and other important financial or statistical operations
 
@@ -100,7 +91,7 @@
   > # Saved "docs/reports/gregswindle-github-resource-converter-pr-export.2018-03-20T02_18_33_682Z.json".
   > ```
 
-## Installation
+## 2. Installation
 
 1.  **Required:** `github-resource-converter` is written in JavaScript (CommonJS) for [Node.js ![External link][icon-octicon-link-external]](https://nodejs.org/), which must be installed prior to use. Node.js requires **npm**, which is used for installing dependencies. (**npm** installs with Node.js.)
 
@@ -124,32 +115,36 @@
         C:\usr\local\etc\github-resource-center\envvars\.env
       ```
 
-### For Terminal/command-line usage
+### 2.1. For Terminal/command-line usage
 
 ```bash
 # Install globally to execute from a Terminal/command-line
 $ npm i -g github-resource-converter
 ```
 
-### As a application dependency
+### 2.2. As a application dependency
 
 ```bash
 # Install as a dependency within a Node.js app
 $ npm i --save github-resource-converter
 ```
 
-## Usage
+## 3. Usage
 
 > <img align="left" alt="terminal" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/terminal.svg"> The following examples assume that `github-resource-converter` is installed globally and invoked from a Terminal (command-line interface)
 
-### Formatting (`--dest export.[csv|json]`)
+### 3.1. Formatting
+
+`--dest export.[csv|json]`
 
 > You can convert GitHub (Enterprise) Issues and Pull Requests into two file formats: `CSV` and `JSON`.
 
 * CSV is the default format.
 * JSON formatting requires a `--dest` value with a `.json` file extension.
 
-### Resource types (`--resource-type`)
+### 3.2. Resource types
+
+`--resource-type, -t`
 
 > Convert and export GitHub (Enterprise) by `--resource-type`: `issues`, `pull_requests`, or both (`all`).
 
@@ -163,16 +158,16 @@ $ npm i --save github-resource-converter
 
 * `--resource-type all` will export all `issues` and `prs` into a single file.
 
-### Filtering
+### 3.3. Filtering
 
 > ![alert][icon-octicon-alert] **Filtering is currently unavailable.**
 >
 > If you're interested in [CONTRIBUTING](#contributing) to features like filters--e.g., only select
 > "open" issues--we're happily accepting pull requests!
 
-### Exporting
+### 3.4. Exporting
 
-#### Issues
+#### 3.4.1. Issues
 
 * **CSV**
 
@@ -217,7 +212,7 @@ $ npm i --save github-resource-converter
   >   --dest ./export.json
   > ```
 
-#### Pull Requests
+#### 3.4.2. Pull Requests
 
 * **CSV**
 
@@ -265,7 +260,7 @@ $ npm i --save github-resource-converter
   >   --dest './export.json'
   > ```
 
-#### All (issues and pull requests)
+#### 3.4.3. All (open and closed issues and pull requests)
 
 * **CSV**
 
@@ -313,7 +308,7 @@ $ npm i --save github-resource-converter
   >   --dest './export.json'
   > ```
 
-### Command-line flags
+### 3.5. Command-line flags
 
 <dl>
   <dt><code>--owner, -o</code></dt>
@@ -322,32 +317,38 @@ $ npm i --save github-resource-converter
   <dd><p><strong>Required.</strong> The name of the GitHub (or GitHub Enterprise) repository.</p></dd>
   <dt><code>--base-url</code></dt>
   <dd><p>The GitHub REST API v3 URL origin, or a GitHub Enterprise URL origin and path-prefix.</p>
-    <p>Default value: <code>https://api.github.com</code>.</p>
+    <table>
+     <tbody><tr><th>Default value:</th><td><samp>https://api.github.com</samp></td></tr></tbody>
+    </table>
   </dd>
   <dt><code>--dest, -d</code></dt>
   <dd><p>The destination path and file name of the CSV.</p>
-    <p>Default value: <code>./export.csv</code>.</p>
+    <table>
+     <tbody><tr><th>Default value:</th><td><samp>./export.csv</samp></td></tr></tbody>
+    </table>
   </dd>
   <dt><code>--no-auto-filename</code></dt>
   <dd><p>Disable automatic file naming.</p>
-    <p>Default value: <code>false</code>.</p>
+    <table>
+     <tbody><tr><th>Default value:</th><td><samp>false</samp></td></tr></tbody>
+    </table>
   </dd>
   <dt><code>--resource-type, -t</code></dt>
   <dd><p>Declares whether to convert and export Issues, Pull Requests, or All.</p>
     <table>
       <tr>
-        <th>Default value</th>
-        <th>Valid values</th>
+        <th>Default&nbsp;value:</th>
+        <td><samp>issues</samp></td>
       </tr>
       <tr>
-        <td><sampl>issues</sampl></td>
-        <td><sampl>all, issue, issues, pr, prs, pull_request, pull_requests</sampl></td>
+        <th>Valid values:</th>
+        <td><samp>all</samp>, <samp>issue</samp>, <samp>issues</samp>, <samp>pr</samp>, <samp>prs</samp>, <samp>pull_request</samp>, <samp>pull_requests</samp></td>
       </tr>
     </table>
   </dd>
 </dl>
 
-### Errors
+### 3.6. Errors
 
 Errors are written to the console (`stdout`) as JSON:
 
@@ -361,7 +362,7 @@ $ grc --owner example --repo error
       at process._tickCallback (internal/process/next_tick.js:188:7)
 ```
 
-### Info
+### 3.7. Info
 
 The `--help` flag displays all options:
 
@@ -416,12 +417,14 @@ Use the `--version` flag to see which version you have installed:
 
 ```bash
 $ github-resource-converter --version
-# => 1.0.0-alpha
+# => 1.0.0
 ```
 
-## API
+## 4. API
 
-### `grc.authenticate({token, type, key})`
+> [![beaker][icon-octicon-beaker] Test the `github-resource-converter (grc)` API in your Web browser][runkit-grc-url].
+
+### 4.1. `grc.authenticate({token, type, key}): void`
 
 > ![Info][icon-octicon-info] Most GitHub API calls don't require authentication. Rules of thumb:
 >
@@ -430,7 +433,7 @@ $ github-resource-converter --version
 >
 > octokit/rest.js. (2018). GitHub. Retrieved 21 March 2018, from <https://github.com/octokit/rest.js#authentication>
 
-#### Parameters
+#### 4.1.1. Parameters
 
 | Name  | Type   | Description                                                      | Notes |
 | :---- | :----- | :--------------------------------------------------------------- | :---- |
@@ -438,9 +441,7 @@ $ github-resource-converter --version
 | token | String |                                                                  |       |
 | type  | Enum   | `basic`, `oauth`, `oauth-key-secret`, `token`, and `integration` |       |
 
-#### Return type: `void`
-
-#### Examples
+#### 4.1.2. Example
 
 ```js
 // Token (https://github.com/settings/tokens)
@@ -450,11 +451,11 @@ grc.authenticate({
 })
 ```
 
-### `async grc.getAll({})`
+### 4.2. `grc.getAll({owner, repo}): Promise`
 
-Retrieve all Issues and Pull Requests from a GitHub project.
+Retrieve all open and closed Issues and Pull Requests from a GitHub project.
 
-#### Parameters
+#### 4.2.1. Parameters
 
 | Name  | Type   | Description                                                      | Notes |
 | :---- | :----- | :--------------------------------------------------------------- | :---- |
@@ -462,35 +463,291 @@ Retrieve all Issues and Pull Requests from a GitHub project.
 | token | String |                                                                  |       |
 | type  | Enum   | `basic`, `oauth`, `oauth-key-secret`, `token`, and `integration` |       |
 
-#### Return type: `array<any>`
+#### 4.2.2. Examples
 
-#### Examples
+### 4.3. `grc.issues.getForRepo({owner, repo}): Promise`
 
-### `grc.issues.getForRepo`
+#### 4.3.1. Parameters
 
-#### Parameters
+#### 4.3.2. Examples
 
-#### Return type
+### 4.4. `grc.logger`
 
-#### Examples
+#### 4.4.1. Methods
 
-### `grc.logger`
+#### 4.4.2. Examples
 
-#### Parameters
+### 4.5. `grc.options`
 
-#### Return type
+Contains default values for `api`, `cli`, and `meta`data.
 
-#### Examples
+---
 
-### `grc.options`
+<details>
+  <summary><strong>Toggle view of <var>grc.options</var></strong>.</summary>
+  <p>
 
-#### Parameters
+```json
+{
+  "api": {
+    "baseUrl": "https://api.github.com",
+    "headers": {
+      "Accept":
+        "application/vnd.github.v3+json, application/vnd.github.symmetra-preview+json",
+      "user-agent": "gregswindle/github-resource-converter v1.0.0"
+    },
+    "owner": null,
+    "repo": null,
+    "requestMedia": "application/vnd.github.v3+json",
+    "timeout": 0
+  },
+  "cli": {
+    "flags": {
+      "baseUrl": {
+        "default": "https://api.github.com",
+        "type": "string"
+      },
+      "dest": {
+        "alias": "d",
+        "default": "./export.csv",
+        "type": "string"
+      },
+      "no-auto-filename": {
+        "default": false,
+        "type": "boolean"
+      },
+      "owner": {
+        "alias": "o",
+        "type": "string"
+      },
+      "repo": {
+        "alias": "r",
+        "type": "string"
+      },
+      "resource-type": {
+        "alias": "t",
+        "default": "issues",
+        "type": "string"
+      }
+    }
+  },
+  "meta": {
+    "input": [],
+    "flags": {
+      "noAutoFilename": false,
+      "baseUrl": "https://api.github.com",
+      "dest": "./export.csv",
+      "d": "./export.csv",
+      "resourceType": "issues",
+      "t": "issues"
+    },
+    "pkg": {
+      "name": "github-resource-converter",
+      "description":
+        "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Greg Swindle",
+        "email": "greg@swindle.net",
+        "url": "https://github.com/gregswindle"
+      },
+      "bin": {
+        "grc": "lib/cli.js"
+      },
+      "bugs": {
+        "url": "https://github.com/gregswindle/github-resource-converter/issues"
+      },
+      "commitplease": {
+        "style": "angular",
+        "types": [
+          "build",
+          "chore",
+          "ci",
+          "docs",
+          "feat",
+          "fix",
+          "perf",
+          "refactor",
+          "revert",
+          "style",
+          "test"
+        ],
+        "scope": "\\S+.*"
+      },
+      "contributors": [],
+      "dependencies": {
+        "@octokit/rest": "15.2.6",
+        "bunyan": "1.8.12",
+        "bunyan-format": "0.2.1",
+        "dotenv": "5.0.1",
+        "fs-extra": "5.0.0",
+        "insight": "0.10.1",
+        "jsonexport": "2.0.11",
+        "lodash": "4.17.5",
+        "meow": "4.0.0"
+      },
+      "devDependencies": {
+        "@semantic-release/changelog": "2.0.1",
+        "@semantic-release/git": "4.0.1",
+        "@semantic-release/npm": "3.2.4",
+        "ajv": "6.4.0",
+        "ajv-keywords": "3.1.0",
+        "codacy-coverage": "2.1.1",
+        "commitplease": "3.2.0",
+        "coveralls": "3.0.0",
+        "eslint": "4.19.1",
+        "eslint-config-prettier": "^2.4.0",
+        "eslint-config-scanjs": "1.0.0-beta4",
+        "eslint-config-standard": "11.0.0",
+        "eslint-config-xo": "0.20.1",
+        "eslint-plugin-import": "2.10.0",
+        "eslint-plugin-jsdoc": "3.5.0",
+        "eslint-plugin-json": "1.2.0",
+        "eslint-plugin-no-unsafe-innerhtml": "1.0.16",
+        "eslint-plugin-node": "6.0.1",
+        "eslint-plugin-prettier": "^2.2.0",
+        "eslint-plugin-promise": "3.7.0",
+        "eslint-plugin-security": "1.4.0",
+        "eslint-plugin-standard": "3.0.1",
+        "eslint-plugin-unicorn": "4.0.2",
+        "eslint-plugin-xss": "0.1.9",
+        "fixpack": "2.3.1",
+        "husky": "^0.14.3",
+        "jest": "22.4.3",
+        "jest-runner-eslint": "0.4.0",
+        "lec": "^1.0.1",
+        "lint-staged": "7.0.3",
+        "markdown-magic": "0.1.21",
+        "markdown-magic-dependency-table": "1.3.2",
+        "markdown-magic-install-command": "1.3.1",
+        "markdown-magic-package-scripts": "1.2.1",
+        "nsp": "^3.2.1",
+        "prettier": "1.11.1",
+        "semantic-release": "15.1.5"
+      },
+      "engines": {
+        "node": ">=8.0.0"
+      },
+      "eslintIgnore": ["lib/__tests__/coverage/**"],
+      "files": ["lib"],
+      "homepage":
+        "https://github.com/gregswindle/github-resource-converter/#readme",
+      "jest": {
+        "automock": false,
+        "collectCoverage": true,
+        "coverageDirectory": "lib/__tests__/coverage",
+        "coverageThreshold": {
+          "global": {
+            "branches": 100,
+            "functions": 100,
+            "lines": 100,
+            "statements": 100
+          }
+        },
+        "moduleDirectories": ["node_modules", "lib"],
+        "testMatch": [
+          "<rootDir>/lib/__tests__/**/*.test.js",
+          "<rootDir>/lib/__tests__/*.test.js"
+        ],
+        "watchman": false
+      },
+      "jest-runner-eslint": {
+        "cliOptions": {
+          "config": ".github/config/jest-runner-eslint.config.json",
+          "fix": true
+        }
+      },
+      "keywords": [
+        "QA",
+        "convert",
+        "converter",
+        "converter",
+        "csv",
+        "export",
+        "github",
+        "google sheets",
+        "issue",
+        "json",
+        "pr",
+        "pull request",
+        "pull-request",
+        "quality assurance",
+        "quality-assurance",
+        "reporting",
+        "reports",
+        "save",
+        "sheets",
+        "spreadsheets",
+        "testing"
+      ],
+      "license": "MIT",
+      "lint-staged": {
+        "*.js": ["npm run lint:js", "git add"],
+        "*.json": ["npm run lint:json", "git add"],
+        "*.md": ["npm run lint:md", "npm run docs", "git add"]
+      },
+      "main": "lib/index.js",
+      "prettier": {
+        "semi": false,
+        "singleQuote": true
+      },
+      "release": {
+        "generateNotes": {
+          "preset": "angular"
+        },
+        "prepare": [
+          "@semantic-release/changelog",
+          "@semantic-release/npm",
+          "@semantic-release/git"
+        ],
+        "verifyConditions": ["@semantic-release/npm", "@semantic-release/git"]
+      },
+      "repository": {
+        "type": "git",
+        "url":
+          "git+https://github.com/gregswindle/github-resource-converter.git"
+      },
+      "scripts": {
+        "docs": "npm run docs:toc",
+        "docs:toc":
+          "md-magic --config '.github/config/markdown.config.js' --path '**/*.md' --ignore 'node_modules'",
+        "lint":
+          "npm run lint:js && npm run lint:json && npm run lint:manifest && npm run lint:md",
+        "lint:js":
+          "node_modules/.bin/eslint -c .github/config/.eslintrc.yml --ext .js . --fix",
+        "lint:json":
+          "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
+        "lint:manifest": "fixpack",
+        "lint:md": "prettier ./**/*.md -prose-wrap always --write",
+        "posttest:ci:coverage:codacy":
+          "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
+        "precommit": "lint-staged",
+        "prepare": "npm run lint && npm run security",
+        "prepublish":
+          "lec lib/cli.js -c LF && npm run security && semantic-release -d",
+        "prepublishOnly": "npm run prepare",
+        "pretest": "npm run lint",
+        "security": "npm run security:nsp:scan",
+        "security:nsp:scan": "nsp check",
+        "test": "jest",
+        "test:config": "jest --showConfig",
+        "test:watch": "jest ./lib/__tests__/*.test.js --watch",
+        "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
+      },
+      "readme": "ERROR: No README data found!",
+      "_id": "github-resource-converter@1.0.0"
+    },
+    "help":
+      "\n  Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.\n\n  Usage\n\n    $ grc [options] [info]\n    $ github-resource-converter [options] [info]\n\n  Options\n    --base-url           The GitHub REST API v3 URL origin, or a\n                         GitHub Enterprise URL origin and path-prefix.\n                         [Default: 'https://api.github.com']\n    --dest,          -d  The CSV's destination path and file name.\n                         [Default: './resources.csv']\n    --no-auto-filename       Don't append an ISO 8601-like timestamp to the\n         output file.\n                         [Default: false]\n    --owner,         -o  The GitHub account name or organization name.\n    --repo,          -r  The name of the GitHub (or GitHub enterprise)\n                         repository.\n    --resource-type, -t  \"issues\", \"prs\", or \"all\".\n                         [Default: 'issues']\n\n  Info\n\n    --help     Show this dialog.\n    --version  Display the installed semantic version.\n\n  Examples\n\n    $ grc --owner github --repo hub\n      // => Exported CSV to /path/of/cwd/issues.csv.\n\n    $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'\n      // => Exported CSV to /path/to/reports/issues/YYYY-MM-DD.csv.\n\n    $ grc --owner example --repo error\n      // =>\n      [2018-03-19T08:04:06.596Z] ERROR: github-resource-converter/00000 on localhost: Cannot destructure property `data` of 'undefined' or 'null'.\n        TypeError: Cannot destructure property `data` of 'undefined' or 'null'.\n            at paginate (/p/a/t/h/github-resource-converter/lib/base-resource-converter.js:39:16)\n            at <anonymous>\n            at process._tickCallback (internal/process/next_tick.js:188:7)\n"
+  }
+}
+```
 
-#### Return type
+</p></details>
 
-#### Examples
+---
 
-### `grc.pullRequests.getForRepo`
+### 4.6. `grc.pullRequests.getForRepo({owner, repo}): Promise`
 
 Retrieve an array of all pull requests for a project.
 
@@ -508,7 +765,7 @@ const result = await grc.pullRequests.getForRepo({
 })
 ```
 
-#### Parameters
+#### 4.6.1. Parameters
 
 <table>
   <thead>
@@ -525,7 +782,6 @@ const result = await grc.pullRequests.getForRepo({
         string
       </td>
       <td>
-
       </td>
     </tr>
     <tr>
@@ -534,22 +790,19 @@ const result = await grc.pullRequests.getForRepo({
         string
       </td>
       <td>
-
       </td>
     </tr>
     <tr>
       <td class="code">state
-        <span class="label label-optional">optional</span>
+        <span class="label label-optional">[optional]</span>
       </td>
       <td>
         string
       </td>
       <td>
-
         <p class="default-value">Default value:
           <code>open</code>
         </p>
-
         <p class="type-size">Allowed values:
           <code>open</code>,
           <code>closed</code>,
@@ -559,33 +812,29 @@ const result = await grc.pullRequests.getForRepo({
     </tr>
     <tr>
       <td class="code">head
-        <span class="label label-optional">optional</span>
+        <span class="label label-optional">[optional]</span>
       </td>
       <td>
         string
       </td>
       <td>
         <p>Filter pulls by head user and branch name in the format of user:ref-name. Example: github:new-script-format.</p>
-
-
       </td>
     </tr>
     <tr>
       <td class="code">base
-        <span class="label label-optional">optional</span>
+        <span class="label label-optional">[optional]</span>
       </td>
       <td>
         string
       </td>
       <td>
         <p>Filter pulls by base branch name. Example: gh-pages.</p>
-
-
       </td>
     </tr>
     <tr>
       <td class="code">sort
-        <span class="label label-optional">optional</span>
+        <span class="label label-optional">[optional]</span>
       </td>
       <td>
         string
@@ -601,7 +850,6 @@ const result = await grc.pullRequests.getForRepo({
         <p class="default-value">Default value:
           <code>created</code>
         </p>
-
         <p class="type-size">Allowed values:
           <code>created</code>,
           <code>updated</code>,
@@ -612,17 +860,15 @@ const result = await grc.pullRequests.getForRepo({
     </tr>
     <tr>
       <td class="code">direction
-        <span class="label label-optional">optional</span>
+        <span class="label label-optional">[optional]</span>
       </td>
       <td>
         string
       </td>
       <td>
-
         <p class="default-value">Default value:
           <code>desc</code>
         </p>
-
         <p class="type-size">Allowed values:
           <code>asc</code>,
           <code>desc</code>
@@ -631,20 +877,18 @@ const result = await grc.pullRequests.getForRepo({
     </tr>
     <tr>
       <td class="code">page
-        <span class="label label-optional">optional</span>
+        <span class="label label-optional">[optional]</span>
       </td>
       <td>
         number
       </td>
       <td>
         <p>Page number of the results to fetch.</p>
-
-
       </td>
     </tr>
     <tr>
       <td class="code">per_page
-        <span class="label label-optional">optional</span>
+        <span class="label label-optional">[optional]</span>
       </td>
       <td>
         number
@@ -654,47 +898,79 @@ const result = await grc.pullRequests.getForRepo({
         <p class="default-value">Default value:
           <code>30</code>
         </p>
-
       </td>
     </tr>
-
   </tbody>
 </table>
 
-#### Return type
+#### 4.6.2. Examples
 
-#### Examples
+* _**async/await**:_
 
-### `async grc.save({data, dest})`
+  > ```js
+  > const grc = require('github-resource-coverter')
+  >
+  > const getAllPullRequests = async (params) = {
+  >   try {
+  >     const WHITESPACE = 2
+  >     const prs = await grc.pullRequests.getForRepo(params)
+  >     grc.logger.info(JSON.stringify(prs, null, WHITESPACE))
+  >   } catch (err) {
+  >     grc.logger.error(err)
+  >   }
+  > }
+  >
+  > await getAllPullRequests({
+  >   owner: 'democracy-ia',
+  >   repo: 'govinfo-link-js'
+  > })
+  > ```
+
+* _**Promises**:_
+
+  > ```js
+  > const grc = require('github-resource-coverter')
+  >
+  > grc.pullRequests
+  >   .getForRepo({
+  >     owner: 'democracy-ia',
+  >     repo: 'govinfo-link-js'
+  >   })
+  >   .then(prs => {
+  >     const WHITESPACE = 2
+  >     grc.logger.info(JSON.stringify(prs, null, WHITESPACE))
+  >   })
+  >   .catch(err => {
+  >     grc.logger.error(err)
+  >   })
+  > ```
+
+### 4.7. `grc.save({data, dest}): Promise`
+
+Export a collection of Issues or Pull Requests to your local filesystem.
 
 ```js
 await grc.save({
   data,
-  './export.csv'
+  dest: './export.csv'
 })
 ```
 
-Export a collection of Issues or Pull Requests to your local filesystem.
+#### 4.7.1. Parameters
 
-#### Parameters
+#### 4.7.2. Examples
 
-#### Return type
+### 4.8. `grc.toCsv({data=[]}): Promise`
 
-#### Examples
+#### 4.8.1. Parameters
 
-### `async grc.toCsv({data=[]})`
+#### 4.8.2. Examples
 
-#### Parameters
+## 5. Version
 
-#### Return type
+The latest semantic version of `github-resource-converter` [![NPM version][npm-image]][npm-url].
 
-#### Examples
-
-## Version
-
-The latest semantic version of `github-resource-converter` is 1.0.0-alpha.
-
-## Contributing
+## 6. Contributing
 
 [![PRs Welcome][makeapullrequest-image] ![External link][icon-octicon-link-external]][makeapullrequest-url] We welcome contributions with GitHub **issues** and **pull requests**.
 
@@ -707,7 +983,7 @@ The latest semantic version of `github-resource-converter` is 1.0.0-alpha.
 
 ---
 
-Contributions in the form of GitHub pull requests are welcome. Before embarking on a significant change, please adhere to the following guidelines:
+Before embarking on a significant change, please adhere to the following guidelines:
 
 1.  **[Create an issue][issues-url]**&mdash;e.g., a [defect ("bug") report][issues-new-defect-url] or a [feature request][issues-new-feat-url]&mdash;to propose changes.
 
@@ -733,7 +1009,7 @@ Contributions in the form of GitHub pull requests are welcome. Before embarking 
 
     > **🙋 Never created a pull request?** No problem. [🆓 Take this free online training ![External link][icon-octicon-link-external]][makeapullrequest-url]. (It even covers most of the conventions in the [CONTRIBUTING guidelines][contributing-url]!)
 
-## License
+## 7. License
 
 [MIT](./LICENSE) © [Greg Swindle](https://github.com/gregswindle).
 
@@ -744,6 +1020,11 @@ Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for a
 ---
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/github-resource-converter.svg)](https://greenkeeper.io/)
+
+<!-- ⛔️ Link References ⛔️  -->
+
+[runkit-grc-url]: https://runkit.com/gregswindle/github-resource-converter
+[toc]: #table-of-contents
 
 <!-- ⛔️ CI Services ⛔️  -->
 
