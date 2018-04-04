@@ -616,7 +616,7 @@ A proxy method for [`octokit.issues.getForRepo` ![link-external][icon-octicon-li
 * _**async/await**:_
 
   > ```javascript
-  > const result = await octokit.issues.getForRepo({
+  > const result = await grc.issues.getForRepo({
   >   owner: 'gregswindle',
   >   repo: 'eslint-plugin-crc'
   > })
