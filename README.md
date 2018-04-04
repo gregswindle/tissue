@@ -314,7 +314,7 @@ $ npm i --save github-resource-converter
   <dt><code>--base-url</code></dt>
   <dd><p>The GitHub REST API v3 URL origin, or a GitHub Enterprise URL origin and path-prefix.</p>
     <table>
-     <tbody><tr><th>Default value:</th><td><samp>https://api.github.com</samp></td></tr></tbody>
+     <tbody><tr><th>Default value:</th><td><code>https://api.github.com</code></td></tr></tbody>
     </table>
   </dd>
   <dt><code>--dest, -d</code></dt>
@@ -418,7 +418,7 @@ $ github-resource-converter --version
 
 ## 4. API
 
-> [![beaker][icon-octicon-beaker] Test the `github-resource-converter (grc)` API in your Web browser][runkit-grc-url].
+> [![beaker][icon-octicon-beaker] Test the `github-resource-converter (grc)` API in your Web browser ![link-external][icon-octicon-link-external]][runkit-grc-url].
 
 ### 4.1. `grc.authenticate({token, type, key}): void`
 
@@ -427,7 +427,7 @@ $ github-resource-converter --version
 > 1.  If you can see the information by visiting the site without being logged in, you don't have to be authenticated to retrieve the same information through the API.
 > 1.  If you want to change data, you have to be authenticated.
 >
-> octokit/rest.js. (2018). GitHub. Retrieved 21 March 2018, from <https://github.com/octokit/rest.js#authentication>
+> octokit/rest.js. (2018). GitHub. Retrieved 21 March 2018, from <https://github.com/octokit/rest.js#authentication> ![link-external][icon-octicon-link-external]
 
 #### 4.1.1. Parameters
 
@@ -458,11 +458,16 @@ Retrieve all open and closed Issues and Pull Requests from a GitHub project.
 /repos/:owner/:repo/pulls
 ```
 
-> ![info][icon-octicon-info] See
+> **![info][icon-octicon-info] `grc.getAll` combines the results of `grc.issues.getForRepo` and `grc.pullRequests.getForRepo` into a single `Array<object>`.**
+>
+> For more information, see
+>
+> 1.  [`grc.issues.getForRepo`](#43-grcissuesgetforrepoowner-repo-promise) and
+> 1.  [`grc.pullRequests.getForRepo`](#46-grcpullrequestsgetforrepoowner-repo-promise) below.
 
 ### 4.3. `grc.issues.getForRepo({owner, repo}): Promise`
 
-A proxy method for [`octokit.issues.getForRepo` ![link-external][icon-octicon-link-external]](https://octokit.github.io/rest.js/#api-Issues-getForRepo).
+Retrieve all open and closed **issues** for a repository with this proxy method for [`octokit.issues.getForRepo` ![link-external][icon-octicon-link-external]](https://octokit.github.io/rest.js/#api-Issues-getForRepo).
 
 ![GET][rest-get-img]
 
@@ -636,8 +641,7 @@ A proxy method for [`octokit.issues.getForRepo` ![link-external][icon-octicon-li
 
 ### 4.4. `grc.logger`
 
-A proxy for a [`trentm/node-bunyan` ![link-external][icon-octicon-link-external]][node-bunyan-url] logger instance,
-using a `LONG` [`thlorenz/bunyan-format` ![link-external][icon-octicon-link-external]][bunyan-format-url] writeable
+A [`trentm/node-bunyan` ![link-external][icon-octicon-link-external]][node-bunyan-url] logger instance that uses the `LONG` [`thlorenz/bunyan-format` ![link-external][icon-octicon-link-external]][bunyan-format-url] writeable
 stream for output.
 
 > ![info][icon-octicon-info] **`bunyan.INFO`** is the default log LEVEL.
@@ -947,16 +951,14 @@ Contains default values for `api`, `cli`, and `meta`data.
 
 ### 4.6. `grc.pullRequests.getForRepo({owner, repo}): Promise`
 
-Retrieve an array of all open and closed pull requests for a GitHub or GitHub Enterprise repository.
+Retrieve an array of all open and closed pull requests for a GitHub or GitHub Enterprise repository with this proxy method for
+[`octokit.pullRequests.getAll` ![link-external][icon-octicon-link-external]](https://octokit.github.io/rest.js/#api-PullRequests-getAll).
 
 ![GET][rest-get-img]
 
 ```http
 /repos/:owner/:repo/pulls
 ```
-
-> ![info][icon-octicon-info] `getForRepo` is a proxy for
-> [`octokit.pullRequests.getAll`](https://octokit.github.io/rest.js/#api-PullRequests-getAll).
 
 #### 4.6.1. Parameters
 
@@ -1208,7 +1210,7 @@ Export a collection of Issues or Pull Requests to your local filesystem.
 
 ### 4.8. `grc.toCsv({data=[]}): Promise`
 
-Converts (deeply) nested JSON into CSV format.
+Converts (deeply) nested JSON into CSV format, returning a `Promise<string>`.
 
 #### 4.8.1. Parameters
 
