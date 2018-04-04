@@ -154,7 +154,7 @@
   },
   "scripts": {
     "docs": "npm run docs:toc",
-    "docs:changelog": "standard-version",
+    "docs:changelog": "standard-version -a",
     "docs:toc":
       "md-magic --config '.github/config/markdown.config.js' --path '**/*.md' --ignore 'node_modules'",
     "lint":
