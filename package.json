@@ -2,7 +2,7 @@
   "name": "github-resource-converter",
   "description":
     "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Greg Swindle",
     "email": "greg@swindle.net",
@@ -78,7 +78,8 @@
     "markdown-magic-package-scripts": "1.2.1",
     "nsp": "^3.2.1",
     "prettier": "1.11.1",
-    "semantic-release": "15.1.5"
+    "semantic-release": "15.1.5",
+    "standard-version": "4.3.0"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -139,23 +140,13 @@
   "lint-staged": {
     "*.js": ["npm run lint:js", "git add"],
     "*.json": ["npm run lint:json", "git add"],
-    "*.md": ["npm run lint:md", "npm run docs", "git add"]
+    "*.md": ["npm run lint:md", "npm run docs", "git add"],
+    "*": ["npm run docs:changelog", "git add"]
   },
   "main": "lib/index.js",
   "prettier": {
     "semi": false,
     "singleQuote": true
-  },
-  "release": {
-    "generateNotes": {
-      "preset": "angular"
-    },
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "verifyConditions": ["@semantic-release/npm", "@semantic-release/git"]
   },
   "repository": {
     "type": "git",
@@ -163,6 +154,7 @@
   },
   "scripts": {
     "docs": "npm run docs:toc",
+    "docs:changelog": "standard-version",
     "docs:toc":
       "md-magic --config '.github/config/markdown.config.js' --path '**/*.md' --ignore 'node_modules'",
     "lint":
@@ -187,5 +179,11 @@
     "test:config": "jest --showConfig",
     "test:watch": "jest ./lib/__tests__/*.test.js --watch",
     "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
+    }
   }
 }
