@@ -1,10 +1,9 @@
-# `github-resource-converter`
+# `github-resource-converter` [![NPM version][npm-image]][npm-url]
 
-> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/desktop-download.svg"> Convert GitHub Issues and Pull Requests to JSON and CSV from a Terminal or within your Node.js app.
+> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/desktop-download.svg"> Convert GitHub Issues and Pull Requests to JSON and CSV from a Terminal or Node.js app.
 
 [![The MIT License][license-image]][license-url]
-[![FOSSA Status][fossa-image]][fossa-url]
-[![NPM version][npm-image]][npm-url]<br>
+[![FOSSA Status][fossa-image]][fossa-url]<br>
 [![NSP Status][nsp-image]][nsp-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Development Dependency Status][daviddm-dev-image]][daviddm-dev-url]<br>
@@ -13,6 +12,7 @@
 [![Coverage percentage][codacy-coverage-image]][codacy-url]
 [![Codacy code quality][codacy-image]][codacy-url]
 [![NPMS score][npms-image]][npms-url]
+[![NPM downloads per month][npm-downloads-month]][npm-url]
 
 ## Table of contents
 
@@ -37,14 +37,10 @@
     + [4.1.1. Parameters](#411-parameters)
     + [4.1.2. Example](#412-example)
   * [4.2. `grc.getAll({owner, repo}): Promise`](#42-grcgetallowner-repo-promise)
-    + [4.2.1. Parameters](#421-parameters)
-    + [4.2.2. Examples](#422-examples)
   * [4.3. `grc.issues.getForRepo({owner, repo}): Promise`](#43-grcissuesgetforrepoowner-repo-promise)
     + [4.3.1. Parameters](#431-parameters)
     + [4.3.2. Examples](#432-examples)
   * [4.4. `grc.logger`](#44-grclogger)
-    + [4.4.1. Methods](#441-methods)
-    + [4.4.2. Examples](#442-examples)
   * [4.5. `grc.options`](#45-grcoptions)
   * [4.6. `grc.pullRequests.getForRepo({owner, repo}): Promise`](#46-grcpullrequestsgetforrepoowner-repo-promise)
     + [4.6.1. Parameters](#461-parameters)
@@ -417,7 +413,7 @@ Use the `--version` flag to see which version you have installed:
 
 ```bash
 $ github-resource-converter --version
-# => 1.0.0
+# => 1.0.1
 ```
 
 ## 4. API
@@ -443,7 +439,7 @@ $ github-resource-converter --version
 
 #### 4.1.2. Example
 
-```js
+```javascript
 // Token (https://github.com/settings/tokens)
 grc.authenticate({
   token: 'secrettoken123',
@@ -455,27 +451,229 @@ grc.authenticate({
 
 Retrieve all open and closed Issues and Pull Requests from a GitHub project.
 
-#### 4.2.1. Parameters
+![GET][rest-get-img]
 
-| Name  | Type   | Description                                                      | Notes |
-| :---- | :----- | :--------------------------------------------------------------- | :---- |
-| key   | String |                                                                  |       |
-| token | String |                                                                  |       |
-| type  | Enum   | `basic`, `oauth`, `oauth-key-secret`, `token`, and `integration` |       |
+```http
+/repos/:owner/:repo/issues
+/repos/:owner/:repo/pulls
+```
 
-#### 4.2.2. Examples
+> ![info][icon-octicon-info] See
 
 ### 4.3. `grc.issues.getForRepo({owner, repo}): Promise`
 
+A proxy method for [`octokit.issues.getForRepo` ![link-external][icon-octicon-link-external]](https://octokit.github.io/rest.js/#api-Issues-getForRepo).
+
+![GET][rest-get-img]
+
+```http
+/repos/:owner/:repo/issues
+```
+
 #### 4.3.1. Parameters
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 30%">Field</th>
+      <th style="width: 10%">Type</th>
+      <th style="width: 60%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><samp>owner</samp></td>
+      <td>
+        string
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><samp>repo</samp></td>
+      <td>
+        string
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><samp>milestone</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><samp>state</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>open, closed, or all</p>
+        <p>Default value: <code>open</code></p>
+        <p>Allowed values:
+          <code>open</code>, 
+          <code>closed</code>, 
+          <code>all</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>assignee</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>String User login, <code>none</code> for Issues with no assigned User. <code>*</code> for Issues with any assigned User.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>creator</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>The user that created the issue.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>per_page</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        number
+      </td>
+      <td>
+        <p>A custom page size up to 100. Default is 30.</p>
+        <p>Default value: <code>30</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>labels</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>String list of comma separated Label names. Example: bug,ui,@high</p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>sort</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>Default value: <code>created</code></p>
+        <p>Allowed values:
+          <code>created</code>,
+          <code>updated</code>,
+          <code>comments</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>direction</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>Default value: <code>desc</code></p>
+        <p>Allowed values:
+          <code>asc</code>, 
+          <code>desc</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>since</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        date
+      </td>
+      <td>
+        <p>Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ</p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>page</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        number
+      </td>
+      <td>
+        <p>Page number of the results to fetch.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>mentioned</samp> <img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>String User login.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 4.3.2. Examples
 
+* _**async/await**:_
+
+  > ```javascript
+  > const result = await octokit.issues.getForRepo({
+  >   owner: 'gregswindle',
+  >   repo: 'eslint-plugin-crc'
+  > })
+  > ```
+
+* _**Promise**:_
+
+  > ```javascript
+  > grc.issues
+  >   .getForRepo({
+  >     owner: 'gregswindle',
+  >     repo: 'eslint-plugin-crc'
+  >   })
+  >   .then(result => {})
+  >   .catch(err => {})
+  > ```
+
 ### 4.4. `grc.logger`
 
-#### 4.4.1. Methods
+A proxy for a [`trentm/node-bunyan` ![link-external][icon-octicon-link-external]][node-bunyan-url] logger instance,
+using a `LONG` [`thlorenz/bunyan-format` ![link-external][icon-octicon-link-external]][bunyan-format-url] writeable
+stream for output.
 
-#### 4.4.2. Examples
+> ![info][icon-octicon-info] **`bunyan.INFO`** is the default log LEVEL.
+
+```javascript
+Logger {
+  domain: null,
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _level: 30,
+  streams:
+    [{
+      type: 'stream',
+      stream: BunyanFormatWritable {
+      },
+      closeOnExit: false,
+      level: 30,
+      raw: false
+    }],
+  serializers: null,
+  src: false,
+  fields: {
+    name: 'github-resource-converter',
+     hostname: 'Gregorys-MBP-2.fios-router.home',
+    pid: 76698
+  },
+
+  debug(): void,
+  error(): void,
+  fatal(): void,
+  info(): void,
+  trace(): void,
+  warn(): void
+}
+```
 
 ### 4.5. `grc.options`
 
@@ -484,17 +682,17 @@ Contains default values for `api`, `cli`, and `meta`data.
 ---
 
 <details>
-  <summary><strong>Toggle view of <var>grc.options</var></strong>.</summary>
+  <summary><strong>Toggle view of <samp>grc.options</samp></strong>.</summary>
   <p>
 
-```json
+```javascript
 {
   "api": {
     "baseUrl": "https://api.github.com",
     "headers": {
       "Accept":
         "application/vnd.github.v3+json, application/vnd.github.symmetra-preview+json",
-      "user-agent": "gregswindle/github-resource-converter v1.0.0"
+      "user-agent": "gregswindle/github-resource-converter v1.0.1"
     },
     "owner": null,
     "repo": null,
@@ -545,7 +743,7 @@ Contains default values for `api`, `cli`, and `meta`data.
       "name": "github-resource-converter",
       "description":
         "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Greg Swindle",
         "email": "greg@swindle.net",
@@ -735,7 +933,7 @@ Contains default values for `api`, `cli`, and `meta`data.
         "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
       },
       "readme": "ERROR: No README data found!",
-      "_id": "github-resource-converter@1.0.0"
+      "_id": "github-resource-converter@1.0.1"
     },
     "help":
       "\n  Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.\n\n  Usage\n\n    $ grc [options] [info]\n    $ github-resource-converter [options] [info]\n\n  Options\n    --base-url           The GitHub REST API v3 URL origin, or a\n                         GitHub Enterprise URL origin and path-prefix.\n                         [Default: 'https://api.github.com']\n    --dest,          -d  The CSV's destination path and file name.\n                         [Default: './resources.csv']\n    --no-auto-filename       Don't append an ISO 8601-like timestamp to the\n         output file.\n                         [Default: false]\n    --owner,         -o  The GitHub account name or organization name.\n    --repo,          -r  The name of the GitHub (or GitHub enterprise)\n                         repository.\n    --resource-type, -t  \"issues\", \"prs\", or \"all\".\n                         [Default: 'issues']\n\n  Info\n\n    --help     Show this dialog.\n    --version  Display the installed semantic version.\n\n  Examples\n\n    $ grc --owner github --repo hub\n      // => Exported CSV to /path/of/cwd/issues.csv.\n\n    $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'\n      // => Exported CSV to /path/to/reports/issues/YYYY-MM-DD.csv.\n\n    $ grc --owner example --repo error\n      // =>\n      [2018-03-19T08:04:06.596Z] ERROR: github-resource-converter/00000 on localhost: Cannot destructure property `data` of 'undefined' or 'null'.\n        TypeError: Cannot destructure property `data` of 'undefined' or 'null'.\n            at paginate (/p/a/t/h/github-resource-converter/lib/base-resource-converter.js:39:16)\n            at <anonymous>\n            at process._tickCallback (internal/process/next_tick.js:188:7)\n"
@@ -749,21 +947,16 @@ Contains default values for `api`, `cli`, and `meta`data.
 
 ### 4.6. `grc.pullRequests.getForRepo({owner, repo}): Promise`
 
-Retrieve an array of all pull requests for a project.
+Retrieve an array of all open and closed pull requests for a GitHub or GitHub Enterprise repository.
 
-```js
-const result = await grc.pullRequests.getForRepo({
-  owner,
-  repo,
-  base,
-  direction,
-  head,
-  page,
-  per_page,
-  sort,
-  state
-})
+![GET][rest-get-img]
+
+```http
+/repos/:owner/:repo/pulls
 ```
+
+> ![info][icon-octicon-info] `getForRepo` is a proxy for
+> [`octokit.pullRequests.getAll`](https://octokit.github.io/rest.js/#api-PullRequests-getAll).
 
 #### 4.6.1. Parameters
 
@@ -777,7 +970,7 @@ const result = await grc.pullRequests.getForRepo({
   </thead>
   <tbody>
     <tr>
-      <td class="code">owner</td>
+      <td><samp>owner</samp></td>
       <td>
         string
       </td>
@@ -785,7 +978,7 @@ const result = await grc.pullRequests.getForRepo({
       </td>
     </tr>
     <tr>
-      <td class="code">repo</td>
+      <td><samp>repo</samp></td>
       <td>
         string
       </td>
@@ -793,17 +986,17 @@ const result = await grc.pullRequests.getForRepo({
       </td>
     </tr>
     <tr>
-      <td class="code">state
-        <span class="label label-optional">[optional]</span>
+      <td><samp>state</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
       </td>
       <td>
         string
       </td>
       <td>
-        <p class="default-value">Default value:
+        <p>Default value:
           <code>open</code>
         </p>
-        <p class="type-size">Allowed values:
+        <p>Allowed values:
           <code>open</code>,
           <code>closed</code>,
           <code>all</code>
@@ -811,8 +1004,8 @@ const result = await grc.pullRequests.getForRepo({
       </td>
     </tr>
     <tr>
-      <td class="code">head
-        <span class="label label-optional">[optional]</span>
+      <td><samp>head</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
       </td>
       <td>
         string
@@ -822,8 +1015,8 @@ const result = await grc.pullRequests.getForRepo({
       </td>
     </tr>
     <tr>
-      <td class="code">base
-        <span class="label label-optional">[optional]</span>
+      <td><samp>base</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
       </td>
       <td>
         string
@@ -833,8 +1026,8 @@ const result = await grc.pullRequests.getForRepo({
       </td>
     </tr>
     <tr>
-      <td class="code">sort
-        <span class="label label-optional">[optional]</span>
+      <td><samp>sort</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
       </td>
       <td>
         string
@@ -847,10 +1040,10 @@ const result = await grc.pullRequests.getForRepo({
           <code>long-running</code>, Default:
           <code>created</code>
         </p>
-        <p class="default-value">Default value:
+        <p>Default value:
           <code>created</code>
         </p>
-        <p class="type-size">Allowed values:
+        <p>Allowed values:
           <code>created</code>,
           <code>updated</code>,
           <code>popularity</code>,
@@ -859,25 +1052,25 @@ const result = await grc.pullRequests.getForRepo({
       </td>
     </tr>
     <tr>
-      <td class="code">direction
-        <span class="label label-optional">[optional]</span>
+      <td><samp>direction</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
       </td>
       <td>
         string
       </td>
       <td>
-        <p class="default-value">Default value:
+        <p>Default value:
           <code>desc</code>
         </p>
-        <p class="type-size">Allowed values:
+        <p>Allowed values:
           <code>asc</code>,
           <code>desc</code>
         </p>
       </td>
     </tr>
     <tr>
-      <td class="code">page
-        <span class="label label-optional">[optional]</span>
+      <td><samp>page</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
       </td>
       <td>
         number
@@ -887,15 +1080,15 @@ const result = await grc.pullRequests.getForRepo({
       </td>
     </tr>
     <tr>
-      <td class="code">per_page
-        <span class="label label-optional">[optional]</span>
+      <td><samp>per_page</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
       </td>
       <td>
         number
       </td>
       <td>
         <p>A custom page size up to 100. Default is 30.</p>
-        <p class="default-value">Default value:
+        <p>Default value:
           <code>30</code>
         </p>
       </td>
@@ -907,7 +1100,7 @@ const result = await grc.pullRequests.getForRepo({
 
 * _**async/await**:_
 
-  > ```js
+  > ```javascript
   > const grc = require('github-resource-coverter')
   >
   > const getAllPullRequests = async (params) = {
@@ -928,7 +1121,7 @@ const result = await grc.pullRequests.getForRepo({
 
 * _**Promises**:_
 
-  > ```js
+  > ```javascript
   > const grc = require('github-resource-coverter')
   >
   > grc.pullRequests
@@ -949,26 +1142,116 @@ const result = await grc.pullRequests.getForRepo({
 
 Export a collection of Issues or Pull Requests to your local filesystem.
 
-```js
-await grc.save({
-  data,
-  dest: './export.csv'
-})
-```
-
 #### 4.7.1. Parameters
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 30%">Field</th>
+      <th style="width: 10%">Type</th>
+      <th style="width: 60%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><samp>data</samp></td>
+      <td>
+        JSON&nbsp;|&nbsp;object
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td><samp>dest</samp>
+        <span class="label label-optional"><img align="right" alt="optional" height="22" width="60" src="https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16"></span>
+      </td>
+      <td>
+        string
+      </td>
+      <td>
+        <p>Default value:
+          <code>./export.csv</code>
+        </p>
+        <p>Allowed values:
+          <code>*.csv</code>,
+          <code>*.json</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 4.7.2. Examples
 
+* _**async/await**:_
+
+  > ```javascript
+  > // Save as JSON
+  > const result = await grc.save({
+  >   data,
+  >   dest: './export.json'
+  > })
+  > ```
+
+* _**Promise**:_
+
+  > ```javascript
+  > // Save as CSV
+  > grc
+  >   .save({
+  >     data,
+  >     dest: './export.csv'
+  >   })
+  >   .then(result => {})
+  >   .catch((err = {}))
+  > ```
+
 ### 4.8. `grc.toCsv({data=[]}): Promise`
+
+Converts (deeply) nested JSON into CSV format.
 
 #### 4.8.1. Parameters
 
+<table>
+  <thead>
+    <tr>
+      <th style="width: 30%">Field</th>
+      <th style="width: 10%">Type</th>
+      <th style="width: 60%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><samp>data</samp></td>
+      <td>
+        JSON&nbsp;|&nbsp;object
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 #### 4.8.2. Examples
+
+* _**async/await**:_
+
+  > ```javascript
+  > const result = await grc.toCsv(data)
+  > ```
+
+* _**Promise**:_
+
+  > ```javascript
+  > grc
+  >   .toCsv(data)
+  >   .then(result => {})
+  >   .catch((err = {}))
+  > ```
 
 ## 5. Version
 
-The latest semantic version of `github-resource-converter` [![NPM version][npm-image]][npm-url].
+[![NPM version][npm-image]][npm-url]
 
 ## 6. Contributing
 
@@ -1020,9 +1303,14 @@ Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for a
 ---
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/github-resource-converter.svg)](https://greenkeeper.io/)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/gregswindle/github-resource-converter)](http://clayallsopp.github.io/readme-score?url=https://github.com/gregswindle/github-resource-converter)
 
 <!-- ⛔️ Link References ⛔️  -->
 
+[bunyan-format-url]: https://github.com/thlorenz/bunyan-format/#readme
+[node-bunyan-url]: https://github.com/trentm/node-bunyan/#readme
+[optional-param-img]: https://fakeimg.pl/60x22/757575/FFF/?text=optional&font_size=16
+[rest-get-img]: https://fakeimg.pl/40x40/0e8a16/FFF/?text=GET&font_size=20
 [runkit-grc-url]: https://runkit.com/gregswindle/github-resource-converter
 [toc]: #table-of-contents
 
@@ -1044,7 +1332,8 @@ Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for a
 [fossa-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Fgithub-resource-converter?ref=badge_shield
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT
-[npm-image]: https://badge.fury.io/js/github-resource-converter.svg?style=flat-square
+[npm-downloads-month]: https://img.shields.io/npm/dm/github-resource-converter.svg?style=social
+[npm-image]: https://img.shields.io/npm/v/github-resource-converter.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/github-resource-converter
 [npms-image]: https://badges.npms.io/github-resource-converter.svg?style=flat-square
 [npms-url]: https://npms.io/search?q=github-resource-converter
@@ -1059,9 +1348,9 @@ Read the [NOTICE ![External link][icon-octicon-link-external]][notice-url] for a
 [contributing-image]: https://img.shields.io/badge/read-CONTRIBUTING%20Guidelines-yellow.svg?style=for-the-badge&label=read+the
 [contributing-url]: https://github.com/gregswindle/github-resource-converter/blob/master/.github/CONTRIBUTING.md
 [issues-new-defect-image]: https://img.shields.io/badge/report-defect-lightgrey.svg?style=for-the-badge&label=report+a
-[issues-new-defect-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=fix%28affected-scope%29%3A+50-character-defect-summary&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Defect&template=defect-report.md
+[issues-new-defect-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=defect%28scope%29%3A+defect-summary&labels=priority%3a+medium%2cstatus%3a+review+needed%2ctype%3a+defect&template=defect-report.md
 [issues-new-feat-image]: https://img.shields.io/badge/request-feature-blue.svg?style=for-the-badge&label=request+a
-[issues-new-feat-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=feat%28affected-scope%29%3A+50-character-change-proposal-summary&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Feature&template=feature-request.md
+[issues-new-feat-url]: https://github.com/gregswindle/github-resource-converter/issues/new?title=feat%28scope%29%3A+change-proposal-summary&labels=priority%3a+medium%2cstatus%3a+review+needed%2ctype%3a+feature&template=feature-request.md
 [issues-url]: https://github.com/gregswindle/github-resource-converter/issues
 [makeapullrequest-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [makeapullrequest-url]: http://makeapullrequest.com
