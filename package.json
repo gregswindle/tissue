@@ -2,7 +2,7 @@
   "name": "github-resource-converter",
   "description":
     "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": {
     "name": "Greg Swindle",
     "email": "greg@swindle.net",

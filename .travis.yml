@@ -50,6 +50,4 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - npm run docs:changelog
-          - git commit -a --amend --no-edit
           - npx travis-deploy-once "npx semantic-release"
