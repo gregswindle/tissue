@@ -79,7 +79,7 @@
     "markdown-magic-package-scripts": "1.2.1",
     "nsp": "^3.2.1",
     "prettier": "1.12.1",
-    "semantic-release": "15.1.6",
+    "semantic-release": "15.1.8",
     "standard-version": "4.3.0"
   },
   "engines": {
