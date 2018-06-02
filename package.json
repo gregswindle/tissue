@@ -34,7 +34,7 @@
     "@octokit/rest": "15.2.7",
     "bunyan": "1.8.12",
     "bunyan-format": "0.2.1",
-    "dotenv": "5.0.1",
+    "dotenv": "6.0.0",
     "fs-extra": "5.0.0",
     "insight": "0.10.1",
     "jsonexport": "2.1.0",
